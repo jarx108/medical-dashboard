@@ -1,0 +1,6 @@
+E:\Projects\Medical Records\PMRdbProj\bin\Debug\PMRdbProj.dacpac
+E:\Projects\Medical Records\PMRdbProj\bin\Debug\PMRdbProj.dll
+E:\Projects\Medical Records\PMRdbProj\bin\Debug\PMRdbProj.pdb
+E:\Projects\Medical Records\PMRdbProj\obj\Debug\PMRdbProj.sqlproj.AssemblyReference.cache
+E:\Projects\Medical Records\PMRdbProj\obj\Debug\PMRdbProj.dll
+E:\Projects\Medical Records\PMRdbProj\obj\Debug\PMRdbProj.pdb

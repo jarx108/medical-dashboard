@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="BloodworkControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="DefualtControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="DoctorVisitsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="FamilyHistoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="HospitalizationsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MedicalControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MedicationsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SurgeriesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="TestsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="VaccinesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
