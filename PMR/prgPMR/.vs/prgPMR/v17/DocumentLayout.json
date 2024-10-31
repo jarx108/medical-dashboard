@@ -1,0 +1,412 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|c:\\users\\nikod\\documents\\coding projects\\medical dashboard\\pmr\\prgpmr\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|c:\\users\\nikod\\documents\\coding projects\\medical dashboard\\pmr\\prgpmr\\surgeriescontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:surgeriescontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|c:\\users\\nikod\\documents\\coding projects\\medical dashboard\\pmr\\prgpmr\\defualtcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:defualtcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|c:\\users\\nikod\\documents\\coding projects\\medical dashboard\\pmr\\prgpmr\\hospitalizationscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:hospitalizationscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|c:\\users\\nikod\\documents\\coding projects\\medical dashboard\\pmr\\prgpmr\\bloodworkcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:bloodworkcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|c:\\users\\nikod\\documents\\coding projects\\medical dashboard\\pmr\\prgpmr\\familyhistorycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:familyhistorycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|c:\\users\\nikod\\documents\\coding projects\\medical dashboard\\pmr\\prgpmr\\medicalcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:medicalcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|c:\\users\\nikod\\documents\\coding projects\\medical dashboard\\pmr\\prgpmr\\testscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:testscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|c:\\users\\nikod\\documents\\coding projects\\medical dashboard\\pmr\\prgpmr\\vaccinescontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:vaccinescontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|c:\\users\\nikod\\documents\\coding projects\\medical dashboard\\pmr\\prgpmr\\doctorvisitscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:doctorvisitscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|c:\\users\\nikod\\documents\\coding projects\\medical dashboard\\pmr\\prgpmr\\medicationscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:medicationscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|c:\\users\\nikod\\documents\\coding projects\\medical dashboard\\pmr\\prgpmr\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|c:\\users\\nikod\\documents\\coding projects\\medical dashboard\\pmr\\prgpmr\\pgmpmrmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:pgmpmrmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|c:\\users\\nikod\\documents\\coding projects\\medical dashboard\\pmr\\prgpmr\\vaccinescontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:vaccinescontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\medicalcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:medicalcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\hospitalizationscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:hospitalizationscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\doctorvisitscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:doctorvisitscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\defualtcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:defualtcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\testscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:testscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\bloodworkcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:bloodworkcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\familyhistorycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:familyhistorycontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\vaccinescontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:vaccinescontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B6D2BD7-AEE1-4385-AD58-0FD1CC40BA66}|prgPMR.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SurgeriesControl.cs",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\SurgeriesControl.cs",
+              "RelativeDocumentMoniker": "SurgeriesControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\SurgeriesControl.cs",
+              "RelativeToolTip": "SurgeriesControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:39:25.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DefualtControl.cs",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\DefualtControl.cs",
+              "RelativeDocumentMoniker": "DefualtControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\DefualtControl.cs",
+              "RelativeToolTip": "DefualtControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:38:20.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HospitalizationsControl.cs",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\HospitalizationsControl.cs",
+              "RelativeDocumentMoniker": "HospitalizationsControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\HospitalizationsControl.cs",
+              "RelativeToolTip": "HospitalizationsControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:30:33.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BloodworkControl.cs",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\BloodworkControl.cs",
+              "RelativeDocumentMoniker": "BloodworkControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\BloodworkControl.cs",
+              "RelativeToolTip": "BloodworkControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:27:28.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FamilyHistoryControl.cs",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\FamilyHistoryControl.cs",
+              "RelativeDocumentMoniker": "FamilyHistoryControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\FamilyHistoryControl.cs",
+              "RelativeToolTip": "FamilyHistoryControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:27:17.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MedicalControl.cs",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\MedicalControl.cs",
+              "RelativeDocumentMoniker": "MedicalControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\MedicalControl.cs",
+              "RelativeToolTip": "MedicalControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:18:49.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TestsControl.cs",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\TestsControl.cs",
+              "RelativeDocumentMoniker": "TestsControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\TestsControl.cs",
+              "RelativeToolTip": "TestsControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:11:33.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAswMMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T22:21:45.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VaccinesControl.cs",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\VaccinesControl.cs",
+              "RelativeDocumentMoniker": "VaccinesControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\VaccinesControl.cs",
+              "RelativeToolTip": "VaccinesControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T20:28:09.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DoctorVisitsControl.cs",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\DoctorVisitsControl.cs",
+              "RelativeDocumentMoniker": "DoctorVisitsControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\DoctorVisitsControl.cs",
+              "RelativeToolTip": "DoctorVisitsControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:38:34.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MedicationsControl.cs",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\MedicationsControl.cs",
+              "RelativeDocumentMoniker": "MedicationsControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\MedicationsControl.cs",
+              "RelativeToolTip": "MedicationsControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:42:28.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\LoginForm.cs",
+              "RelativeToolTip": "LoginForm.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAowFQAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T00:56:39.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "pgmPMRMain.cs",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\pgmPMRMain.cs",
+              "RelativeDocumentMoniker": "pgmPMRMain.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\pgmPMRMain.cs",
+              "RelativeToolTip": "pgmPMRMain.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T20:17:41.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "VaccinesControl.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\VaccinesControl.Designer.cs",
+              "RelativeDocumentMoniker": "VaccinesControl.Designer.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\VaccinesControl.Designer.cs",
+              "RelativeToolTip": "VaccinesControl.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T20:31:38.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MedicalControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\MedicalControl.cs",
+              "RelativeDocumentMoniker": "MedicalControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Visual Basic\\Medical Records\\PMR\\prgPMR\\MedicalControl.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Visual Basic\\Medical Records\\PMR\\prgPMR\\MedicalControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:41:38.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HospitalizationsControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\HospitalizationsControl.cs",
+              "RelativeDocumentMoniker": "HospitalizationsControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Visual Basic\\Medical Records\\PMR\\prgPMR\\HospitalizationsControl.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Visual Basic\\Medical Records\\PMR\\prgPMR\\HospitalizationsControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:30:00.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DoctorVisitsControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\DoctorVisitsControl.cs",
+              "RelativeDocumentMoniker": "DoctorVisitsControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Visual Basic\\Medical Records\\PMR\\prgPMR\\DoctorVisitsControl.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Visual Basic\\Medical Records\\PMR\\prgPMR\\DoctorVisitsControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:27:42.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DefualtControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\DefualtControl.cs",
+              "RelativeDocumentMoniker": "DefualtControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Visual Basic\\Medical Records\\PMR\\prgPMR\\DefualtControl.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Visual Basic\\Medical Records\\PMR\\prgPMR\\DefualtControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:24:01.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TestsControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\TestsControl.cs",
+              "RelativeDocumentMoniker": "TestsControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Visual Basic\\Medical Records\\PMR\\prgPMR\\TestsControl.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Visual Basic\\Medical Records\\PMR\\prgPMR\\TestsControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:11:30.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BloodworkControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\BloodworkControl.cs",
+              "RelativeDocumentMoniker": "BloodworkControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Visual Basic\\Medical Records\\PMR\\prgPMR\\BloodworkControl.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Visual Basic\\Medical Records\\PMR\\prgPMR\\BloodworkControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:08:55.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\MainForm.cs [Design]",
+              "RelativeToolTip": "MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T01:29:07.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FamilyHistoryControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\FamilyHistoryControl.cs",
+              "RelativeDocumentMoniker": "FamilyHistoryControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Visual Basic\\Medical Records\\PMR\\prgPMR\\FamilyHistoryControl.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Visual Basic\\Medical Records\\PMR\\prgPMR\\FamilyHistoryControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:09:03.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "VaccinesControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\VaccinesControl.cs",
+              "RelativeDocumentMoniker": "VaccinesControl.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Visual Basic\\Medical Records\\PMR\\prgPMR\\VaccinesControl.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Visual Basic\\Medical Records\\PMR\\prgPMR\\VaccinesControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T01:22:46.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nikod\\Documents\\Coding Projects\\Medical Dashboard\\PMR\\prgPMR\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\nikod\\Documents\\Coding Projects\\Visual Basic\\Medical Records\\PMR\\prgPMR\\LoginForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Visual Basic\\Medical Records\\PMR\\prgPMR\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T00:56:23.254Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

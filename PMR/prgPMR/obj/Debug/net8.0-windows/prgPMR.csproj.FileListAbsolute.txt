@@ -1,0 +1,192 @@
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\prgPMR.exe
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\prgPMR.deps.json
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\prgPMR.runtimeconfig.json
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\prgPMR.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\prgPMR.pdb
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.csproj.GenerateResource.cache
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.AssemblyInfoInputs.cache
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.AssemblyInfo.cs
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.csproj.CoreCompileInputs.cache
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.dll
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\refint\prgPMR.dll
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.pdb
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.genruntimeconfig.cache
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\ref\prgPMR.dll
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.Properties.Resources.resources
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Azure.Core.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Azure.Identity.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\System.ClientModel.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\System.Memory.Data.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Projects\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.csproj.AssemblyReference.cache
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.csproj.Up2Date
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.MainForm.resources
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.LoginForm.resources
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.VaccineMain.resources
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.FamMed.resources
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.Hospital.resources
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.Medications.resources
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.DefUserCtrl.resources
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.Blood.resources
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.DrVisits.resources
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.Surgeries.resources
+E:\Projects\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.Tests.resources
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\prgPMR.exe
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\prgPMR.deps.json
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\prgPMR.runtimeconfig.json
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\prgPMR.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\prgPMR.pdb
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.csproj.AssemblyReference.cache
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.LoginForm.resources
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.MainForm.resources
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.Properties.Resources.resources
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.csproj.GenerateResource.cache
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.AssemblyInfoInputs.cache
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.AssemblyInfo.cs
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.csproj.CoreCompileInputs.cache
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.csproj.Up2Date
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\refint\prgPMR.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.pdb
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.genruntimeconfig.cache
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\ref\prgPMR.dll
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.FamilyHistoryControl.resources
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.DefualtControl.resources
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.DoctorVisitsControl.resources
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.MedicalControl.resources
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.MedicationsControl.resources
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.TestsControl.resources
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.BloodworkControl.resources
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.HospitalizationsControl.resources
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.SurgeriesControl.resources
+C:\Users\nikod\Documents\Coding Projects\Visual Basic\Medical Records\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.VaccinesControl.resources
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\prgPMR.exe
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\prgPMR.deps.json
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\prgPMR.runtimeconfig.json
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\prgPMR.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\prgPMR.pdb
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.csproj.AssemblyReference.cache
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.BloodworkControl.resources
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.DefualtControl.resources
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.DoctorVisitsControl.resources
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.FamilyHistoryControl.resources
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.HospitalizationsControl.resources
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.LoginForm.resources
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.MainForm.resources
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.MedicalControl.resources
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.MedicationsControl.resources
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.Properties.Resources.resources
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.SurgeriesControl.resources
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.TestsControl.resources
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.VaccinesControl.resources
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.csproj.GenerateResource.cache
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.AssemblyInfoInputs.cache
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.AssemblyInfo.cs
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.csproj.CoreCompileInputs.cache
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.sourcelink.json
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.csproj.Up2Date
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\refint\prgPMR.dll
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.pdb
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\prgPMR.genruntimeconfig.cache
+C:\Users\nikod\Documents\Coding Projects\Medical Dashboard\PMR\prgPMR\obj\Debug\net8.0-windows\ref\prgPMR.dll
