@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="144c0229-422b-40d9-a5c6-8ab690c96a0d" ChangeDateTime="10/19/2024 16:37:32">
+    <Property Name="ElementName" Value="[dbo].[tblVaccDetails].[Manufacture]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblVaccDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Manufacturer" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0ace39e2-a360-46b5-8270-60caa31ffdde" ChangeDateTime="10/19/2024 16:42:10">
+    <Property Name="ElementName" Value="[dbo].[tblVaccDetails].[FileData]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblVaccDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PDFFile" />
+  </Operation>
+</Operations>
