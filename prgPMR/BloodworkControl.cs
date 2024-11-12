@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace prgPMR
 {
-    public partial class BloodworkControl : MedicalUserControlClass
+    public partial class BloodworkControl : MedicalControl
     {
         public BloodworkControl()
         {

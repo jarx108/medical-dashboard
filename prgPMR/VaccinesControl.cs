@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace prgPMR
 {
-    public partial class VaccinesControl : MedicalUserControlClass 
+    public partial class VaccinesControl : MedicalControl 
     {
         public VaccinesControl()
         {
