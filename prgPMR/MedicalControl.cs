@@ -1,5 +1,7 @@
-﻿using System;
+﻿using prgPMR.Abstraction;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -7,7 +9,8 @@ using System.Threading.Tasks;
 
 namespace prgPMR
 {
-    public abstract class MedicalUserControlClass : UserControl
+    [TypeDescriptionProvider(typeof(AbstractControlDescriptionProvider<MedicalControl, UserControl>))]
+    public abstract class MedicalControl : UserControl
     {
         
         public void SetVisible(Boolean visible)

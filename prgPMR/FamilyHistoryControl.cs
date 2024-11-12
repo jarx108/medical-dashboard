@@ -1,6 +1,6 @@
 ﻿namespace prgPMR
 {
-    public partial class FamilyHistoryControl : MedicalUserControlClass
+    public partial class FamilyHistoryControl : MedicalControl
     {
         public FamilyHistoryControl()
         {

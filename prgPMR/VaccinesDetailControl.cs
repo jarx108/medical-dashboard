@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace prgPMR
 {
-    public partial class VaccinesDetailControl : MedicalUserControlClass
+    public partial class VaccinesDetailControl : MedicalControl
     {
         public VaccinesDetailControl()
         {

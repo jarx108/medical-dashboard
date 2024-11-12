@@ -27,7 +27,7 @@ namespace prgPMR
             VaccinesDetail
         }
 
-        public Dictionary<MedicalControlType, MedicalUserControlClass> MedicalControls;
+        public Dictionary<MedicalControlType, MedicalControl> MedicalControls;
 
 
         // Declare user information
@@ -42,7 +42,7 @@ namespace prgPMR
         public MainForm()
         {
             // Initialize all the User Control Forms
-            MedicalControls = new Dictionary<MedicalControlType, MedicalUserControlClass>
+            MedicalControls = new Dictionary<MedicalControlType, MedicalControl>
             {
                 {MedicalControlType.Default, new DefaultControl() },
                 {MedicalControlType.FamilyHistory, new FamilyHistoryControl() },
@@ -72,7 +72,7 @@ namespace prgPMR
             lblDOB.Text = "04/09/1963";
             lblUsername.Text = "ejangaon";
 
-            foreach ((_, MedicalUserControlClass value) in MedicalControls)
+            foreach ((_, MedicalControl value) in MedicalControls)
             {
                 pnlMain.Controls.Add(value);
             }
@@ -209,7 +209,7 @@ namespace prgPMR
         }
         private void Disp_Panel(MedicalControlType panelChoice)
         {
-            foreach ((MedicalControlType key, MedicalUserControlClass value) in MedicalControls)
+            foreach ((MedicalControlType key, MedicalControl value) in MedicalControls)
             {
                 if (key == panelChoice)
                 {
