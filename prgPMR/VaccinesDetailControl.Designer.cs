@@ -120,7 +120,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(54, 202);
+            label6.Location = new Point(54, 206);
             label6.Name = "label6";
             label6.Size = new Size(107, 21);
             label6.TabIndex = 6;
@@ -130,7 +130,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(67, 243);
+            label7.Location = new Point(67, 247);
             label7.Name = "label7";
             label7.Size = new Size(94, 21);
             label7.TabIndex = 7;
@@ -140,7 +140,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(53, 283);
+            label8.Location = new Point(53, 287);
             label8.Name = "label8";
             label8.Size = new Size(108, 21);
             label8.TabIndex = 8;
@@ -150,7 +150,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(64, 326);
+            label9.Location = new Point(64, 330);
             label9.Name = "label9";
             label9.Size = new Size(97, 21);
             label9.TabIndex = 9;
@@ -209,21 +209,21 @@
             // 
             // txtRXNum
             // 
-            txtRXNum.Location = new Point(167, 243);
+            txtRXNum.Location = new Point(167, 247);
             txtRXNum.Name = "txtRXNum";
             txtRXNum.Size = new Size(300, 23);
             txtRXNum.TabIndex = 17;
             // 
             // txtNDCNum
             // 
-            txtNDCNum.Location = new Point(167, 283);
+            txtNDCNum.Location = new Point(167, 287);
             txtNDCNum.Name = "txtNDCNum";
             txtNDCNum.Size = new Size(300, 23);
             txtNDCNum.TabIndex = 18;
             // 
             // txtLotNum
             // 
-            txtLotNum.Location = new Point(167, 326);
+            txtLotNum.Location = new Point(167, 330);
             txtLotNum.Name = "txtLotNum";
             txtLotNum.Size = new Size(300, 23);
             txtLotNum.TabIndex = 19;
@@ -247,7 +247,7 @@
             // cboManufacturer
             // 
             cboManufacturer.FormattingEnabled = true;
-            cboManufacturer.Location = new Point(167, 202);
+            cboManufacturer.Location = new Point(167, 208);
             cboManufacturer.Name = "cboManufacturer";
             cboManufacturer.Size = new Size(300, 23);
             cboManufacturer.TabIndex = 23;
