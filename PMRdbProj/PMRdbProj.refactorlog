@@ -1,17 +1,164 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
-  <Operation Name="Rename Refactor" Key="144c0229-422b-40d9-a5c6-8ab690c96a0d" ChangeDateTime="10/19/2024 16:37:32">
-    <Property Name="ElementName" Value="[dbo].[tblVaccDetails].[Manufacture]" />
+  <Operation Name="Rename Refactor" Key="7775c9d5-634c-4aaf-80a7-20f25ef7b1bb" ChangeDateTime="11/17/2024 19:03:39">
+    <Property Name="ElementName" Value="[dbo].[tblSelectDoctors].[Specialtiy]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
-    <Property Name="ParentElementName" Value="[dbo].[tblVaccDetails]" />
+    <Property Name="ParentElementName" Value="[dbo].[tblSelectDoctors]" />
     <Property Name="ParentElementType" Value="SqlTable" />
-    <Property Name="NewName" Value="Manufacturer" />
+    <Property Name="NewName" Value="Specialty" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="0ace39e2-a360-46b5-8270-60caa31ffdde" ChangeDateTime="10/19/2024 16:42:10">
-    <Property Name="ElementName" Value="[dbo].[tblVaccDetails].[FileData]" />
+  <Operation Name="Rename Refactor" Key="8c1ad37f-ac98-4db2-ac83-698ecd3d2c35" ChangeDateTime="11/17/2024 19:30:32">
+    <Property Name="ElementName" Value="[dbo].[tblVaccineDetails].[VaccinesID]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
-    <Property Name="ParentElementName" Value="[dbo].[tblVaccDetails]" />
+    <Property Name="ParentElementName" Value="[dbo].[tblVaccineDetails]" />
     <Property Name="ParentElementType" Value="SqlTable" />
-    <Property Name="NewName" Value="PDFFile" />
+    <Property Name="NewName" Value="VaccinesGroupID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="20ffe7c1-40f2-4360-a92e-51d15e29006f" ChangeDateTime="11/17/2024 19:30:58">
+    <Property Name="ElementName" Value="[dbo].[tblVaccineDetails].[VaccinesGroupID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblVaccineDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="VaccinesGroupNameID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ae398b27-8277-42a3-8c6e-237a9b11c1db" ChangeDateTime="11/17/2024 19:32:08">
+    <Property Name="ElementName" Value="[dbo].[tblVaccineDetails].[FullName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblVaccineDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="VaccinesID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a8fefdd3-37e2-4cd7-bc8a-11ead03af60a" ChangeDateTime="11/17/2024 19:33:11">
+    <Property Name="ElementName" Value="[dbo].[tblVaccines].[VaccineGroupID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblVaccines]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="VaccineGroupNameID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0ec73af9-0fb2-4145-aff8-320dc29dcf8b" ChangeDateTime="11/17/2024 19:33:22">
+    <Property Name="ElementName" Value="[dbo].[tblVaccineDetails].[VaccinesGroupNameID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblVaccineDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="VaccinesID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2094b0e5-e080-4795-baa5-5c5c80623821" ChangeDateTime="11/17/2024 19:37:55">
+    <Property Name="ElementName" Value="[dbo].[tblVaccineDetails].[Facility]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblVaccineDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="VaccineFacilitiesID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f03609f2-e029-44d2-962d-8d77c99553bf" ChangeDateTime="11/17/2024 19:40:16">
+    <Property Name="ElementName" Value="[dbo].[tblVaccineDetails].[VaccineManufacturer]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblVaccineDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="VaccineManufacturerID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f259149b-fc88-40f9-a9fe-ba918c66b881" ChangeDateTime="11/17/2024 19:45:34">
+    <Property Name="ElementName" Value="[dbo].[tblDoctorVisits].[Notes:]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblDoctorVisits]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Notes" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="85f95c45-689f-4025-9916-32694fce2423" ChangeDateTime="11/17/2024 22:10:06">
+    <Property Name="ElementName" Value="[dbo].[tblSurgeries].[Date]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblSurgeries]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DoctorID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8fe8c740-1e5b-4adc-a07e-a70dca577c35" ChangeDateTime="11/17/2024 22:34:08">
+    <Property Name="ElementName" Value="[dbo].[tblMedications].[RXNjmber]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblMedications]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RXNumber" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7f01cee7-4f62-4b2e-a3d8-049fe582d913" ChangeDateTime="11/17/2024 22:37:13">
+    <Property Name="ElementName" Value="[dbo].[tblHospitalizations].[Notes]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblHospitalizations]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AdmissionDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="94a62d05-fd6e-4f72-a60b-e285700ed15e" ChangeDateTime="11/17/2024 22:37:25">
+    <Property Name="ElementName" Value="[dbo].[tblHospitalizations].[PDFFile]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblHospitalizations]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DischargeDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a643803d-be9a-4652-a5f3-be77fe6d170e" ChangeDateTime="11/17/2024 22:37:31">
+    <Property Name="ElementName" Value="[dbo].[tblHospitalizations].[ImgFile]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblHospitalizations]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Notes" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="359d03b9-2530-4baa-ac09-b63f6b2be177" ChangeDateTime="11/18/2024 00:16:10">
+    <Property Name="ElementName" Value="[dbo].[tblSelectBloodworkIndiName].[RangeUppoer]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblSelectBloodworkIndiName]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RangeUpper" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="33015a56-a904-43a4-9bee-e537f8db4187" ChangeDateTime="11/18/2024 00:17:02">
+    <Property Name="ElementName" Value="[dbo].[tblSelectBloodworkIndiName].[MeasurementType]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblSelectBloodworkIndiName]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UnitMeasure" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6429643f-eb12-4cdf-a230-32fdc5f9fbe6" ChangeDateTime="11/18/2024 00:21:35">
+    <Property Name="ElementName" Value="[dbo].[tblSelectBloodworkDrawFacility].[Locattion]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblSelectBloodworkDrawFacility]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Location" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e6196e76-a1c4-4016-8225-799f443a7837" ChangeDateTime="11/18/2024 00:27:31">
+    <Property Name="ElementName" Value="[dbo].[tblBloodwork].[Note]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblBloodwork]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Notes" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="601ec34a-b4c4-4fc8-a12a-7828c7f3f59f" ChangeDateTime="11/18/2024 00:29:17">
+    <Property Name="ElementName" Value="[dbo].[tblTests].[Note]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblTests]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Notes" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="432121ea-2dfe-45f6-9440-a1d82aba925a" ChangeDateTime="11/18/2024 03:09:09">
+    <Property Name="ElementName" Value="[dbo].[tblVaccineDetails].[VaccineManufacturerID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblVaccineDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ManufacturerID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="aae34640-bfa0-4f35-8219-08f5556c9678" ChangeDateTime="11/18/2024 03:11:08">
+    <Property Name="ElementName" Value="[dbo].[tblVaccineDetails].[VaccineGroupNameID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblVaccineDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ManufacturerID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="eee8b8ea-2110-4794-9a28-aaa04088866c" ChangeDateTime="11/18/2024 03:14:16">
+    <Property Name="ElementName" Value="[dbo].[tblSurgeries].[Notes:]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblSurgeries]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Notes" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d95ae13e-41a6-4b9a-8cc7-0cfc80fcf2a0" ChangeDateTime="11/18/2024 03:37:47">
+    <Property Name="ElementName" Value="[dbo].[tblSelectVaccineManufacturer]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[tblSelectManufacturer]" />
   </Operation>
 </Operations>

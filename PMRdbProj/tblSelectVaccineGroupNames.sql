@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[tblSelectVaccineGroupName]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Name] VARCHAR(60) NOT NULL, 
+    [Abbreviation] VARCHAR(10) NULL
+)
