@@ -61,8 +61,31 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="tblUsernames.sql" />
+    <Build Include="tblSelectVaccineGroupNames.sql" />
+    <Build Include="tblSelectDoctors.sql" />
+    <Build Include="tblSelectPharmacies.sql" />
+    <Build Include="tblSelectTestCenters.sql" />
+    <Build Include="tblSelectHospitals.sql" />
+    <Build Include="tblSelectTestTypes.sql" />
+    <Build Include="tblSelectMedicalConditions.sql" />
+    <Build Include="tblSelectBloodworkGroupName.sql" />
     <Build Include="tblVaccines.sql" />
-    <Build Include="tblVaccDetails.sql" />
+    <Build Include="tblVaccineDetails.sql" />
+    <Build Include="tblSelectVaccineFacilities.sql" />
+    <Build Include="tblSelectManufacturer.sql" />
+    <Build Include="tblDoctorVisits.sql" />
+    <Build Include="tblSelectSurgeryCenters.sql" />
+    <Build Include="tblSurgeries.sql" />
+    <Build Include="tblFamilyMembers.sql" />
+    <Build Include="tblFamilyMemberMedicalConditions.sql" />
+    <Build Include="tblHospitalizations.sql" />
+    <Build Include="tblSelectMedications.sql" />
+    <Build Include="tblMedications.sql" />
+    <Build Include="tblSelectBloodworkIndiName.sql" />
+    <Build Include="tblBloodwork.sql" />
+    <Build Include="tblSelectBloodworkDrawFacility.sql" />
+    <Build Include="tblTests.sql" />
+    <Build Include="tblFamilyHistory.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PMRdbProj.refactorlog" />

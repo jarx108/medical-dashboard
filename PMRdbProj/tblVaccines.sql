@@ -1,9 +1,8 @@
 ﻿CREATE TABLE [dbo].[tblVaccines]
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
-    [Name] NCHAR(60) NULL, 
-    [Abbreviation] NCHAR(10) NULL, 
+    [UserID] INT NOT NULL, 
     [NumDoses] INT NULL, 
     [LastDose] DATE NULL, 
-    [UserID] INT NULL
+    CONSTRAINT [FK_tblVaccines_tblUsernames] FOREIGN KEY ([UserID]) REFERENCES [tblUsernames]([Id])
 )

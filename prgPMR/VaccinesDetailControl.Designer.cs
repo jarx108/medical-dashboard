@@ -88,7 +88,7 @@
             // 
             // pnlHeading
             // 
-            pnlHeading.BackColor = Color.Silver;
+            pnlHeading.BackColor = Color.Gainsboro;
             pnlHeading.Controls.Add(label3);
             pnlHeading.Dock = DockStyle.Top;
             pnlHeading.Location = new Point(0, 0);
@@ -206,6 +206,7 @@
             cboGeneralName.Name = "cboGeneralName";
             cboGeneralName.Size = new Size(475, 23);
             cboGeneralName.TabIndex = 15;
+            cboGeneralName.SelectedIndexChanged += cboGeneralName_SelectedIndexChanged;
             // 
             // txtRXNum
             // 

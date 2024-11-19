@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[tblSelectMedicalConditions]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Name] VARCHAR(50) NOT NULL
+)
