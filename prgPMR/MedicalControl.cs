@@ -12,15 +12,44 @@ namespace prgPMR
     [TypeDescriptionProvider(typeof(AbstractControlDescriptionProvider<MedicalControl, UserControl>))]
     public abstract class MedicalControl : UserControl
     {
+        internal MedicalControl? child;
+        internal bool isActive = true;
+
         
         public void SetVisible(Boolean visible)
         {
-            this.Visible = visible;
+            if (!visible)
+            {
+                this.Visible = false;
+                child?.SetVisible(visible);
+            } else
+            {
+                if(isActive)
+                {
+                    this.Visible = true;
+                    child?.SetVisible(false);
+                }
+                else
+                {
+                    this.Visible = false;
+                    if (child == null)
+                    {
+                        throw new InvalidOperationException("No control in chain is Active");
+                    }
+                    child.SetVisible(visible);
+                }
+            }
         }
 
         public override void Refresh()
         {
             base.Refresh();
+        }
+
+        public void AddAllToPanel(Panel pnl) 
+        {
+            pnl.Controls.Add(this);
+            child?.AddAllToPanel(pnl);
         }
 
         

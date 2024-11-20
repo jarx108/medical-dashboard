@@ -15,6 +15,10 @@ namespace prgPMR
     {
         public VaccinesControl()
         {
+            child = new VaccinesDetailControl
+            {
+                isActive = false
+            };
             InitializeComponent();
             InitializeGrid();
         }
@@ -32,12 +36,30 @@ namespace prgPMR
 
         public override void Add()
         {
-            throw new NotImplementedException();
+            if(isActive)
+            {
+                isActive = false;
+                child.isActive = true;
+            }
+            else
+            {
+                isActive = true;
+                child.isActive = false;
+            }
+
+            SetVisible(true);
         }
 
         public override void Edit()
         {
-            throw new NotImplementedException();
+            if (child.isActive)
+            {
+                child.Edit();
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
         }
 
         public override void Delete()

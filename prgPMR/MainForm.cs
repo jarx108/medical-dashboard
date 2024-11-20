@@ -23,8 +23,7 @@ namespace prgPMR
             Tests,
             Bloodwork,
             Surgeries,
-            Hospitalizations,
-            VaccinesDetail
+            Hospitalizations
         }
 
         public Dictionary<MedicalControlType, MedicalControl> MedicalControls;
@@ -53,7 +52,6 @@ namespace prgPMR
                 {MedicalControlType.Bloodwork, new BloodworkControl() },
                 {MedicalControlType.Surgeries, new SurgeriesControl() },
                 {MedicalControlType.Hospitalizations, new HospitalizationsControl() },
-                {MedicalControlType.VaccinesDetail, new VaccinesDetailControl() },
             };
 
             // Set the panel to be the default
@@ -74,7 +72,7 @@ namespace prgPMR
 
             foreach ((_, MedicalControl value) in MedicalControls)
             {
-                pnlMain.Controls.Add(value);
+                value.AddAllToPanel(pnlMain);
             }
         }
 
