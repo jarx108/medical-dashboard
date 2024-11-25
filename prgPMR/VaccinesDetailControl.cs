@@ -58,5 +58,15 @@ namespace prgPMR
         {
 
         }
+
+        private void btnPDFFile_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VaccinesDetailControl_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

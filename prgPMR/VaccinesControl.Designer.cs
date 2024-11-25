@@ -57,7 +57,7 @@
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
             dgvVacMain.DefaultCellStyle = dataGridViewCellStyle2;
             dgvVacMain.EnableHeadersVisualStyles = false;
-            dgvVacMain.Location = new Point(19, 17);
+            dgvVacMain.Location = new Point(23, 21);
             dgvVacMain.MultiSelect = false;
             dgvVacMain.Name = "dgvVacMain";
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
