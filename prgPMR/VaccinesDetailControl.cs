@@ -12,7 +12,7 @@ namespace prgPMR
 {
     public partial class VaccinesDetailControl : MedicalControl
     {
-        public VaccinesDetailControl()
+        public VaccinesDetailControl(ControlManager m) : base(m)
         {
             InitializeComponent();
         }
@@ -31,7 +31,7 @@ namespace prgPMR
 
         public override void Add()
         {
-            lblClass.Text = "Add was Pushed";
+            Manager.PreviousControl();
         }
 
         public override void Edit()

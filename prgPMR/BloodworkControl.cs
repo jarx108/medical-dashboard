@@ -12,7 +12,7 @@ namespace prgPMR
 {
     public partial class BloodworkControl : MedicalControl
     {
-        public BloodworkControl()
+        public BloodworkControl(ControlManager m) : base(m)
         {
             InitializeComponent();
         }

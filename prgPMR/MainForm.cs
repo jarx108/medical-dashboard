@@ -26,7 +26,7 @@ namespace prgPMR
             Hospitalizations
         }
 
-        public Dictionary<MedicalControlType, MedicalControl> MedicalControls;
+        public Dictionary<MedicalControlType, ControlManager> MedicalControls;
 
 
         // Declare user information
@@ -41,17 +41,17 @@ namespace prgPMR
         public MainForm()
         {
             // Initialize all the User Control Forms
-            MedicalControls = new Dictionary<MedicalControlType, MedicalControl>
+            MedicalControls = new Dictionary<MedicalControlType, ControlManager>
             {
-                {MedicalControlType.Default, new DefaultControl() },
-                {MedicalControlType.FamilyHistory, new FamilyHistoryControl() },
-                {MedicalControlType.Medications, new MedicationsControl() },
-                {MedicalControlType.Vaccines, new VaccinesControl() },
-                {MedicalControlType.DoctorVisits, new DoctorVisitsControl() },
-                {MedicalControlType.Tests, new TestsControl() },
-                {MedicalControlType.Bloodwork, new BloodworkControl() },
-                {MedicalControlType.Surgeries, new SurgeriesControl() },
-                {MedicalControlType.Hospitalizations, new HospitalizationsControl() },
+                {MedicalControlType.Default, new ControlManager(MedicalControlType.Default) },
+                {MedicalControlType.FamilyHistory, new ControlManager(MedicalControlType.FamilyHistory) },
+                {MedicalControlType.Medications, new ControlManager(MedicalControlType.Medications) },
+                {MedicalControlType.Vaccines, new ControlManager(MedicalControlType.Vaccines) },
+                {MedicalControlType.DoctorVisits, new ControlManager(MedicalControlType.DoctorVisits) },
+                {MedicalControlType.Tests, new ControlManager(MedicalControlType.Tests) },
+                {MedicalControlType.Bloodwork, new ControlManager(MedicalControlType.Bloodwork) },
+                {MedicalControlType.Surgeries, new ControlManager(MedicalControlType.Surgeries) },
+                {MedicalControlType.Hospitalizations, new ControlManager(MedicalControlType.Hospitalizations) },
             };
 
             // Set the panel to be the default
@@ -70,9 +70,13 @@ namespace prgPMR
             lblDOB.Text = "04/09/1963";
             lblUsername.Text = "ejangaon";
 
-            foreach ((_, MedicalControl value) in MedicalControls)
+            foreach ((_, ControlManager value) in MedicalControls)
             {
-                value.AddAllToPanel(pnlMain);
+                foreach (Control c in value.MedicalControls)
+                {
+                    pnlMain.Controls.Add(c);
+                }
+                
             }
         }
 
@@ -207,16 +211,9 @@ namespace prgPMR
         }
         private void Disp_Panel(MedicalControlType panelChoice)
         {
-            foreach ((MedicalControlType key, MedicalControl value) in MedicalControls)
+            foreach ((MedicalControlType key, ControlManager value) in MedicalControls)
             {
-                if (key == panelChoice)
-                {
-                    value.SetVisible(true);
-                }
-                else
-                {
-                    value.SetVisible(false);
-                }
+                value.SetVisible(key == panelChoice);
             }
         }
 
