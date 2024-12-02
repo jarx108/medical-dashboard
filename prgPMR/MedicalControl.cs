@@ -10,46 +10,15 @@ using System.Threading.Tasks;
 namespace prgPMR
 {
     [TypeDescriptionProvider(typeof(AbstractControlDescriptionProvider<MedicalControl, UserControl>))]
-    public abstract class MedicalControl : UserControl
+    public abstract class MedicalControl(ControlManager manager) : UserControl
     {
-        internal MedicalControl? child;
-        internal bool isActive = true;
+        internal ControlManager Manager { get; } = manager;
 
-        
-        public void SetVisible(Boolean visible)
-        {
-            if (!visible)
-            {
-                this.Visible = false;
-                child?.SetVisible(visible);
-            } else
-            {
-                if(isActive)
-                {
-                    this.Visible = true;
-                    child?.SetVisible(false);
-                }
-                else
-                {
-                    this.Visible = false;
-                    if (child == null)
-                    {
-                        throw new InvalidOperationException("No control in chain is Active");
-                    }
-                    child.SetVisible(visible);
-                }
-            }
-        }
+       
 
         public override void Refresh()
         {
             base.Refresh();
-        }
-
-        public void AddAllToPanel(Panel pnl) 
-        {
-            pnl.Controls.Add(this);
-            child?.AddAllToPanel(pnl);
         }
 
         

@@ -13,20 +13,12 @@ namespace prgPMR
 {
     public partial class VaccinesControl : MedicalControl 
     {
-        public VaccinesControl()
-        {
-            child = new VaccinesDetailControl
-            {
-                isActive = false
-            };
-            InitializeComponent();
-            InitializeGrid();
-        }
 
-        //public override void Refresh()
-        //{
-        //    base.Refresh();
-        //}
+
+        public VaccinesControl(ControlManager m) : base(m)
+        {
+            InitializeComponent();
+        }
 
 
         public override void Default()
@@ -36,30 +28,12 @@ namespace prgPMR
 
         public override void Add()
         {
-            if(isActive)
-            {
-                isActive = false;
-                child.isActive = true;
-            }
-            else
-            {
-                isActive = true;
-                child.isActive = false;
-            }
-
-            SetVisible(true);
+            Manager.NextControl();
         }
 
         public override void Edit()
         {
-            if (child.isActive)
-            {
-                child.Edit();
-            }
-            else
-            {
-                throw new NotImplementedException();
-            }
+            throw new NotImplementedException();
         }
 
         public override void Delete()

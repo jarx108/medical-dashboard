@@ -10,11 +10,35 @@ using System.Windows.Forms;
 
 namespace prgPMR
 {
-    public partial class DoctorVisitsDetail : UserControl
+    public partial class DoctorVisitsDetail : MedicalControl
     {
-        public DoctorVisitsDetail()
+        public DoctorVisitsDetail(ControlManager m) : base(m)
         {
             InitializeComponent();
+        }
+        public override void Default()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Add()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Edit()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Delete()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Cancel()
+        {
+            throw new NotImplementedException();
         }
     }
 }

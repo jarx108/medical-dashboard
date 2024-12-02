@@ -12,7 +12,7 @@ namespace prgPMR
 {
     public partial class TestsControl : MedicalControl
     {
-        public TestsControl()
+        public TestsControl(ControlManager m) : base(m)
         {
             InitializeComponent();
         }

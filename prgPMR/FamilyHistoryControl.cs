@@ -2,7 +2,7 @@
 {
     public partial class FamilyHistoryControl : MedicalControl
     {
-        public FamilyHistoryControl()
+        public FamilyHistoryControl(ControlManager m) : base(m)
         {
             InitializeComponent();
         }
