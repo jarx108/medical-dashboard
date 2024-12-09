@@ -45,7 +45,10 @@ namespace prgPMR
         {
             throw new NotImplementedException();
         }
-
+        public override void Back()
+        {
+            Manager.PreviousControl();
+        }
         private void dgvVacMain_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             

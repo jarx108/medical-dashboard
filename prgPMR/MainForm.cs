@@ -76,7 +76,7 @@ namespace prgPMR
                 {
                     pnlMain.Controls.Add(c);
                 }
-                
+
             }
         }
 
@@ -287,6 +287,11 @@ namespace prgPMR
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             MedicalControls[ActiveMedicalControl].Refresh();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MedicalControls[ActiveMedicalControl].Back();
         }
     }
 }

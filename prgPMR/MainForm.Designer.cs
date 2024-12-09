@@ -60,6 +60,7 @@
             label9 = new Label();
             pnlMain = new Panel();
             pnlMainButtons = new Panel();
+            button1 = new Button();
             btnRefresh = new Button();
             btnMainCancel = new Button();
             bntMainDelete = new Button();
@@ -473,6 +474,7 @@
             // pnlMainButtons
             // 
             pnlMainButtons.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            pnlMainButtons.Controls.Add(button1);
             pnlMainButtons.Controls.Add(btnRefresh);
             pnlMainButtons.Controls.Add(btnMainCancel);
             pnlMainButtons.Controls.Add(bntMainDelete);
@@ -482,6 +484,19 @@
             pnlMainButtons.Name = "pnlMainButtons";
             pnlMainButtons.Size = new Size(1200, 56);
             pnlMainButtons.TabIndex = 4;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Navy;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(1115, 14);
+            button1.Name = "button1";
+            button1.Size = new Size(73, 30);
+            button1.TabIndex = 17;
+            button1.Text = "Back";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // btnRefresh
             // 
@@ -607,5 +622,6 @@
         public Button bntMainDelete;
         public Button bntMainEdit;
         public Button btnRefresh;
+        public Button button1;
     }
 }

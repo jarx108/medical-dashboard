@@ -27,7 +27,7 @@ namespace prgPMR
                     MedicalControls.Add(new MedicationsControl(this));
                     break;
                 case MainForm.MedicalControlType.Vaccines:
-                    MedicalControls.AddRange(new VaccinesControl(this), new VaccinesDetailControl(this));
+                    MedicalControls.AddRange(new VaccinesControl(this), new VaccinesDetailGridControl(this), new VaccinesDetailControl(this));
                     break;
                 case MainForm.MedicalControlType.DoctorVisits:
                     MedicalControls.Add(new DoctorVisitsControl(this));
@@ -45,10 +45,10 @@ namespace prgPMR
                     MedicalControls.Add(new HospitalizationsControl(this));
                     break;
                 default:
-                    throw new NotImplementedException();
+                    throw new ArgumentException("Invalid Medical Control type");
             }
-            ActiveControl = MedicalControls[0];
             index = 0;
+            ActiveControl = MedicalControls[index];
         }
 
 
@@ -69,6 +69,11 @@ namespace prgPMR
             ActiveControl.Cancel();
         }
 
+        public void Back()
+        {
+            ActiveControl.Back();
+        }
+
         private void RefreshVisible()
         {
             SetVisible(visible);
@@ -84,6 +89,11 @@ namespace prgPMR
                     m.Visible = false;
             }
         }
+        public bool GetVisilble()
+        {
+            return visible;
+        }
+
         public void Default()
         {
             ActiveControl.Default();

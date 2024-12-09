@@ -40,5 +40,11 @@ namespace prgPMR
         {
             throw new NotImplementedException();
         }
+
+        public override void Back()
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }
