@@ -31,7 +31,7 @@ namespace prgPMR
 
         public override void Add()
         {
-            Manager.PreviousControl();
+            Manager.NextControl();
         }
 
         public override void Edit()
@@ -47,6 +47,11 @@ namespace prgPMR
         public override void Cancel()
         {
             lblClass.Text = "Cancel was Pushed";
+        }
+
+        public override void Back()
+        {
+            Manager.PreviousControl();
         }
 
         private void label1_Click(object sender, EventArgs e)

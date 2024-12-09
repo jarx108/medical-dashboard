@@ -48,5 +48,11 @@ namespace prgPMR
         {
             lblClass.Text = "Cancel was Pushed";
         }
+
+        public override void Back()
+        {
+            lblClass.Text = "Back was Pushed";
+        }
+
     }
 }

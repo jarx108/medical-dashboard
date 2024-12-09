@@ -10,15 +10,12 @@ using System.Windows.Forms;
 
 namespace prgPMR
 {
-    public partial class MedicationsControl : MedicalControl
+    public partial class VaccinesDetailGridControl : MedicalControl
     {
-        public MedicationsControl(ControlManager m) : base(m)
+
+        public VaccinesDetailGridControl(ControlManager m) : base(m)
         {
             InitializeComponent();
-        }
-        public override void Refresh()
-        {
-            base.Refresh();
         }
 
         public override void Default()
@@ -28,7 +25,7 @@ namespace prgPMR
 
         public override void Add()
         {
-            throw new NotImplementedException();
+            Manager.NextControl();
         }
 
         public override void Edit()
@@ -40,7 +37,7 @@ namespace prgPMR
         {
             throw new NotImplementedException();
         }
-
+        
         public override void Cancel()
         {
             throw new NotImplementedException();
@@ -48,7 +45,17 @@ namespace prgPMR
 
         public override void Back()
         {
-            throw new NotImplementedException();
+            Manager.PreviousControl();
+        }
+
+        private void dgvVacMain_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void InitializeGrid()
+        {
+
         }
 
     }

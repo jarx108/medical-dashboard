@@ -14,14 +14,12 @@ namespace prgPMR
     {
         internal ControlManager Manager { get; } = manager;
 
-       
-
         public override void Refresh()
         {
             base.Refresh();
         }
 
-        
+                
         public abstract void Default();
         // Default is used to display the datagrid or core data
         // The user can then Add, Edit, Delete
@@ -37,6 +35,7 @@ namespace prgPMR
         
         public abstract void Cancel();
 
+        public abstract void Back();
 
     }
 }
