@@ -18,6 +18,7 @@ namespace prgPMR
         public VaccinesControl(ControlManager m) : base(m)
         {
             InitializeComponent();
+            InitializeGrid();
         }
 
 
@@ -67,16 +68,11 @@ namespace prgPMR
             dt.Columns.Add("LastDose", typeof(DateOnly));
             dt.Columns.Add("NumDoses", typeof(int));
 
-            // Add the columns for the 6 Dose Date fields
-            for (int i=1; i <= 6; i++)
-            {
-                dt.Columns.Add($"DoseDate{i}", typeof(DateOnly));
-            }
 
             // fill the grid with dummy data
-            dt.Rows.Add("COVID", "COVID", new DateOnly(2024, 4,8), 3, new DateOnly(2023, 8, 18), new DateOnly(2022, 6, 22), new DateOnly(2022, 6, 22));
-            dt.Rows.Add("Influenza", "FLU", new DateOnly(2024, 5, 24), 2, new DateOnly(2022, 8, 18), new DateOnly(2022, 7, 22));
-            dt.Rows.Add("Tetnus", "tdap", new DateOnly(2024, 4, 8), 4, new DateOnly(2023, 8, 18), new DateOnly(2022, 4, 12), new DateOnly(2022, 6, 22), new DateOnly(2022, 6, 22));
+            dt.Rows.Add("COVID", "COVID", new DateOnly(2024, 4,8),2);
+            dt.Rows.Add("Influenza", "FLU", new DateOnly(2024, 5, 24), 5);
+            dt.Rows.Add("Tetnus", "tdap", new DateOnly(2024, 4, 8), 4);
 
             // Initialize the DataGridView
 
@@ -105,19 +101,6 @@ namespace prgPMR
             dgvVacMain.Columns["NumDoses"].Width = 40;
             dgvVacMain.Columns["NumDoses"].ReadOnly = true;
 
-
-            for (int i = 0; i < (dgvVacMain.Columns.Count); i++)
-            {
-                if (i < startDoses)
-                {
-                    dgvVacMain.Columns[i].Frozen = true;
-                }
-               else
-               {
-                    dgvVacMain.Columns[i].Width = 80;
-                    dgvVacMain.Columns[i].HeaderText = "Dose " + i;
-                }
-            }
 
         }
 
