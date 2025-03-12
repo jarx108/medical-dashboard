@@ -11,8 +11,10 @@ using System.Windows.Forms;
 
 namespace prgPMR
 {
+    
     public partial class VaccinesControl : MedicalControl 
     {
+        //public override string[] ButtonsNames { get; }
 
 
         public VaccinesControl(ControlManager m) : base(m)

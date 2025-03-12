@@ -26,7 +26,8 @@ namespace prgPMR
             Hospitalizations
         }
 
-        public Dictionary<MedicalControlType, ControlManager> MedicalControls;
+        private Dictionary<MedicalControlType, ControlManager> MedicalControls;
+        private Button[] buttons;
 
 
         // Declare user information
@@ -40,29 +41,32 @@ namespace prgPMR
 
         public MainForm()
         {
+            InitializeComponent();
+
+            buttons = [bntMainAdd, bntMainEdit, bntMainDelete, btnMainCancel, btnRefresh, button1];
             // Initialize all the User Control Forms
             MedicalControls = new Dictionary<MedicalControlType, ControlManager>
             {
-                {MedicalControlType.Default, new ControlManager(MedicalControlType.Default) },
-                {MedicalControlType.FamilyHistory, new ControlManager(MedicalControlType.FamilyHistory) },
-                {MedicalControlType.Medications, new ControlManager(MedicalControlType.Medications) },
-                {MedicalControlType.Vaccines, new ControlManager(MedicalControlType.Vaccines) },
-                {MedicalControlType.DoctorVisits, new ControlManager(MedicalControlType.DoctorVisits) },
-                {MedicalControlType.Tests, new ControlManager(MedicalControlType.Tests) },
-                {MedicalControlType.Bloodwork, new ControlManager(MedicalControlType.Bloodwork) },
-                {MedicalControlType.Surgeries, new ControlManager(MedicalControlType.Surgeries) },
-                {MedicalControlType.Hospitalizations, new ControlManager(MedicalControlType.Hospitalizations) },
+                {MedicalControlType.Default, new ControlManager(MedicalControlType.Default, buttons) },
+                {MedicalControlType.FamilyHistory, new ControlManager(MedicalControlType.FamilyHistory, buttons) },
+                {MedicalControlType.Medications, new ControlManager(MedicalControlType.Medications, buttons) },
+                {MedicalControlType.Vaccines, new ControlManager(MedicalControlType.Vaccines, buttons) },
+                {MedicalControlType.DoctorVisits, new ControlManager(MedicalControlType.DoctorVisits, buttons) },
+                {MedicalControlType.Tests, new ControlManager(MedicalControlType.Tests, buttons) },
+                {MedicalControlType.Bloodwork, new ControlManager(MedicalControlType.Bloodwork, buttons) },
+                {MedicalControlType.Surgeries, new ControlManager(MedicalControlType.Surgeries, buttons) },
+                {MedicalControlType.Hospitalizations, new ControlManager(MedicalControlType.Hospitalizations, buttons) },
             };
-
             // Set the panel to be the default
             Disp_Panel(MedicalControlType.Default);
 
+            
 
 
             // Add User Control Forms to the Panel
 
 
-            InitializeComponent();
+            
 
             // Assingn the user values from the database to the labels on the form
             lblLastName.Text = "Jangaon";
@@ -213,7 +217,15 @@ namespace prgPMR
         {
             foreach ((MedicalControlType key, ControlManager value) in MedicalControls)
             {
-                value.SetVisible(key == panelChoice);
+                if (panelChoice == key)
+                {
+                    value.SetVisible(true);
+                }
+                else
+                {
+                    value.SetVisible(false);
+                }
+                
             }
         }
 

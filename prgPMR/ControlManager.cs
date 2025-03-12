@@ -8,13 +8,15 @@ namespace prgPMR
 {
     public class ControlManager
     {
+        public Button[] Buttons;
         internal List<MedicalControl> MedicalControls { get; }
         private MedicalControl ActiveControl;
         private int index;
         private bool visible;
 
-        public ControlManager(MainForm.MedicalControlType type) {
+        public ControlManager(MainForm.MedicalControlType type, Button[] b) {
             MedicalControls = [];
+            Buttons = b;
             switch (type)
             {
                 case MainForm.MedicalControlType.Default:
@@ -83,10 +85,27 @@ namespace prgPMR
             visible = isVisible;
             foreach(MedicalControl m in MedicalControls)
             {
-                if(m == ActiveControl)
-                    m.Visible = isVisible;
-                else 
+                if(isVisible && m == ActiveControl)
+                {
+                    m.Visible = true;
+                    for (int i = 0; i < Buttons.Length; i++)
+                    {
+                        if(i >= m.ButtonsNames.Length || m.ButtonsNames[i] == null)
+                        {
+                            Buttons[i].Visible = false;
+                        }
+                        else
+                        {
+                            Buttons[i].Text = m.ButtonsNames[i];
+                            Buttons[i].Visible = true;
+                        }
+                    }
+
+                }
+                else
+                {
                     m.Visible = false;
+                }
             }
         }
         public bool GetVisilble()
