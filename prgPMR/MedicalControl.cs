@@ -12,6 +12,7 @@ namespace prgPMR
     [TypeDescriptionProvider(typeof(AbstractControlDescriptionProvider<MedicalControl, UserControl>))]
     public abstract class MedicalControl(ControlManager manager) : UserControl
     {
+        public virtual string[] ButtonsNames { get { return ["Not implmented"]; } }
         internal ControlManager Manager { get; } = manager;
 
         public override void Refresh()

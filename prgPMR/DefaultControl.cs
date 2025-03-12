@@ -12,6 +12,8 @@ namespace prgPMR
 {
     public partial class DefaultControl : MedicalControl
     {
+        private string[] bNames = ["Add"]; 
+        public override string[] ButtonsNames { get { return bNames; } }
         public DefaultControl(ControlManager m) : base(m)
         {
             InitializeComponent();
@@ -46,7 +48,7 @@ namespace prgPMR
             throw new NotImplementedException();
         }
 
-            public override void Back()
+        public override void Back()
         {
             throw new NotImplementedException();
         }
