@@ -60,12 +60,12 @@
             label9 = new Label();
             pnlMain = new Panel();
             pnlMainButtons = new Panel();
-            button1 = new Button();
-            btnRefresh = new Button();
-            btnMainCancel = new Button();
-            bntMainDelete = new Button();
-            bntMainEdit = new Button();
-            bntMainAdd = new Button();
+            bntSlot6 = new Button();
+            btnSlot5 = new Button();
+            btnSlot4 = new Button();
+            btnSlot3 = new Button();
+            btnSlot2 = new Button();
+            btnSlot1 = new Button();
             pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             pnlUser.SuspendLayout();
@@ -474,94 +474,94 @@
             // pnlMainButtons
             // 
             pnlMainButtons.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            pnlMainButtons.Controls.Add(button1);
-            pnlMainButtons.Controls.Add(btnRefresh);
-            pnlMainButtons.Controls.Add(btnMainCancel);
-            pnlMainButtons.Controls.Add(bntMainDelete);
-            pnlMainButtons.Controls.Add(bntMainEdit);
-            pnlMainButtons.Controls.Add(bntMainAdd);
+            pnlMainButtons.Controls.Add(bntSlot6);
+            pnlMainButtons.Controls.Add(btnSlot5);
+            pnlMainButtons.Controls.Add(btnSlot4);
+            pnlMainButtons.Controls.Add(btnSlot3);
+            pnlMainButtons.Controls.Add(btnSlot2);
+            pnlMainButtons.Controls.Add(btnSlot1);
             pnlMainButtons.Location = new Point(150, 673);
             pnlMainButtons.Name = "pnlMainButtons";
             pnlMainButtons.Size = new Size(1200, 56);
             pnlMainButtons.TabIndex = 4;
             // 
-            // button1
+            // bntSlot6
             // 
-            button1.BackColor = Color.Navy;
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(1115, 14);
-            button1.Name = "button1";
-            button1.Size = new Size(73, 30);
-            button1.TabIndex = 17;
-            button1.Text = "Back";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            bntSlot6.BackColor = Color.Navy;
+            bntSlot6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            bntSlot6.ForeColor = Color.White;
+            bntSlot6.Location = new Point(1115, 14);
+            bntSlot6.Name = "bntSlot6";
+            bntSlot6.Size = new Size(73, 30);
+            bntSlot6.TabIndex = 17;
+            bntSlot6.Text = "Back";
+            bntSlot6.UseVisualStyleBackColor = false;
+            bntSlot6.Click += button1_Click;
             // 
-            // btnRefresh
+            // btnSlot5
             // 
-            btnRefresh.BackColor = Color.Navy;
-            btnRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRefresh.ForeColor = Color.White;
-            btnRefresh.Location = new Point(564, 13);
-            btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new Size(73, 30);
-            btnRefresh.TabIndex = 16;
-            btnRefresh.Text = "Refresh";
-            btnRefresh.UseVisualStyleBackColor = false;
-            btnRefresh.Click += btnRefresh_Click;
+            btnSlot5.BackColor = Color.Navy;
+            btnSlot5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSlot5.ForeColor = Color.White;
+            btnSlot5.Location = new Point(564, 13);
+            btnSlot5.Name = "btnSlot5";
+            btnSlot5.Size = new Size(73, 30);
+            btnSlot5.TabIndex = 16;
+            btnSlot5.Text = "Refresh";
+            btnSlot5.UseVisualStyleBackColor = false;
+            btnSlot5.Click += btnRefresh_Click;
             // 
-            // btnMainCancel
+            // btnSlot4
             // 
-            btnMainCancel.BackColor = Color.Navy;
-            btnMainCancel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnMainCancel.ForeColor = Color.White;
-            btnMainCancel.Location = new Point(348, 14);
-            btnMainCancel.Name = "btnMainCancel";
-            btnMainCancel.Size = new Size(73, 30);
-            btnMainCancel.TabIndex = 15;
-            btnMainCancel.Text = "Cancel";
-            btnMainCancel.UseVisualStyleBackColor = false;
-            btnMainCancel.Click += btnMainCancel_Click;
+            btnSlot4.BackColor = Color.Navy;
+            btnSlot4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSlot4.ForeColor = Color.White;
+            btnSlot4.Location = new Point(348, 14);
+            btnSlot4.Name = "btnSlot4";
+            btnSlot4.Size = new Size(73, 30);
+            btnSlot4.TabIndex = 15;
+            btnSlot4.Text = "Cancel";
+            btnSlot4.UseVisualStyleBackColor = false;
+            btnSlot4.Click += btnMainCancel_Click;
             // 
-            // bntMainDelete
+            // btnSlot3
             // 
-            bntMainDelete.BackColor = Color.Navy;
-            bntMainDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            bntMainDelete.ForeColor = Color.White;
-            bntMainDelete.Location = new Point(248, 14);
-            bntMainDelete.Name = "bntMainDelete";
-            bntMainDelete.Size = new Size(73, 30);
-            bntMainDelete.TabIndex = 14;
-            bntMainDelete.Text = "Delete";
-            bntMainDelete.UseVisualStyleBackColor = false;
-            bntMainDelete.Click += bntMainDelete_Click;
+            btnSlot3.BackColor = Color.Navy;
+            btnSlot3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSlot3.ForeColor = Color.White;
+            btnSlot3.Location = new Point(248, 14);
+            btnSlot3.Name = "btnSlot3";
+            btnSlot3.Size = new Size(73, 30);
+            btnSlot3.TabIndex = 14;
+            btnSlot3.Text = "Delete";
+            btnSlot3.UseVisualStyleBackColor = false;
+            btnSlot3.Click += bntMainDelete_Click;
             // 
-            // bntMainEdit
+            // btnSlot2
             // 
-            bntMainEdit.BackColor = Color.Navy;
-            bntMainEdit.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            bntMainEdit.ForeColor = Color.White;
-            bntMainEdit.Location = new Point(148, 14);
-            bntMainEdit.Name = "bntMainEdit";
-            bntMainEdit.Size = new Size(73, 30);
-            bntMainEdit.TabIndex = 13;
-            bntMainEdit.Text = "Edit";
-            bntMainEdit.UseVisualStyleBackColor = false;
-            bntMainEdit.Click += bntMainEdit_Click;
+            btnSlot2.BackColor = Color.Navy;
+            btnSlot2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSlot2.ForeColor = Color.White;
+            btnSlot2.Location = new Point(148, 14);
+            btnSlot2.Name = "btnSlot2";
+            btnSlot2.Size = new Size(73, 30);
+            btnSlot2.TabIndex = 13;
+            btnSlot2.Text = "Edit";
+            btnSlot2.UseVisualStyleBackColor = false;
+            btnSlot2.Click += bntMainEdit_Click;
             // 
-            // bntMainAdd
+            // btnSlot1
             // 
-            bntMainAdd.BackColor = Color.Navy;
-            bntMainAdd.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            bntMainAdd.ForeColor = Color.White;
-            bntMainAdd.Location = new Point(51, 14);
-            bntMainAdd.Name = "bntMainAdd";
-            bntMainAdd.Size = new Size(73, 30);
-            bntMainAdd.TabIndex = 12;
-            bntMainAdd.Text = "Add";
-            bntMainAdd.UseVisualStyleBackColor = false;
-            bntMainAdd.Click += btnMainAdd;
+            btnSlot1.BackColor = Color.Navy;
+            btnSlot1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSlot1.ForeColor = Color.White;
+            btnSlot1.Location = new Point(51, 14);
+            btnSlot1.Name = "btnSlot1";
+            btnSlot1.Size = new Size(73, 30);
+            btnSlot1.TabIndex = 12;
+            btnSlot1.Text = "Add";
+            btnSlot1.UseVisualStyleBackColor = false;
+            btnSlot1.Click += btnMainAdd;
             // 
             // MainForm
             // 
@@ -617,11 +617,11 @@
         private Label lblDOB;
         public Button btnCancelUser;
         private Panel pnlMainButtons;
-        public Button bntMainAdd;
-        public Button btnMainCancel;
-        public Button bntMainDelete;
-        public Button bntMainEdit;
-        public Button btnRefresh;
-        public Button button1;
+        public Button btnSlot1;
+        public Button btnSlot4;
+        public Button btnSlot3;
+        public Button btnSlot2;
+        public Button btnSlot5;
+        public Button bntSlot6;
     }
 }

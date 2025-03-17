@@ -15,12 +15,17 @@ namespace prgPMR
     public partial class VaccinesControl : MedicalControl 
     {
         //public override string[] ButtonsNames { get; }
-
+        private string[] bNames = ["Add", null,null,null,null,"Cancel"];
+        public override string[] ButtonsNames { get { return bNames; } }
 
         public VaccinesControl(ControlManager m) : base(m)
         {
             InitializeComponent();
             InitializeGrid();
+        }
+        public override void Refresh()
+        {
+            base.Refresh();
         }
 
 
