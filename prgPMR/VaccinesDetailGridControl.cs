@@ -13,6 +13,7 @@ namespace prgPMR
     public partial class VaccinesDetailGridControl : MedicalControl
     {
 
+
         public VaccinesDetailGridControl(ControlManager m) : base(m)
         {
             InitializeComponent();

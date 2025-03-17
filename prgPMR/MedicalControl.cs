@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace prgPMR
 {
+    //This line of code is here to overcome the bug in Visual Studio with Form Designer 
     [TypeDescriptionProvider(typeof(AbstractControlDescriptionProvider<MedicalControl, UserControl>))]
+
+
     public abstract class MedicalControl(ControlManager manager) : UserControl
     {
         public virtual string[] ButtonsNames { get { return ["Not implmented"]; } }

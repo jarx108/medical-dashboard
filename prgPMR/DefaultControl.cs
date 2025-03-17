@@ -12,7 +12,7 @@ namespace prgPMR
 {
     public partial class DefaultControl : MedicalControl
     {
-        private string[] bNames = ["Add"]; 
+        private string[] bNames = ["Add", "Edit", "Delete"]; 
         public override string[] ButtonsNames { get { return bNames; } }
         public DefaultControl(ControlManager m) : base(m)
         {

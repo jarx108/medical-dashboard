@@ -4,9 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 using System.Windows.Forms;
 
 namespace prgPMR
@@ -26,11 +26,10 @@ namespace prgPMR
             Hospitalizations
         }
 
-        private Dictionary<MedicalControlType, ControlManager> MedicalControls;
+        private Dictionary<MedicalControlType, ControlManager> ControlManagerDict;
         private Button[] buttons;
 
-
-        // Declare user information
+        // Declare user inf0ormation
         public int intUserID;
         public string strUsername = "";
         public string strPassword = "";
@@ -42,10 +41,13 @@ namespace prgPMR
         public MainForm()
         {
             InitializeComponent();
+            //Initialize all the buttons at the bottom at of the form
+            buttons = [btnSlot1, btnSlot2, btnSlot3, btnSlot4, btnSlot5, bntSlot6];
 
-            buttons = [bntMainAdd, bntMainEdit, bntMainDelete, btnMainCancel, btnRefresh, button1];
             // Initialize all the User Control Forms
-            MedicalControls = new Dictionary<MedicalControlType, ControlManager>
+
+
+            ControlManagerDict = new Dictionary<MedicalControlType, ControlManager>
             {
                 {MedicalControlType.Default, new ControlManager(MedicalControlType.Default, buttons) },
                 {MedicalControlType.FamilyHistory, new ControlManager(MedicalControlType.FamilyHistory, buttons) },
@@ -57,14 +59,8 @@ namespace prgPMR
                 {MedicalControlType.Surgeries, new ControlManager(MedicalControlType.Surgeries, buttons) },
                 {MedicalControlType.Hospitalizations, new ControlManager(MedicalControlType.Hospitalizations, buttons) },
             };
-            // Set the panel to be the default
+            // Set the panel to be the Default panel and display it
             Disp_Panel(MedicalControlType.Default);
-
-            
-
-
-            // Add User Control Forms to the Panel
-
 
             
 
@@ -74,13 +70,14 @@ namespace prgPMR
             lblDOB.Text = "04/09/1963";
             lblUsername.Text = "ejangaon";
 
-            foreach ((_, ControlManager value) in MedicalControls)
+
+            //Go through every item in the dictionary and add the sub panel into the main pane
+            foreach ((_, ControlManager value) in ControlManagerDict)
             {
-                foreach (Control c in value.MedicalControls)
+                foreach (MedicalControl c in value.MedicalControls)
                 {
                     pnlMain.Controls.Add(c);
                 }
-
             }
         }
 
@@ -213,19 +210,23 @@ namespace prgPMR
 
             }
         }
+       //Method that makes the visible, the panel of the selected medical type
         private void Disp_Panel(MedicalControlType panelChoice)
         {
-            foreach ((MedicalControlType key, ControlManager value) in MedicalControls)
+            //Loop through all the items in the ControManagerDict dictionary
+            foreach ((MedicalControlType key, ControlManager value) in ControlManagerDict)
             {
+                //If the panelChoice that was passed through the method matches the item in the dictionary
                 if (panelChoice == key)
                 {
+                    //call the method in ControlManger to make the panel visible
                     value.SetVisible(true);
                 }
                 else
                 {
+                    //call the method in ControlManger to hide the panel
                     value.SetVisible(false);
                 }
-                
             }
         }
 
@@ -255,7 +256,7 @@ namespace prgPMR
         {
             Disp_Panel(MedicalControlType.Tests);
             ActiveMedicalControl = MedicalControlType.Tests;
-            MedicalControls[ActiveMedicalControl].Default();
+            ControlManagerDict[ActiveMedicalControl].Default();
 
         }
 
@@ -278,32 +279,32 @@ namespace prgPMR
 
         private void btnMainAdd(object sender, EventArgs e)
         {
-            MedicalControls[ActiveMedicalControl].Add();
+            ControlManagerDict[ActiveMedicalControl].Add();
         }
 
         private void bntMainEdit_Click(object sender, EventArgs e)
         {
-            MedicalControls[ActiveMedicalControl].Edit();
+            ControlManagerDict[ActiveMedicalControl].Edit();
         }
 
         private void bntMainDelete_Click(object sender, EventArgs e)
         {
-            MedicalControls[ActiveMedicalControl].Delete();
+            ControlManagerDict[ActiveMedicalControl].Delete();
         }
 
         private void btnMainCancel_Click(object sender, EventArgs e)
         {
-            MedicalControls[ActiveMedicalControl].Cancel();
+            ControlManagerDict[ActiveMedicalControl].Cancel();
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            MedicalControls[ActiveMedicalControl].Refresh();
+            ControlManagerDict[ActiveMedicalControl].Refresh();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MedicalControls[ActiveMedicalControl].Back();
+            ControlManagerDict[ActiveMedicalControl].Back();
         }
     }
 }
