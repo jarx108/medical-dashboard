@@ -1,6 +1,6 @@
 ﻿namespace prgPMR
 {
-    partial class VaccinesDetailControl
+    partial class ImmunizationDetailControl
     {
         /// <summary> 
         /// Required designer variable.

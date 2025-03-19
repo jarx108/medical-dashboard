@@ -15,47 +15,15 @@ namespace prgPMR
         public SurgeriesDetailControl(ControlManager m) : base(m)
         {
             InitializeComponent();
+            SetButtons([], []);
         }
-
         private void label3_Click(object sender, EventArgs e)
         {
 
         }
-
         private void label12_Click(object sender, EventArgs e)
         {
 
         }
-
-        public override void Default()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Add()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Edit()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Delete()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Cancel()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Back()
-        {
-            throw new NotImplementedException();
-        }
-
     }
 }

@@ -18,7 +18,7 @@ namespace prgPMR
             Default,
             FamilyHistory,
             Medications,
-            Vaccines,
+            Immunization,
             DoctorVisits,
             Tests,
             Bloodwork,
@@ -27,9 +27,8 @@ namespace prgPMR
         }
 
         private Dictionary<MedicalControlType, ControlManager> ControlManagerDict;
-        private Button[] buttons;
 
-        // Declare user inf0ormation
+        // Declare user information
         public int intUserID;
         public string strUsername = "";
         public string strPassword = "";
@@ -42,7 +41,12 @@ namespace prgPMR
         {
             InitializeComponent();
             //Initialize all the buttons at the bottom at of the form
-            buttons = [btnSlot1, btnSlot2, btnSlot3, btnSlot4, btnSlot5, bntSlot6];
+            Button[] buttons = [button0, button1, button2, button3, button4, button5];
+            for(int i = 0; i < buttons.Length; i++)
+            {
+                buttons[i].Tag = i;
+                
+            }
 
             // Initialize all the User Control Forms
 
@@ -52,7 +56,7 @@ namespace prgPMR
                 {MedicalControlType.Default, new ControlManager(MedicalControlType.Default, buttons) },
                 {MedicalControlType.FamilyHistory, new ControlManager(MedicalControlType.FamilyHistory, buttons) },
                 {MedicalControlType.Medications, new ControlManager(MedicalControlType.Medications, buttons) },
-                {MedicalControlType.Vaccines, new ControlManager(MedicalControlType.Vaccines, buttons) },
+                {MedicalControlType.Immunization, new ControlManager(MedicalControlType.Immunization, buttons) },
                 {MedicalControlType.DoctorVisits, new ControlManager(MedicalControlType.DoctorVisits, buttons) },
                 {MedicalControlType.Tests, new ControlManager(MedicalControlType.Tests, buttons) },
                 {MedicalControlType.Bloodwork, new ControlManager(MedicalControlType.Bloodwork, buttons) },
@@ -80,7 +84,10 @@ namespace prgPMR
                 }
             }
         }
-
+        private void MainForm_Click(object? sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -241,10 +248,10 @@ namespace prgPMR
             ActiveMedicalControl = MedicalControlType.Medications;
         }
 
-        private void btnVaccine_Click(object sender, EventArgs e)
+        private void btnImmunization_Click(object sender, EventArgs e)
         {
-            Disp_Panel(MedicalControlType.Vaccines);
-            ActiveMedicalControl = MedicalControlType.Vaccines;
+            Disp_Panel(MedicalControlType.Immunization);
+            ActiveMedicalControl = MedicalControlType.Immunization;
         }
         private void btnDoctorVisits_Click(object sender, EventArgs e)
         {
@@ -256,8 +263,6 @@ namespace prgPMR
         {
             Disp_Panel(MedicalControlType.Tests);
             ActiveMedicalControl = MedicalControlType.Tests;
-            ControlManagerDict[ActiveMedicalControl].Default();
-
         }
 
         private void btnBloodwork_Click(object sender, EventArgs e)
@@ -277,34 +282,34 @@ namespace prgPMR
             ActiveMedicalControl = MedicalControlType.Hospitalizations;
         }
 
-        private void btnMainAdd(object sender, EventArgs e)
+        private void Button0_Click(object sender, EventArgs e)
         {
-            ControlManagerDict[ActiveMedicalControl].Add();
+            ControlManagerDict[ActiveMedicalControl].ClickButton(0);
         }
 
-        private void bntMainEdit_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            ControlManagerDict[ActiveMedicalControl].Edit();
+            ControlManagerDict[ActiveMedicalControl].ClickButton(1);
         }
 
-        private void bntMainDelete_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
-            ControlManagerDict[ActiveMedicalControl].Delete();
+            ControlManagerDict[ActiveMedicalControl].ClickButton(2);
         }
 
-        private void btnMainCancel_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
-            ControlManagerDict[ActiveMedicalControl].Cancel();
+            ControlManagerDict[ActiveMedicalControl].ClickButton(3);
         }
 
-        private void btnRefresh_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
-            ControlManagerDict[ActiveMedicalControl].Refresh();
+            ControlManagerDict[ActiveMedicalControl].ClickButton(4);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button5_Click(object sender, EventArgs e)
         {
-            ControlManagerDict[ActiveMedicalControl].Back();
+            ControlManagerDict[ActiveMedicalControl].ClickButton(5);
         }
     }
 }

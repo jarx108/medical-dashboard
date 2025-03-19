@@ -1,7 +1,9 @@
-﻿using prgPMR.Abstraction;
+﻿using Microsoft.Identity.Client;
+using prgPMR.Abstraction;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -11,35 +13,24 @@ namespace prgPMR
 {
     //This line of code is here to overcome the bug in Visual Studio with Form Designer 
     [TypeDescriptionProvider(typeof(AbstractControlDescriptionProvider<MedicalControl, UserControl>))]
-
-
     public abstract class MedicalControl(ControlManager manager) : UserControl
     {
-        public virtual string[] ButtonsNames { get { return ["Not implmented"]; } }
+
+        private string[] _buttonText = [];
+        public string[] ButtonsText { get { return _buttonText; } }
+
+        private Action[] _buttonActions = [];
+        public Action[] ButtonActions { get { return _buttonActions; } }
         internal ControlManager Manager { get; } = manager;
 
-        public override void Refresh()
+        protected void SetButtons(string[] text, Action[] actions)
         {
-            base.Refresh();
+            _buttonText = text;
+            _buttonActions = actions;
+
+            Debug.Assert(_buttonText.Length == _buttonActions.Length);
+            for(int i = 0; i < text.Length; i++)
+                Debug.Assert((_buttonText[i] == null) == (_buttonActions[i] == null));
         }
-
-                
-        public abstract void Default();
-        // Default is used to display the datagrid or core data
-        // The user can then Add, Edit, Delete
-
-        public abstract void Add();
-
-        
-        public abstract void Edit();
-
-        
-        public abstract void Delete();
-
-        
-        public abstract void Cancel();
-
-        public abstract void Back();
-
     }
 }

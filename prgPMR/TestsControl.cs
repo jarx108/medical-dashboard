@@ -15,6 +15,9 @@ namespace prgPMR
         public TestsControl(ControlManager m) : base(m)
         {
             InitializeComponent();
+            SetButtons(
+                ["Refresh", "Add", "Edit", "Delete", null, "Cancel"],
+                [Refresh, Add, Edit, Delete, null, Cancel]);
         }
 
         public override void Refresh()
@@ -23,36 +26,26 @@ namespace prgPMR
             lblClass.Text = "Refresh was Pushed";
 
         }
-
-        public override void Default()
-        {
-            lblClass.Text = "Default screen";
-        }
-
-        public override void Add()
+        public void Add()
         {
             lblClass.Text = "Add was Pushed";
         }
-
-        public override void Edit()
+        public void Edit()
         {
             lblClass.Text = "Edit was Pushed";
         }
 
-        public override void Delete()
+        public void Delete()
         {
             lblClass.Text = "Delete was Pushed";
         }
-
-        public override void Cancel()
+        public void Cancel()
         {
             lblClass.Text = "Cancel was Pushed";
         }
-
-        public override void Back()
+        public void Back()
         {
             lblClass.Text = "Back was Pushed";
         }
-
     }
 }

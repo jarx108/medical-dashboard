@@ -12,50 +12,18 @@ using System.Windows.Forms;
 namespace prgPMR
 {
     
-    public partial class VaccinesControl : MedicalControl 
+    public partial class ImmunizationControl : MedicalControl
     {
-        //public override string[] ButtonsNames { get; }
-        private string[] bNames = ["Add", null,null,null,null,"Cancel"];
-        public override string[] ButtonsNames { get { return bNames; } }
-
-        public VaccinesControl(ControlManager m) : base(m)
+        public ImmunizationControl(ControlManager m) : base(m)
         {
+            //ButtonsNames = ;
             InitializeComponent();
             InitializeGrid();
+            SetButtons(["Next"], [Next]);
         }
-        public override void Refresh()
-        {
-            base.Refresh();
-        }
-
-
-        public override void Default()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Add()
+        public void Next()
         {
             Manager.NextControl();
-        }
-
-        public override void Edit()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Delete()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Cancel()
-        {
-            throw new NotImplementedException();
-        }
-        public override void Back()
-        {
-            Manager.PreviousControl();
         }
         private void dgvVacMain_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
