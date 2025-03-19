@@ -53,8 +53,6 @@
             {
                 b.Tag = type;
             }
-            // this is a test
-
 
             // Initialize all the User Control Forms
             ControlManagerDict = [];
