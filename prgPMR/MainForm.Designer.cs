@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             pnlMenu = new Panel();
-            btnHospital = new Button();
-            btnSurgeries = new Button();
-            btnBloodwork = new Button();
-            btnTests = new Button();
-            btnDoctorVisits = new Button();
-            btnVaccine = new Button();
+            hospitalizationButton = new Button();
+            surgeriesButton = new Button();
+            bloodworkButton = new Button();
+            testsButton = new Button();
+            doctorVisitsButton = new Button();
+            immunizationButton = new Button();
             btnLogout = new Button();
             pictureBox1 = new PictureBox();
-            btnMedications = new Button();
+            medicationButton = new Button();
             panel2 = new Panel();
-            btnFamMedHistory = new Button();
+            familyHistoryButton = new Button();
             pnlUser = new Panel();
             btnCancelUser = new Button();
             lblUsername = new Label();
@@ -76,118 +76,118 @@
             // 
             pnlMenu.BackColor = Color.MidnightBlue;
             pnlMenu.BorderStyle = BorderStyle.Fixed3D;
-            pnlMenu.Controls.Add(btnHospital);
-            pnlMenu.Controls.Add(btnSurgeries);
-            pnlMenu.Controls.Add(btnBloodwork);
-            pnlMenu.Controls.Add(btnTests);
-            pnlMenu.Controls.Add(btnDoctorVisits);
-            pnlMenu.Controls.Add(btnVaccine);
+            pnlMenu.Controls.Add(hospitalizationButton);
+            pnlMenu.Controls.Add(surgeriesButton);
+            pnlMenu.Controls.Add(bloodworkButton);
+            pnlMenu.Controls.Add(testsButton);
+            pnlMenu.Controls.Add(doctorVisitsButton);
+            pnlMenu.Controls.Add(immunizationButton);
             pnlMenu.Controls.Add(btnLogout);
             pnlMenu.Controls.Add(pictureBox1);
-            pnlMenu.Controls.Add(btnMedications);
+            pnlMenu.Controls.Add(medicationButton);
             pnlMenu.Controls.Add(panel2);
-            pnlMenu.Controls.Add(btnFamMedHistory);
+            pnlMenu.Controls.Add(familyHistoryButton);
             pnlMenu.Dock = DockStyle.Left;
             pnlMenu.Location = new Point(0, 0);
             pnlMenu.Name = "pnlMenu";
             pnlMenu.Size = new Size(150, 729);
             pnlMenu.TabIndex = 1;
             // 
-            // btnHospital
+            // hospitalizationButton
             // 
-            btnHospital.BackColor = Color.MidnightBlue;
-            btnHospital.FlatAppearance.BorderColor = Color.MidnightBlue;
-            btnHospital.FlatAppearance.MouseOverBackColor = Color.MediumBlue;
-            btnHospital.FlatStyle = FlatStyle.Flat;
-            btnHospital.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnHospital.ForeColor = Color.AliceBlue;
-            btnHospital.Location = new Point(-2, 409);
-            btnHospital.Name = "btnHospital";
-            btnHospital.Size = new Size(150, 31);
-            btnHospital.TabIndex = 17;
-            btnHospital.Text = "Hospitalizations";
-            btnHospital.UseVisualStyleBackColor = false;
-            btnHospital.Click += btnHospital_Click;
+            hospitalizationButton.BackColor = Color.MidnightBlue;
+            hospitalizationButton.FlatAppearance.BorderColor = Color.MidnightBlue;
+            hospitalizationButton.FlatAppearance.MouseOverBackColor = Color.MediumBlue;
+            hospitalizationButton.FlatStyle = FlatStyle.Flat;
+            hospitalizationButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            hospitalizationButton.ForeColor = Color.AliceBlue;
+            hospitalizationButton.Location = new Point(-2, 409);
+            hospitalizationButton.Name = "hospitalizationButton";
+            hospitalizationButton.Size = new Size(150, 31);
+            hospitalizationButton.TabIndex = 17;
+            hospitalizationButton.Text = "Hospitalizations";
+            hospitalizationButton.UseVisualStyleBackColor = false;
+            hospitalizationButton.Click += DisplayControl_Click;
             // 
-            // btnSurgeries
+            // surgeriesButton
             // 
-            btnSurgeries.BackColor = Color.MidnightBlue;
-            btnSurgeries.FlatAppearance.BorderColor = Color.MidnightBlue;
-            btnSurgeries.FlatAppearance.MouseOverBackColor = Color.MediumBlue;
-            btnSurgeries.FlatStyle = FlatStyle.Flat;
-            btnSurgeries.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSurgeries.ForeColor = Color.AliceBlue;
-            btnSurgeries.Location = new Point(-2, 381);
-            btnSurgeries.Name = "btnSurgeries";
-            btnSurgeries.Size = new Size(150, 31);
-            btnSurgeries.TabIndex = 16;
-            btnSurgeries.Text = "Surgeries";
-            btnSurgeries.UseVisualStyleBackColor = false;
-            btnSurgeries.Click += btnSurgeries_Click;
+            surgeriesButton.BackColor = Color.MidnightBlue;
+            surgeriesButton.FlatAppearance.BorderColor = Color.MidnightBlue;
+            surgeriesButton.FlatAppearance.MouseOverBackColor = Color.MediumBlue;
+            surgeriesButton.FlatStyle = FlatStyle.Flat;
+            surgeriesButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            surgeriesButton.ForeColor = Color.AliceBlue;
+            surgeriesButton.Location = new Point(-2, 381);
+            surgeriesButton.Name = "surgeriesButton";
+            surgeriesButton.Size = new Size(150, 31);
+            surgeriesButton.TabIndex = 16;
+            surgeriesButton.Text = "Surgeries";
+            surgeriesButton.UseVisualStyleBackColor = false;
+            surgeriesButton.Click += DisplayControl_Click;
             // 
-            // btnBloodwork
+            // bloodworkButton
             // 
-            btnBloodwork.BackColor = Color.MidnightBlue;
-            btnBloodwork.FlatAppearance.BorderColor = Color.MidnightBlue;
-            btnBloodwork.FlatAppearance.MouseOverBackColor = Color.MediumBlue;
-            btnBloodwork.FlatStyle = FlatStyle.Flat;
-            btnBloodwork.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnBloodwork.ForeColor = Color.AliceBlue;
-            btnBloodwork.Location = new Point(-2, 353);
-            btnBloodwork.Name = "btnBloodwork";
-            btnBloodwork.Size = new Size(150, 31);
-            btnBloodwork.TabIndex = 15;
-            btnBloodwork.Text = "Bloodwork";
-            btnBloodwork.UseVisualStyleBackColor = false;
-            btnBloodwork.Click += btnBloodwork_Click;
+            bloodworkButton.BackColor = Color.MidnightBlue;
+            bloodworkButton.FlatAppearance.BorderColor = Color.MidnightBlue;
+            bloodworkButton.FlatAppearance.MouseOverBackColor = Color.MediumBlue;
+            bloodworkButton.FlatStyle = FlatStyle.Flat;
+            bloodworkButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            bloodworkButton.ForeColor = Color.AliceBlue;
+            bloodworkButton.Location = new Point(-2, 353);
+            bloodworkButton.Name = "bloodworkButton";
+            bloodworkButton.Size = new Size(150, 31);
+            bloodworkButton.TabIndex = 15;
+            bloodworkButton.Text = "Bloodwork";
+            bloodworkButton.UseVisualStyleBackColor = false;
+            bloodworkButton.Click += DisplayControl_Click;
             // 
-            // btnTests
+            // testsButton
             // 
-            btnTests.BackColor = Color.MidnightBlue;
-            btnTests.FlatAppearance.BorderColor = Color.MidnightBlue;
-            btnTests.FlatAppearance.MouseOverBackColor = Color.MediumBlue;
-            btnTests.FlatStyle = FlatStyle.Flat;
-            btnTests.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnTests.ForeColor = Color.AliceBlue;
-            btnTests.Location = new Point(-2, 325);
-            btnTests.Name = "btnTests";
-            btnTests.Size = new Size(150, 31);
-            btnTests.TabIndex = 14;
-            btnTests.Text = "Tests";
-            btnTests.UseVisualStyleBackColor = false;
-            btnTests.Click += btnTests_Click;
+            testsButton.BackColor = Color.MidnightBlue;
+            testsButton.FlatAppearance.BorderColor = Color.MidnightBlue;
+            testsButton.FlatAppearance.MouseOverBackColor = Color.MediumBlue;
+            testsButton.FlatStyle = FlatStyle.Flat;
+            testsButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            testsButton.ForeColor = Color.AliceBlue;
+            testsButton.Location = new Point(-2, 325);
+            testsButton.Name = "testsButton";
+            testsButton.Size = new Size(150, 31);
+            testsButton.TabIndex = 14;
+            testsButton.Text = "Tests";
+            testsButton.UseVisualStyleBackColor = false;
+            testsButton.Click += DisplayControl_Click;
             // 
-            // btnDoctorVisits
+            // doctorVisitsButton
             // 
-            btnDoctorVisits.BackColor = Color.MidnightBlue;
-            btnDoctorVisits.FlatAppearance.BorderColor = Color.MidnightBlue;
-            btnDoctorVisits.FlatAppearance.MouseOverBackColor = Color.MediumBlue;
-            btnDoctorVisits.FlatStyle = FlatStyle.Flat;
-            btnDoctorVisits.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDoctorVisits.ForeColor = Color.AliceBlue;
-            btnDoctorVisits.Location = new Point(-2, 297);
-            btnDoctorVisits.Name = "btnDoctorVisits";
-            btnDoctorVisits.Size = new Size(150, 31);
-            btnDoctorVisits.TabIndex = 13;
-            btnDoctorVisits.Text = "Doctor Visits";
-            btnDoctorVisits.UseVisualStyleBackColor = false;
-            btnDoctorVisits.Click += btnDoctorVisits_Click;
+            doctorVisitsButton.BackColor = Color.MidnightBlue;
+            doctorVisitsButton.FlatAppearance.BorderColor = Color.MidnightBlue;
+            doctorVisitsButton.FlatAppearance.MouseOverBackColor = Color.MediumBlue;
+            doctorVisitsButton.FlatStyle = FlatStyle.Flat;
+            doctorVisitsButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            doctorVisitsButton.ForeColor = Color.AliceBlue;
+            doctorVisitsButton.Location = new Point(-2, 297);
+            doctorVisitsButton.Name = "doctorVisitsButton";
+            doctorVisitsButton.Size = new Size(150, 31);
+            doctorVisitsButton.TabIndex = 13;
+            doctorVisitsButton.Text = "Doctor Visits";
+            doctorVisitsButton.UseVisualStyleBackColor = false;
+            doctorVisitsButton.Click += DisplayControl_Click;
             // 
-            // btnVaccine
+            // immunizationButton
             // 
-            btnVaccine.BackColor = Color.MidnightBlue;
-            btnVaccine.FlatAppearance.BorderColor = Color.MidnightBlue;
-            btnVaccine.FlatAppearance.MouseOverBackColor = Color.MediumBlue;
-            btnVaccine.FlatStyle = FlatStyle.Flat;
-            btnVaccine.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnVaccine.ForeColor = Color.AliceBlue;
-            btnVaccine.Location = new Point(-2, 269);
-            btnVaccine.Name = "btnVaccine";
-            btnVaccine.Size = new Size(150, 31);
-            btnVaccine.TabIndex = 12;
-            btnVaccine.Text = "Immunizations";
-            btnVaccine.UseVisualStyleBackColor = false;
-            btnVaccine.Click += btnImmunization_Click;
+            immunizationButton.BackColor = Color.MidnightBlue;
+            immunizationButton.FlatAppearance.BorderColor = Color.MidnightBlue;
+            immunizationButton.FlatAppearance.MouseOverBackColor = Color.MediumBlue;
+            immunizationButton.FlatStyle = FlatStyle.Flat;
+            immunizationButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            immunizationButton.ForeColor = Color.AliceBlue;
+            immunizationButton.Location = new Point(-2, 269);
+            immunizationButton.Name = "immunizationButton";
+            immunizationButton.Size = new Size(150, 31);
+            immunizationButton.TabIndex = 12;
+            immunizationButton.Text = "Immunizations";
+            immunizationButton.UseVisualStyleBackColor = false;
+            immunizationButton.Click += DisplayControl_Click;
             // 
             // btnLogout
             // 
@@ -200,7 +200,7 @@
             btnLogout.TabIndex = 11;
             btnLogout.Text = "Logout";
             btnLogout.UseVisualStyleBackColor = false;
-            btnLogout.Click += btnLogout_Click;
+            btnLogout.Click += LogoutButton_Click;
             // 
             // pictureBox1
             // 
@@ -212,21 +212,21 @@
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
-            // btnMedications
+            // medicationButton
             // 
-            btnMedications.BackColor = Color.MidnightBlue;
-            btnMedications.FlatAppearance.BorderColor = Color.MidnightBlue;
-            btnMedications.FlatAppearance.MouseOverBackColor = Color.MediumBlue;
-            btnMedications.FlatStyle = FlatStyle.Flat;
-            btnMedications.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnMedications.ForeColor = Color.AliceBlue;
-            btnMedications.Location = new Point(-2, 241);
-            btnMedications.Name = "btnMedications";
-            btnMedications.Size = new Size(150, 31);
-            btnMedications.TabIndex = 4;
-            btnMedications.Text = " Medications";
-            btnMedications.UseVisualStyleBackColor = false;
-            btnMedications.Click += btnMedications_Click;
+            medicationButton.BackColor = Color.MidnightBlue;
+            medicationButton.FlatAppearance.BorderColor = Color.MidnightBlue;
+            medicationButton.FlatAppearance.MouseOverBackColor = Color.MediumBlue;
+            medicationButton.FlatStyle = FlatStyle.Flat;
+            medicationButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            medicationButton.ForeColor = Color.AliceBlue;
+            medicationButton.Location = new Point(-2, 241);
+            medicationButton.Name = "medicationButton";
+            medicationButton.Size = new Size(150, 31);
+            medicationButton.TabIndex = 4;
+            medicationButton.Text = " Medications";
+            medicationButton.UseVisualStyleBackColor = false;
+            medicationButton.Click += DisplayControl_Click;
             // 
             // panel2
             // 
@@ -235,21 +235,21 @@
             panel2.Size = new Size(850, 122);
             panel2.TabIndex = 2;
             // 
-            // btnFamMedHistory
+            // familyHistoryButton
             // 
-            btnFamMedHistory.BackColor = Color.MidnightBlue;
-            btnFamMedHistory.FlatAppearance.BorderColor = Color.MidnightBlue;
-            btnFamMedHistory.FlatAppearance.MouseOverBackColor = Color.MediumBlue;
-            btnFamMedHistory.FlatStyle = FlatStyle.Flat;
-            btnFamMedHistory.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnFamMedHistory.ForeColor = Color.AliceBlue;
-            btnFamMedHistory.Location = new Point(-2, 213);
-            btnFamMedHistory.Name = "btnFamMedHistory";
-            btnFamMedHistory.Size = new Size(150, 31);
-            btnFamMedHistory.TabIndex = 3;
-            btnFamMedHistory.Text = "Family Medical History";
-            btnFamMedHistory.UseVisualStyleBackColor = false;
-            btnFamMedHistory.Click += btnFamMedHistory_Click;
+            familyHistoryButton.BackColor = Color.MidnightBlue;
+            familyHistoryButton.FlatAppearance.BorderColor = Color.MidnightBlue;
+            familyHistoryButton.FlatAppearance.MouseOverBackColor = Color.MediumBlue;
+            familyHistoryButton.FlatStyle = FlatStyle.Flat;
+            familyHistoryButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            familyHistoryButton.ForeColor = Color.AliceBlue;
+            familyHistoryButton.Location = new Point(-2, 213);
+            familyHistoryButton.Name = "familyHistoryButton";
+            familyHistoryButton.Size = new Size(150, 31);
+            familyHistoryButton.TabIndex = 3;
+            familyHistoryButton.Text = "Family Medical History";
+            familyHistoryButton.UseVisualStyleBackColor = false;
+            familyHistoryButton.Click += DisplayControl_Click;
             // 
             // pnlUser
             // 
@@ -288,7 +288,7 @@
             btnCancelUser.TabIndex = 16;
             btnCancelUser.Text = "Cancel";
             btnCancelUser.UseVisualStyleBackColor = false;
-            btnCancelUser.Click += btnCancelUser_Click;
+            btnCancelUser.Click += CancelUserButton_Click;
             // 
             // lblUsername
             // 
@@ -346,7 +346,7 @@
             btnSaveUser.TabIndex = 11;
             btnSaveUser.Text = "Save";
             btnSaveUser.UseVisualStyleBackColor = false;
-            btnSaveUser.Click += btnSaveUser_Click;
+            btnSaveUser.Click += SaveUserButton_Click;
             // 
             // bntChangePW
             // 
@@ -417,7 +417,7 @@
             label3.Size = new Size(107, 31);
             label3.TabIndex = 4;
             label3.Text = "Username:";
-            label3.Click += label3_Click;
+            label3.Click += Label3_Click;
             // 
             // label2
             // 
@@ -450,7 +450,7 @@
             btnEditUser.TabIndex = 1;
             btnEditUser.Text = "Edit";
             btnEditUser.UseVisualStyleBackColor = false;
-            btnEditUser.Click += btnEditUser_Click;
+            btnEditUser.Click += EditUserButton_Click;
             // 
             // label9
             // 
@@ -469,7 +469,7 @@
             pnlMain.Name = "pnlMain";
             pnlMain.Size = new Size(1200, 548);
             pnlMain.TabIndex = 3;
-            pnlMain.Paint += pnlMain_Paint;
+            pnlMain.Paint += MainPanel_Paint;
             // 
             // pnlMainButtons
             // 
@@ -485,83 +485,83 @@
             pnlMainButtons.Size = new Size(1200, 56);
             pnlMainButtons.TabIndex = 4;
             // 
-            // bntSlot6
+            // button5
             // 
             button5.BackColor = Color.Navy;
             button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button5.ForeColor = Color.White;
             button5.Location = new Point(1115, 14);
-            button5.Name = "bntSlot6";
+            button5.Name = "button5";
             button5.Size = new Size(73, 30);
             button5.TabIndex = 17;
             button5.Text = "Back";
             button5.UseVisualStyleBackColor = false;
-            button5.Click += Button5_Click;
+            button5.Click += ButtonBar_Click;
             // 
-            // btnSlot5
+            // button4
             // 
             button4.BackColor = Color.Navy;
             button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
             button4.Location = new Point(564, 13);
-            button4.Name = "btnSlot5";
+            button4.Name = "button4";
             button4.Size = new Size(73, 30);
             button4.TabIndex = 16;
             button4.Text = "Refresh";
             button4.UseVisualStyleBackColor = false;
-            button4.Click += Button4_Click;
+            button4.Click += ButtonBar_Click;
             // 
-            // btnSlot4
+            // button3
             // 
             button3.BackColor = Color.Navy;
             button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
             button3.Location = new Point(348, 14);
-            button3.Name = "btnSlot4";
+            button3.Name = "button3";
             button3.Size = new Size(73, 30);
             button3.TabIndex = 15;
             button3.Text = "Cancel";
             button3.UseVisualStyleBackColor = false;
-            button3.Click += Button3_Click;
+            button3.Click += ButtonBar_Click;
             // 
-            // btnSlot3
+            // button2
             // 
             button2.BackColor = Color.Navy;
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
             button2.Location = new Point(248, 14);
-            button2.Name = "btnSlot3";
+            button2.Name = "button2";
             button2.Size = new Size(73, 30);
             button2.TabIndex = 14;
             button2.Text = "Delete";
             button2.UseVisualStyleBackColor = false;
-            button2.Click += Button2_Click;
+            button2.Click += ButtonBar_Click;
             // 
-            // btnSlot2
+            // button1
             // 
             button1.BackColor = Color.Navy;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
             button1.Location = new Point(148, 14);
-            button1.Name = "btnSlot2";
+            button1.Name = "button1";
             button1.Size = new Size(73, 30);
             button1.TabIndex = 13;
             button1.Text = "Edit";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += Button1_Click;
+            button1.Click += ButtonBar_Click;
             // 
-            // btnSlot1
+            // button0
             // 
             button0.BackColor = Color.Navy;
             button0.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button0.ForeColor = Color.White;
             button0.Location = new Point(51, 14);
-            button0.Name = "btnSlot1";
+            button0.Name = "button0";
             button0.Size = new Size(73, 30);
             button0.TabIndex = 12;
             button0.Text = "Add";
             button0.UseVisualStyleBackColor = false;
-            button0.Click += Button0_Click;
+            button0.Click += ButtonBar_Click;
             // 
             // MainForm
             // 
@@ -586,12 +586,12 @@
         #endregion
 
         private Panel pnlMenu;
-        private Button btnFamMedHistory;
+        private Button familyHistoryButton;
         private Panel panel2;
         private Panel pnlUser;
         private Panel pnlMain;
         private Label label9;
-        private Button btnMedications;
+        private Button medicationButton;
         public Button btnEditUser;
         private PictureBox pictureBox1;
         private Label label3;
@@ -605,12 +605,12 @@
         private TextBox txtLastName;
         public Button btnSaveUser;
         public Button btnLogout;
-        private Button btnDoctorVisits;
-        private Button btnVaccine;
-        private Button btnHospital;
-        private Button btnSurgeries;
-        private Button btnBloodwork;
-        private Button btnTests;
+        private Button doctorVisitsButton;
+        private Button immunizationButton;
+        private Button hospitalizationButton;
+        private Button surgeriesButton;
+        private Button bloodworkButton;
+        private Button testsButton;
         private Label lblFirstName;
         private Label lblLastName;
         private Label lblUsername;

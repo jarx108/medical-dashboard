@@ -71,7 +71,7 @@
             dgvVacMain.SelectionMode = DataGridViewSelectionMode.CellSelect;
             dgvVacMain.Size = new Size(1161, 571);
             dgvVacMain.TabIndex = 2;
-            dgvVacMain.CellContentClick += dgvVacMain_CellContentClick;
+            dgvVacMain.CellContentClick += VacMainDataGridView_CellContentClick;
             // 
             // VaccinesControl
             // 

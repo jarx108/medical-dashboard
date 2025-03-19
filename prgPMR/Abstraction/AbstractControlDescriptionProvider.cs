@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+#pragma warning disable 
 namespace prgPMR.Abstraction
 {
     public class AbstractControlDescriptionProvider<TAbstract, TBase> : TypeDescriptionProvider

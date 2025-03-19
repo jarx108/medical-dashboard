@@ -16,7 +16,6 @@ namespace prgPMR
     {
         public ImmunizationControl(ControlManager m) : base(m)
         {
-            //ButtonsNames = ;
             InitializeComponent();
             InitializeGrid();
             SetButtons(["Next"], [Next]);
@@ -25,17 +24,15 @@ namespace prgPMR
         {
             Manager.NextControl();
         }
-        private void dgvVacMain_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void VacMainDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
         }
 
         private void InitializeGrid()
         {
-            int startDoses = 4;
-
             // Define new DataTable called "dt"
-            DataTable dt = new DataTable();
+            DataTable dt = new();
 
             // Add 1st four column definitions
             dt.Columns.Add("Name", typeof(string));
@@ -50,31 +47,20 @@ namespace prgPMR
             dt.Rows.Add("Tetnus", "tdap", new DateOnly(2024, 4, 8), 4);
 
             // Initialize the DataGridView
-
             dgvVacMain.DataSource= dt;
 
-
-            // {
-            //    DataSource = dt,
-            //    Dock = DockStyle.Fill,
-            // };
-
-            // Controls.Add(dgvVacMain);
-
-
-
             // Set the column properties in the DataGridView
-            dgvVacMain.Columns["Name"].HeaderText = "Name";
-            dgvVacMain.Columns["Name"].Width = 300;
-            dgvVacMain.Columns["Name"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dgvVacMain.Columns["Abbreviation"].HeaderText = "Abbreviation";
-            dgvVacMain.Columns["Abbreviation"].Width = 80;
-            dgvVacMain.Columns["LastDose"].HeaderText = "Last Dose";
-            dgvVacMain.Columns["LastDose"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dgvVacMain.Columns["LastDose"].Width = 60;
-            dgvVacMain.Columns["NumDoses"].HeaderText = "Num of Doses";
-            dgvVacMain.Columns["NumDoses"].Width = 40;
-            dgvVacMain.Columns["NumDoses"].ReadOnly = true;
+            dgvVacMain.Columns["Name"]!.HeaderText = "Name";
+            dgvVacMain.Columns["Name"]!.Width = 300;
+            dgvVacMain.Columns["Name"]!.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dgvVacMain.Columns["Abbreviation"]!.HeaderText = "Abbreviation";
+            dgvVacMain.Columns["Abbreviation"]!.Width = 80;
+            dgvVacMain.Columns["LastDose"]!.HeaderText = "Last Dose";
+            dgvVacMain.Columns["LastDose"]!.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvVacMain.Columns["LastDose"]!.Width = 60;
+            dgvVacMain.Columns["NumDoses"]!.HeaderText = "Num of Doses";
+            dgvVacMain.Columns["NumDoses"]!.Width = 40;
+            dgvVacMain.Columns["NumDoses"]!.ReadOnly = true;
 
 
         }
