@@ -1,15 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Transactions;
-using System.Windows.Forms;
-
-namespace prgPMR
+﻿namespace prgPMR
 {
     public partial class MainForm : Form
     {
@@ -18,7 +7,7 @@ namespace prgPMR
             Default,
             FamilyHistory,
             Medications,
-            Vaccines,
+            Immunization,
             DoctorVisits,
             Tests,
             Bloodwork,
@@ -26,10 +15,10 @@ namespace prgPMR
             Hospitalizations
         }
 
-        private Dictionary<MedicalControlType, ControlManager> ControlManagerDict;
-        private Button[] buttons;
+        private readonly Dictionary<MedicalControlType, ControlManager> ControlManagerDict;
+        private readonly Dictionary<MedicalControlType, Button> ControlButtonDict;
 
-        // Declare user inf0ormation
+        // Declare user information
         public int intUserID;
         public string strUsername = "";
         public string strPassword = "";
@@ -41,26 +30,47 @@ namespace prgPMR
         public MainForm()
         {
             InitializeComponent();
-            //Initialize all the buttons at the bottom at of the form
-            buttons = [btnSlot1, btnSlot2, btnSlot3, btnSlot4, btnSlot5, bntSlot6];
+            // Initialize all the buttons at the bottom at of the form
+            Button[] buttons = [button0, button1, button2, button3, button4, button5];
+            // Map MedicalControlType to there corrisponding buttons
+            ControlButtonDict = new Dictionary<MedicalControlType, Button> {
+                {MedicalControlType.FamilyHistory, familyHistoryButton },
+                {MedicalControlType.Medications, medicationButton },
+                {MedicalControlType.Immunization, immunizationButton },
+                {MedicalControlType.DoctorVisits, doctorVisitsButton },
+                {MedicalControlType.Tests, testsButton },
+                {MedicalControlType.Bloodwork, bloodworkButton },
+                {MedicalControlType.Surgeries, surgeriesButton },
+                {MedicalControlType.Hospitalizations, hospitalizationButton },
+            };
+            // Change the tag for the button bar buttons to match there index
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                buttons[i].Tag = i;
+            }
+            // Change the tag for Control changing buttons to there given MedicalControlType
+            foreach ((MedicalControlType type, Button b) in ControlButtonDict)
+            {
+                b.Tag = type;
+            }
 
             // Initialize all the User Control Forms
+            ControlManagerDict = [];
 
-
-            ControlManagerDict = new Dictionary<MedicalControlType, ControlManager>
+            foreach (MedicalControlType type in Enum.GetValues<MedicalControlType>())
             {
-                {MedicalControlType.Default, new ControlManager(MedicalControlType.Default, buttons) },
-                {MedicalControlType.FamilyHistory, new ControlManager(MedicalControlType.FamilyHistory, buttons) },
-                {MedicalControlType.Medications, new ControlManager(MedicalControlType.Medications, buttons) },
-                {MedicalControlType.Vaccines, new ControlManager(MedicalControlType.Vaccines, buttons) },
-                {MedicalControlType.DoctorVisits, new ControlManager(MedicalControlType.DoctorVisits, buttons) },
-                {MedicalControlType.Tests, new ControlManager(MedicalControlType.Tests, buttons) },
-                {MedicalControlType.Bloodwork, new ControlManager(MedicalControlType.Bloodwork, buttons) },
-                {MedicalControlType.Surgeries, new ControlManager(MedicalControlType.Surgeries, buttons) },
-                {MedicalControlType.Hospitalizations, new ControlManager(MedicalControlType.Hospitalizations, buttons) },
-            };
+                ControlManager m = new(type, buttons);
+                ControlManagerDict.Add(type, m);
+
+                //Go through every item in the dictionary and add the sub panel into the main pane
+                foreach (MedicalControl c in m.MedicalControls)
+                {
+                    pnlMain.Controls.Add(c);
+                }
+            }
+
             // Set the panel to be the Default panel and display it
-            Disp_Panel(MedicalControlType.Default);
+            DisplayMedicalControl(MedicalControlType.Default);
 
             
 
@@ -71,16 +81,8 @@ namespace prgPMR
             lblUsername.Text = "ejangaon";
 
 
-            //Go through every item in the dictionary and add the sub panel into the main pane
-            foreach ((_, ControlManager value) in ControlManagerDict)
-            {
-                foreach (MedicalControl c in value.MedicalControls)
-                {
-                    pnlMain.Controls.Add(c);
-                }
-            }
+            
         }
-
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -88,18 +90,18 @@ namespace prgPMR
         }
 
 
-        private void label3_Click(object sender, EventArgs e)
+        private void Label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
+        private void LogoutButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
 
-        private void btnEditUser_Click(object sender, EventArgs e)
+        private void EditUserButton_Click(object sender, EventArgs e)
         {
 
             // Assign the user data from the database that was  put into 
@@ -110,16 +112,16 @@ namespace prgPMR
             txtUsername.Text = lblUsername.Text;
 
             // Turn the display into Edit mode
-            Disp_User(1);
+            DisplayUser(1);
         }
 
-        private void btnCancelUser_Click(object sender, EventArgs e)
+        private void CancelUserButton_Click(object sender, EventArgs e)
         {
             // Return the display to View mode
-            Disp_User(0);
+            DisplayUser(0);
         }
 
-        private void btnSaveUser_Click(object sender, EventArgs e)
+        private void SaveUserButton_Click(object sender, EventArgs e)
         {
             //Update the fields in the database
             // ****** code goes here *******
@@ -132,20 +134,20 @@ namespace prgPMR
             lblUsername.Text = txtUsername.Text;
 
             // Return the display to View mode with the new labels
-            Disp_User(0);
+            DisplayUser(0);
         }
 
 
 
-        private void pnlMain_Paint(object sender, PaintEventArgs e)
+        private void MainPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void Disp_User(int intChoice)
+        private void DisplayUser(int intChoice)
         {
             // Set the panel to be the default
-            Disp_Panel(MedicalControlType.Default);
+            DisplayMedicalControl(MedicalControlType.Default);
 
             if (intChoice == 1)
             {
@@ -211,7 +213,7 @@ namespace prgPMR
             }
         }
        //Method that makes the visible, the panel of the selected medical type
-        private void Disp_Panel(MedicalControlType panelChoice)
+        private void DisplayMedicalControl(MedicalControlType panelChoice)
         {
             //Loop through all the items in the ControManagerDict dictionary
             foreach ((MedicalControlType key, ControlManager value) in ControlManagerDict)
@@ -229,82 +231,24 @@ namespace prgPMR
                 }
             }
         }
-
-        private void btnFamMedHistory_Click(object sender, EventArgs e)
+        // Changes current active MedicalControl to the one that matches the Tag of the button that triggered this event
+        private void DisplayControl_Click(object sender, EventArgs e)
         {
-            Disp_Panel(MedicalControlType.FamilyHistory);
-            ActiveMedicalControl = MedicalControlType.FamilyHistory;
+            if (sender is not Button b || b.Tag is not MedicalControlType m)
+            {
+                return;
+            }
+            DisplayMedicalControl(m);
+            ActiveMedicalControl = m;
         }
-        private void btnMedications_Click(object sender, EventArgs e)
+        // Tells currently active control manager that a button has been pressed corrispoding with the tag of button that triggered this event
+        private void ButtonBar_Click(object sender, EventArgs e)
         {
-            Disp_Panel(MedicalControlType.Medications);
-            ActiveMedicalControl = MedicalControlType.Medications;
-        }
-
-        private void btnVaccine_Click(object sender, EventArgs e)
-        {
-            Disp_Panel(MedicalControlType.Vaccines);
-            ActiveMedicalControl = MedicalControlType.Vaccines;
-        }
-        private void btnDoctorVisits_Click(object sender, EventArgs e)
-        {
-            Disp_Panel(MedicalControlType.DoctorVisits);
-            ActiveMedicalControl = MedicalControlType.DoctorVisits;
-        }
-
-        private void btnTests_Click(object sender, EventArgs e)
-        {
-            Disp_Panel(MedicalControlType.Tests);
-            ActiveMedicalControl = MedicalControlType.Tests;
-            ControlManagerDict[ActiveMedicalControl].Default();
-
-        }
-
-        private void btnBloodwork_Click(object sender, EventArgs e)
-        {
-            Disp_Panel(MedicalControlType.Bloodwork);
-            ActiveMedicalControl = MedicalControlType.Bloodwork;
-        }
-
-        private void btnSurgeries_Click(object sender, EventArgs e)
-        {
-            Disp_Panel(MedicalControlType.Surgeries);
-            ActiveMedicalControl = MedicalControlType.Surgeries;
-        }
-        private void btnHospital_Click(object sender, EventArgs e)
-        {
-            Disp_Panel(MedicalControlType.Hospitalizations);
-            ActiveMedicalControl = MedicalControlType.Hospitalizations;
-        }
-
-        private void btnMainAdd(object sender, EventArgs e)
-        {
-            ControlManagerDict[ActiveMedicalControl].Add();
-        }
-
-        private void bntMainEdit_Click(object sender, EventArgs e)
-        {
-            ControlManagerDict[ActiveMedicalControl].Edit();
-        }
-
-        private void bntMainDelete_Click(object sender, EventArgs e)
-        {
-            ControlManagerDict[ActiveMedicalControl].Delete();
-        }
-
-        private void btnMainCancel_Click(object sender, EventArgs e)
-        {
-            ControlManagerDict[ActiveMedicalControl].Cancel();
-        }
-
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
-            ControlManagerDict[ActiveMedicalControl].Refresh();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ControlManagerDict[ActiveMedicalControl].Back();
+            if (sender is not Button b || b.Tag is not int)
+            {
+                return;
+            }
+            ControlManagerDict[ActiveMedicalControl].ClickButton((int)b.Tag);
         }
     }
 }

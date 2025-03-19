@@ -1,6 +1,6 @@
 ﻿namespace prgPMR
 {
-    partial class VaccinesDetailGridControl
+    partial class ImmunizationControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -57,7 +57,7 @@
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
             dgvVacMain.DefaultCellStyle = dataGridViewCellStyle2;
             dgvVacMain.EnableHeadersVisualStyles = false;
-            dgvVacMain.Location = new Point(20, 20);
+            dgvVacMain.Location = new Point(23, 21);
             dgvVacMain.MultiSelect = false;
             dgvVacMain.Name = "dgvVacMain";
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -70,14 +70,15 @@
             dgvVacMain.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dgvVacMain.SelectionMode = DataGridViewSelectionMode.CellSelect;
             dgvVacMain.Size = new Size(1161, 571);
-            dgvVacMain.TabIndex = 3;
+            dgvVacMain.TabIndex = 2;
+            dgvVacMain.CellContentClick += VacMainDataGridView_CellContentClick;
             // 
-            // VaccinesDetailGridControl
+            // VaccinesControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(dgvVacMain);
-            Name = "VaccinesDetailGridControl";
+            Name = "VaccinesControl";
             Size = new Size(1200, 610);
             ((System.ComponentModel.ISupportInitialize)dgvVacMain).EndInit();
             ResumeLayout(false);

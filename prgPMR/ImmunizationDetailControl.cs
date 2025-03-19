@@ -10,48 +10,31 @@ using System.Windows.Forms;
 
 namespace prgPMR
 {
-    public partial class VaccinesDetailControl : MedicalControl
+    public partial class ImmunizationDetailControl : MedicalControl
     {
-        public VaccinesDetailControl(ControlManager m) : base(m)
+        public ImmunizationDetailControl(ControlManager m) : base(m)
         {
             InitializeComponent();
+            SetButtons(["Next", "Back", "Delete", "Cancel"], [Next, Back, Delete, Cancel]);
         }
-
-        public override void Refresh()
-        {
-            base.Refresh();
-            lblClass.Text = "Refresh was Pushed";
-
-        }
-
-        public override void Default()
-        {
-            lblClass.Text = "Default screen";
-        }
-
-        public override void Add()
+        public void Next()
         {
             Manager.NextControl();
         }
 
-        public override void Edit()
+        public void Back()
         {
-            lblClass.Text = "Edit was Pushed";
+            Manager.PreviousControl();
         }
 
-        public override void Delete()
+        public void Delete()
         {
             lblClass.Text = "Delete was Pushed";
         }
 
-        public override void Cancel()
+        public void Cancel()
         {
             lblClass.Text = "Cancel was Pushed";
-        }
-
-        public override void Back()
-        {
-            Manager.PreviousControl();
         }
 
         private void label1_Click(object sender, EventArgs e)

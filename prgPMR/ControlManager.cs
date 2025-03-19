@@ -10,9 +10,8 @@ namespace prgPMR
     {
         public Button[] Buttons;
         internal List<MedicalControl> MedicalControls { get; }
-        private MedicalControl ActiveControl;
-        private int index;
-        private bool visible;
+        private int index = 0;
+        private bool visible = false;
 
         public ControlManager(MainForm.MedicalControlType type, Button[] b) 
         {
@@ -29,8 +28,8 @@ namespace prgPMR
                 case MainForm.MedicalControlType.Medications:
                     MedicalControls.Add(new MedicationsControl(this));
                     break;
-                case MainForm.MedicalControlType.Vaccines:
-                    MedicalControls.AddRange(new VaccinesControl(this), new VaccinesDetailGridControl(this), new VaccinesDetailControl(this));
+                case MainForm.MedicalControlType.Immunization:
+                    MedicalControls.AddRange(new ImmunizationControl(this), new ImmunizationDetailGridControl(this), new ImmunizationDetailControl(this));
                     break;
                 case MainForm.MedicalControlType.DoctorVisits:
                     MedicalControls.Add(new DoctorVisitsControl(this));
@@ -50,33 +49,11 @@ namespace prgPMR
                 default:
                     throw new ArgumentException("Invalid Medical Control type");
             }
-            index = 0;
-            ActiveControl = MedicalControls[index];
         }
-
-
-        public void Add()
+        public void ClickButton(int buttonNumber)
         {
-            ActiveControl.Add();
+            MedicalControls[index].ButtonActions[buttonNumber]();
         }
-        public void Edit()
-        {
-            ActiveControl.Edit();
-        }
-        public void Delete()
-        {
-            ActiveControl.Delete();
-        }
-        public void Cancel()
-        {
-            ActiveControl.Cancel();
-        }
-
-        public void Back()
-        {
-            ActiveControl.Back();
-        }
-
         private void RefreshVisible()
         {
             SetVisible(visible);
@@ -93,9 +70,9 @@ namespace prgPMR
             {
                 // Check if the the passed parameter value is set to visible or not visible and
                 // if "m" is the the same as the control that is currently active "ActiveControl"
-                if(isVisible && m == ActiveControl)
+                if(isVisible && m == MedicalControls[index])
                 {
-                    // Set the visbility property of the panel of the ActiveControl/m to true/visible
+                    // Set the visibility property of the panel of the ActiveControl/m to true/visible
                     m.Visible = true;
 
                     //Loop through all the buttons on the panel
@@ -103,7 +80,7 @@ namespace prgPMR
                     {
                         // Check if the index is greater than the number of buttons in the list or
                         // the name of the button is null
-                        if(i >= m.ButtonsNames.Length || m.ButtonsNames[i] == null)
+                        if(i >= m.ButtonsText.Length || m.ButtonsText[i] == null)
                         {
                             //  Hide the button
                             Buttons[i].Visible = false;
@@ -112,45 +89,37 @@ namespace prgPMR
                         {
                             // Set the text of the button to the text in the control and
                             // make button visible by setting button property to true
-                            Buttons[i].Text = m.ButtonsNames[i];
+                            Buttons[i].Text = m.ButtonsText[i];
                             Buttons[i].Visible = true;
                         }
                     }
                 }
                 else
                 {
-                    // Set the visbility property of the panel of the ActiveControl/m to false/invisible
+                    // Set the visibility property of the panel of the ActiveControl/m to false/invisible
                     m.Visible = false;
                 }
             }
         }
-        public bool GetVisilble()
+        public bool GetVisible()
         {
             return visible;
         }
 
-        public void Default()
-        {
-            ActiveControl.Default();
-        }
-        public void Refresh()
-        {
-            ActiveControl.Refresh();
-        }
-
-
         // TODO: replace dummy method
         public void NextControl()
         {
+            if (index == MedicalControls.Count - 1)
+                return;
             index++;
-            ActiveControl = MedicalControls[index];
             RefreshVisible();
         }
         // TODO: replace dummy method
         public void PreviousControl()
         {
+            if (index == 0)
+                return;
             index--;
-            ActiveControl = MedicalControls[index];
             RefreshVisible();
         }
     }
