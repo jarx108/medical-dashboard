@@ -61,7 +61,7 @@
             label1.Name = "label1";
             label1.Size = new Size(160, 23);
             label1.TabIndex = 0;
-            label1.Text = "Complete Name:";
+            label1.Text = "Detailed Name:";
             label1.TextAlign = ContentAlignment.MiddleRight;
             label1.Click += label1_Click;
             // 
@@ -72,7 +72,7 @@
             label2.Name = "label2";
             label2.Size = new Size(160, 23);
             label2.TabIndex = 1;
-            label2.Text = "General Name:";
+            label2.Text = "Vaccine Name:";
             label2.TextAlign = ContentAlignment.MiddleRight;
             // 
             // label3
@@ -187,7 +187,7 @@
             // 
             // rtxtNotes
             // 
-            rtxtNotes.Location = new Point(712, 79);
+            rtxtNotes.Location = new Point(712, 88);
             rtxtNotes.Name = "rtxtNotes";
             rtxtNotes.Size = new Size(464, 387);
             rtxtNotes.TabIndex = 13;

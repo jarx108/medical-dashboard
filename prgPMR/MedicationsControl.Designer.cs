@@ -39,14 +39,14 @@
             label1.Name = "label1";
             label1.Size = new Size(688, 86);
             label1.TabIndex = 4;
-            label1.Text = "Subform - Medications";
+            label1.Text = "Subform - Medication";
             // 
-            // Medications
+            // Medication
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(label1);
-            Name = "Medications";
+            Name = "Medication";
             Size = new Size(1200, 610);
             ResumeLayout(false);
             PerformLayout();

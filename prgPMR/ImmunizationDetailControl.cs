@@ -44,7 +44,7 @@ namespace prgPMR
 
         private void cboGeneralName_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnPDFFile_Click(object sender, EventArgs e)

@@ -10,7 +10,7 @@ namespace prgPMR
     {
         public Button[] Buttons;
         internal List<MedicalControl> MedicalControls { get; }
-        private int index = 0;
+        private int activeControl = 0;
         private bool visible = false;
 
         public ControlManager(MainForm.MedicalControlType type, Button[] b) 
@@ -25,36 +25,36 @@ namespace prgPMR
                 case MainForm.MedicalControlType.FamilyHistory:
                     MedicalControls.Add(new FamilyHistoryControl(this));
                     break;
-                case MainForm.MedicalControlType.Medications:
+                case MainForm.MedicalControlType.Medication:
                     MedicalControls.Add(new MedicationsControl(this));
                     break;
                 case MainForm.MedicalControlType.Immunization:
                     MedicalControls.AddRange(new ImmunizationControl(this), new ImmunizationDetailGridControl(this), new ImmunizationDetailControl(this));
                     break;
-                case MainForm.MedicalControlType.DoctorVisits:
+                case MainForm.MedicalControlType.DoctorVisit:
                     MedicalControls.Add(new DoctorVisitsControl(this));
                     break;
-                case MainForm.MedicalControlType.Tests:
+                case MainForm.MedicalControlType.Test:
                     MedicalControls.Add(new TestsControl(this));
                     break;
                 case MainForm.MedicalControlType.Bloodwork:
                     MedicalControls.Add(new BloodworkControl(this));
                     break;
-                case MainForm.MedicalControlType.Surgeries:
+                case MainForm.MedicalControlType.Surgery:
                     MedicalControls.Add(new SurgeriesControl(this));
                     break;
-                case MainForm.MedicalControlType.Hospitalizations:
+                case MainForm.MedicalControlType.Hospitalization:
                     MedicalControls.Add(new HospitalizationsControl(this));
                     break;
                 default:
                     throw new ArgumentException("Invalid Medical Control type");
             }
         }
-        public void ClickButton(int buttonNumber)
+        public void ButtonClicked(int buttonIndex)
         {
-            MedicalControls[index].ButtonActions[buttonNumber]();
+            MedicalControls[activeControl].ButtonActions[buttonIndex]();
         }
-        private void RefreshVisible()
+        public void RefreshVisibility()
         {
             SetVisible(visible);
         }
@@ -70,7 +70,7 @@ namespace prgPMR
             {
                 // Check if the the passed parameter value is set to visible or not visible and
                 // if "m" is the the same as the control that is currently active "ActiveControl"
-                if(isVisible && m == MedicalControls[index])
+                if(isVisible && m == MedicalControls[activeControl])
                 {
                     // Set the visibility property of the panel of the ActiveControl/m to true/visible
                     m.Visible = true;
@@ -78,7 +78,7 @@ namespace prgPMR
                     //Loop through all the buttons on the panel
                     for (int i = 0; i < Buttons.Length; i++)
                     {
-                        // Check if the index is greater than the number of buttons in the list or
+                        // Check if the activeControl is greater than the number of buttons in the list or
                         // the name of the button is null
                         if(i >= m.ButtonsText.Length || m.ButtonsText[i] == null)
                         {
@@ -109,18 +109,18 @@ namespace prgPMR
         // TODO: replace dummy method
         public void NextControl()
         {
-            if (index == MedicalControls.Count - 1)
+            if (activeControl == MedicalControls.Count - 1)
                 return;
-            index++;
-            RefreshVisible();
+            activeControl++;
+            RefreshVisibility();
         }
         // TODO: replace dummy method
         public void PreviousControl()
         {
-            if (index == 0)
+            if (activeControl == 0)
                 return;
-            index--;
-            RefreshVisible();
+            activeControl--;
+            RefreshVisibility();
         }
     }
 }
