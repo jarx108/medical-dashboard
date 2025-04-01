@@ -35,7 +35,7 @@
             ((System.ComponentModel.ISupportInitialize)dgvVacMain).BeginInit();
             SuspendLayout();
             // 
-            // dgvVacMain
+            // ImmuneMainDataGrid
             // 
             dgvVacMain.AllowUserToAddRows = false;
             dgvVacMain.AllowUserToDeleteRows = false;
@@ -59,7 +59,7 @@
             dgvVacMain.EnableHeadersVisualStyles = false;
             dgvVacMain.Location = new Point(20, 20);
             dgvVacMain.MultiSelect = false;
-            dgvVacMain.Name = "dgvVacMain";
+            dgvVacMain.Name = "ImmuneMainDataGrid";
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = SystemColors.ActiveCaption;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);

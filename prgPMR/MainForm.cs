@@ -2,20 +2,24 @@
 {
     public partial class MainForm : Form
     {
+        // Enumerated list of types of medical controls
         public enum MedicalControlType
         {
             Default,
             FamilyHistory,
-            Medications,
+            Medication,
             Immunization,
-            DoctorVisits,
-            Tests,
+            DoctorVisit,
+            Test,
             Bloodwork,
-            Surgeries,
-            Hospitalizations
+            Surgery,
+            Hospitalization
         }
 
+        // Declare a dictionary "ControManagerDict" consiting of a "MedicalControlType" and a "ControlManager"
         private readonly Dictionary<MedicalControlType, ControlManager> ControlManagerDict;
+
+        // Declare a dictionary "ControlButtonDict" consisting of a "MedicalControlType" and a single button
         private readonly Dictionary<MedicalControlType, Button> ControlButtonDict;
 
         // Declare user information
@@ -25,41 +29,66 @@
         public string strLastname = "";
         public string strFirstname = "";
         public DateTime dtDOB = DateTime.Today;
+
+        // Declare variable "ActiveMedicalControl" of type "MedicalControlType" and assign
+        // it to the type of "medicalControlType.Default"
         public MedicalControlType ActiveMedicalControl = MedicalControlType.Default;
 
         public MainForm()
         {
             InitializeComponent();
-            // Initialize all the buttons at the bottom at of the form
-            Button[] buttons = [button0, button1, button2, button3, button4, button5];
-            // Map MedicalControlType to there corrisponding buttons
-            ControlButtonDict = new Dictionary<MedicalControlType, Button> {
-                {MedicalControlType.FamilyHistory, familyHistoryButton },
-                {MedicalControlType.Medications, medicationButton },
-                {MedicalControlType.Immunization, immunizationButton },
-                {MedicalControlType.DoctorVisits, doctorVisitsButton },
-                {MedicalControlType.Tests, testsButton },
-                {MedicalControlType.Bloodwork, bloodworkButton },
-                {MedicalControlType.Surgeries, surgeriesButton },
-                {MedicalControlType.Hospitalizations, hospitalizationButton },
-            };
-            // Change the tag for the button bar buttons to match there index
-            for (int i = 0; i < buttons.Length; i++)
+
+            // Create and initialize "lowerbuttonBar" with the  Winform names for each button
+            // at the bottom of the form
+            Button[] lowerbuttonBar = [btnAction0, btnAction1, btnAction2, btnAction3, btnAction4, btnAction5, btnAction6];
+
+
+
+
+
+
+            // Create dictionary "ControlButtonDict" and map MedicalControlType to their corresponding
+            // Winform names for each button on the side menu panel
+            // Note: There is no line item for default since there is no menu selection for "default"
+            //        on the left panel
+            ControlButtonDict = new Dictionary<MedicalControlType, Button> 
             {
-                buttons[i].Tag = i;
+                {MedicalControlType.FamilyHistory, btnFamilyHistory },
+                {MedicalControlType.Medication, btnMedication },
+                {MedicalControlType.Immunization, btnImmunization },
+                {MedicalControlType.DoctorVisit, btnDoctorVisit },
+                {MedicalControlType.Test, btnMedicalTest },
+                {MedicalControlType.Bloodwork, btnBloodwork },
+                {MedicalControlType.Surgery, btnSurgery },
+                {MedicalControlType.Hospitalization, btnHospitalization },
+            };
+            
+            // For all the buttons in the array "lowerbuttonBar", change the tag for that button
+            // to be the current index value in the array
+            for (int i = 0; i < lowerbuttonBar.Length; i++)
+            {
+                lowerbuttonBar[i].Tag = i;
             }
-            // Change the tag for Control changing buttons to there given MedicalControlType
+
+            // Go through the entire "ControlButtonDict" dictionary and for each "MedicalControlType"
+            // change the tag for that button to the current "MedicalControlType" in the loop
             foreach ((MedicalControlType type, Button b) in ControlButtonDict)
             {
                 b.Tag = type;
             }
 
-            // Initialize all the User Control Forms
+            // Create a new "ControlManagerDict"
             ControlManagerDict = [];
 
+            // Go through the entire "MedicalControlType" enumeration and for each "MedicalControlType"
+            // assign the "MedicalControlType" to "type" and then execute the rest of the loop
             foreach (MedicalControlType type in Enum.GetValues<MedicalControlType>())
             {
-                ControlManager m = new(type, buttons);
+                // Create a new "ControlManager" called "m"
+                ControlManager m = new(type, lowerbuttonBar);
+
+                // Add to the dictionary "ControManagerDict", a new item with 
+                // "MedicalControlType" value of "type" and "ControlManager" instance of "m"
                 ControlManagerDict.Add(type, m);
 
                 //Go through every item in the dictionary and add the sub panel into the main pane
@@ -72,27 +101,18 @@
             // Set the panel to be the Default panel and display it
             DisplayMedicalControl(MedicalControlType.Default);
 
-            
 
-            // Assingn the user values from the database to the labels on the form
+            // Assign the user values from the database to the labels on the form
+            // *** Using dummy values until the database in is place ***
             lblLastName.Text = "Jangaon";
             lblFirstName.Text = "Estella";
             lblDOB.Text = "04/09/1963";
             lblUsername.Text = "ejangaon";
-
-
-            
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
-        }
-
-
-        private void Label3_Click(object sender, EventArgs e)
-        {
-
+            
         }
 
         private void LogoutButton_Click(object sender, EventArgs e)
@@ -100,16 +120,20 @@
             Application.Exit();
         }
 
-
         private void EditUserButton_Click(object sender, EventArgs e)
         {
 
             // Assign the user data from the database that was  put into 
             // user labels as the defaults for the texboxes 
-            txtLastName.Text = lblLastName.Text;
-            txtFirstName.Text = lblFirstName.Text;
-            txtDOB.Text = lblDOB.Text;
-            txtUsername.Text = lblUsername.Text;
+            txtLastName.Text = "Jangaon";
+            txtLastName.ReadOnly = true;
+            txtFirstName.Text = "Estella";
+            txtFirstName.ReadOnly = true;
+            txtDOB.Text = "04/09/1963";
+            txtDOB.ReadOnly = true;
+            txtUsername.Text = "ejangaon";
+            txtUsername.ReadOnly = true;
+
 
             // Turn the display into Edit mode
             DisplayUser(1);
@@ -128,10 +152,14 @@
 
 
             // Copy the edited textbox info to the labels
-            lblLastName.Text = txtLastName.Text;
-            lblFirstName.Text = txtFirstName.Text;
-            lblDOB.Text = txtDOB.Text;
-            lblUsername.Text = txtUsername.Text;
+            txtLastName.Text = "Jangaon";
+            txtLastName.ReadOnly = false;
+            txtFirstName.Text = "Estella";
+            txtFirstName.ReadOnly = false;
+            txtDOB.Text = "04/09/1963";
+            txtDOB.ReadOnly = false;
+            txtUsername.Text = "ejangaon";
+            txtUsername.ReadOnly = false;
 
             // Return the display to View mode with the new labels
             DisplayUser(0);
@@ -169,12 +197,12 @@
                 btnCancelUser.Visible = true;
                 btnSaveUser.Visible = true;
 
-                // Hide the Edit and Delete buttons
+                // Hide the Edit and Delete lowerbuttonBar
                 btnEditUser.Visible = false;
                 btnDeleteUser.Visible = false;
 
                 // Hide the Change Password button
-                bntChangePW.Visible = false;
+                btnChangePW.Visible = false;
 
                 // Hide the Menu Panel
                 pnlMenu.Visible = false;
@@ -199,12 +227,12 @@
                 btnCancelUser.Visible = false;
                 btnSaveUser.Visible = false;
 
-                // Make the Edit and Delete buttons visible
+                // Make the Edit and Delete lowerbuttonBar visible
                 btnEditUser.Visible = true;
                 btnDeleteUser.Visible = true;
 
                 //Make the Change Password button visible
-                bntChangePW.Visible = true;
+                btnChangePW.Visible = true;
 
                 // Make the Menu Panel visible
                 pnlMenu.Visible = true;
@@ -238,6 +266,7 @@
             {
                 return;
             }
+
             DisplayMedicalControl(m);
             ActiveMedicalControl = m;
         }
@@ -248,7 +277,7 @@
             {
                 return;
             }
-            ControlManagerDict[ActiveMedicalControl].ClickButton((int)b.Tag);
+            ControlManagerDict[ActiveMedicalControl].ButtonClicked((int)b.Tag);
         }
     }
 }

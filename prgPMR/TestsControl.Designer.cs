@@ -40,7 +40,7 @@
             label1.Name = "label1";
             label1.Size = new Size(479, 86);
             label1.TabIndex = 3;
-            label1.Text = "Subform - Tests";
+            label1.Text = "Subform - Test";
             // 
             // lblClass
             // 

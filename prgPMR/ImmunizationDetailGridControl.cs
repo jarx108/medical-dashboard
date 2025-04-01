@@ -31,7 +31,7 @@ namespace prgPMR
 
         private void dgvVacMain_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
         }
 
         private void InitializeGrid()

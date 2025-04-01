@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.DirectoryServices;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -13,15 +14,52 @@ namespace prgPMR
 {
     //This line of code is here to overcome the bug in Visual Studio with Form Designer 
     [TypeDescriptionProvider(typeof(AbstractControlDescriptionProvider<MedicalControl, UserControl>))]
-    public abstract class MedicalControl(ControlManager manager) : UserControl
+
+
+    public abstract class MedicalControl : UserControl
     {
 
+        // Enumerated list for the buttons
+        public enum lowerbuttonBarPresetGrouping
+        {
+            Initial,     // Add,                             Refresh
+            Select,      // Add, Edit, Delete, Cancel,       Refresh
+            MultiSelect, //            Delete, Cancel,       Refresh
+            Add,         //                    Cancel, Save, Refresh, Back
+            Edit         //            Delete, Cancel, Save, Refresh, Back
+        }
+
+        //  Create a private variable "_buttonText" that is an array of strings
         private string[] _buttonText = [];
+
+        // Create "ButtonsText" that is 
         public string[] ButtonsText { get { return _buttonText; } }
 
+        // Create a private instance of th evarible called "_buttonActions" that is an array of Action delegates
+        // An Action delegate is a method with no parameters and not return value
         private Action[] _buttonActions = [];
+
         public Action[] ButtonActions { get { return _buttonActions; } }
-        internal ControlManager Manager { get; } = manager;
+        internal ControlManager Manager { get; }
+
+        public Dictionary<lowerbuttonBarPresetGrouping, string[]> lowerbuttonBarPresetTextsDict;
+
+
+        public MedicalControl(ControlManager manager)
+        {
+            Manager = manager;
+
+            // Define dictionary
+            lowerbuttonBarPresetTextsDict = new Dictionary<lowerbuttonBarPresetGrouping, string[]>
+            {
+                {lowerbuttonBarPresetGrouping.Initial,["Add", null, null, null, null, "Refresh", null] },
+                {lowerbuttonBarPresetGrouping.Select,["Add", "Edit", "Delete", "Cancel", null, "Refresh", null] },
+                {lowerbuttonBarPresetGrouping.MultiSelect,[null, null, "Delete", "Cancel", null, "Refresh", null] },
+                {lowerbuttonBarPresetGrouping.Add,[null, null, null, "Cancel", "Save", "Refresh", null] },
+                {lowerbuttonBarPresetGrouping.Edit,[null, null, "Delete", "Cancel", "Save", "Refresh", "Back"] },
+            };
+
+        }
 
         protected void SetButtons(string[] text, Action[] actions)
         {
@@ -31,6 +69,7 @@ namespace prgPMR
             Debug.Assert(_buttonText.Length == _buttonActions.Length);
             for(int i = 0; i < text.Length; i++)
                 Debug.Assert((_buttonText[i] == null) == (_buttonActions[i] == null));
+            Manager.RefreshVisibility();
         }
     }
 }
