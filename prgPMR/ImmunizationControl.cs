@@ -26,6 +26,10 @@ namespace prgPMR
 
         public Dictionary<lowerbuttonBarPresetGrouping, Action[]> lowerbuttonBarPresetActionDict;
 
+        // boolean flag to indicate that user is adding a record versus editing
+        // true = Add, false = Edit
+        public bool isDetailPanelAdd = true;
+
         
 
         public ImmunizationControl(ControlManager m) : base(m)
@@ -38,11 +42,11 @@ namespace prgPMR
 
             lowerbuttonBarPresetActionDict = new Dictionary<lowerbuttonBarPresetGrouping, Action[]>
             {
-                {lowerbuttonBarPresetGrouping.Initial,[Add, null, null, null, null, Refresh, null] },
-                {lowerbuttonBarPresetGrouping.Select,[Add, Edit, Delete, Cancel, null, Refresh, null] },
-                {lowerbuttonBarPresetGrouping.MultiSelect,[null, null, Delete, Cancel, null, Refresh, null] },
-                {lowerbuttonBarPresetGrouping.Add,[null, null, null, Cancel, Save, Refresh, null] },
-                {lowerbuttonBarPresetGrouping.Edit,[null, null, Delete, Cancel, Save, Refresh, Back] },
+                {lowerbuttonBarPresetGrouping.Initial,[Add, null, null, Reset, null, null] },
+                {lowerbuttonBarPresetGrouping.Select,[Add, Edit, Delete, Reset, null, null] },
+                {lowerbuttonBarPresetGrouping.MultiSelect,[null, null, Delete, Reset, null, null] },
+                {lowerbuttonBarPresetGrouping.Add,[null, null, null, Reset, Save, Cancel] },
+                {lowerbuttonBarPresetGrouping.Edit,[null, null, Delete, Reset, Save, Cancel] },
             };
 
             InitializeGrid();
@@ -51,13 +55,16 @@ namespace prgPMR
 
         public void Add()
         {
-            SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Add], lowerbuttonBarPresetActionDict[lowerbuttonBarPresetGrouping.Add]);
-            MessageBox.Show("Add Function Triggered", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            isDetailPanelAdd = true;
+            Manager.NextControl();
+                MessageBox.Show("Add Function Triggered", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public void Edit()
         {
             SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Edit], lowerbuttonBarPresetActionDict[lowerbuttonBarPresetGrouping.Edit]);
+            isDetailPanelAdd = false;
+            Manager.NextControl();
             MessageBox.Show("Edit Function Triggered", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -66,6 +73,15 @@ namespace prgPMR
             SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Initial], lowerbuttonBarPresetActionDict[lowerbuttonBarPresetGrouping.Initial]);
             MessageBox.Show("Delete Function Triggered", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        public void Reset() 
+        {
+            // Reset all the buttons and refresh the data in the grid
+            ImmunizationDataGrid.CurrentCell = null;
+            SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Initial], lowerbuttonBarPresetActionDict[lowerbuttonBarPresetGrouping.Initial]);
+            MessageBox.Show("Refresh Function Triggered", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
 
         public void Cancel()
         {
@@ -80,19 +96,6 @@ namespace prgPMR
             MessageBox.Show("Save Function Triggered", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        public void Refresh()
-        {
-            // Reset all the buttons and refresh the data in the grid
-            ImmunizationDataGrid.CurrentCell = null;
-            SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Initial], lowerbuttonBarPresetActionDict[lowerbuttonBarPresetGrouping.Initial]);
-            MessageBox.Show("Refresh Function Triggered", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        public void Back()
-        {
-            SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Initial], lowerbuttonBarPresetActionDict[lowerbuttonBarPresetGrouping.Initial]);
-            Manager.NextControl();
-        }
         private void InitializeGrid()
         {
             ImmunizationDataGrid.CurrentCell = null;
@@ -112,7 +115,7 @@ namespace prgPMR
             dt.Columns.Add("DateDose4", typeof(DateOnly));
             dt.Columns.Add("DateDose5", typeof(DateOnly));
 
-            // fill the data table with dummy data
+            // fill the data table with dummy data, replace with appropriate code once database is implemented
             dt.Rows.Add("Tetanus, Diptheria, Pertussis", "Tdap", new DateOnly(2005, 11, 22), 1, new DateOnly(2005, 11, 22), DBNull.Value, DBNull.Value, DBNull.Value, DBNull.Value);
             dt.Rows.Add("Influenza IIV3 PF", "Influenza", new DateOnly(2024, 8, 27), 5, new DateOnly(2010, 10, 30), new DateOnly(2008, 12, 10), new DateOnly(2007, 12, 6), new DateOnly(2005, 11, 22), new DateOnly(2002, 9, 30));
             dt.Rows.Add("Influenza IIV4", "Influenza", new DateOnly(2023, 10, 4), 2, new DateOnly(2016, 8, 18), new DateOnly(2016, 1, 8), DBNull.Value, DBNull.Value, DBNull.Value);

@@ -33,24 +33,23 @@
             label3 = new Label();
             pnlHeading = new Panel();
             label4 = new Label();
-            label5 = new Label();
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
             label10 = new Label();
             btnPDFFile = new Button();
-            btnImage = new Button();
+            btnImageFile = new Button();
             rtxtNotes = new RichTextBox();
-            txtCompleteName = new TextBox();
-            cboGeneralName = new ComboBox();
+            txtDetailedName = new TextBox();
+            cboVaccineName = new ComboBox();
             txtRXNum = new TextBox();
             txtNDCNum = new TextBox();
             txtLotNum = new TextBox();
-            dtpDateGiven = new DateTimePicker();
-            cboGivenBy = new ComboBox();
+            dtpDoseDate = new DateTimePicker();
             cboManufacturer = new ComboBox();
-            lblClass = new Label();
+            label11 = new Label();
+            cboFacility = new ComboBox();
             pnlHeading.SuspendLayout();
             SuspendLayout();
             // 
@@ -63,7 +62,6 @@
             label1.TabIndex = 0;
             label1.Text = "Detailed Name:";
             label1.TextAlign = ContentAlignment.MiddleRight;
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -103,18 +101,8 @@
             label4.Name = "label4";
             label4.Size = new Size(160, 23);
             label4.TabIndex = 4;
-            label4.Text = "Date Given:";
+            label4.Text = "Vaccination Date:";
             label4.TextAlign = ContentAlignment.MiddleRight;
-            // 
-            // label5
-            // 
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(3, 175);
-            label5.Name = "label5";
-            label5.Size = new Size(160, 23);
-            label5.TabIndex = 5;
-            label5.Text = "Given By:";
-            label5.TextAlign = ContentAlignment.MiddleRight;
             // 
             // label6
             // 
@@ -168,7 +156,7 @@
             // 
             // btnPDFFile
             // 
-            btnPDFFile.Location = new Point(712, 481);
+            btnPDFFile.Location = new Point(843, 493);
             btnPDFFile.Name = "btnPDFFile";
             btnPDFFile.Size = new Size(120, 40);
             btnPDFFile.TabIndex = 11;
@@ -176,38 +164,38 @@
             btnPDFFile.UseVisualStyleBackColor = true;
             btnPDFFile.Click += btnPDFFile_Click;
             // 
-            // btnImage
+            // btnImageFile
             // 
-            btnImage.Location = new Point(858, 481);
-            btnImage.Name = "btnImage";
-            btnImage.Size = new Size(120, 40);
-            btnImage.TabIndex = 12;
-            btnImage.Text = "Attach Image File";
-            btnImage.UseVisualStyleBackColor = true;
+            btnImageFile.Location = new Point(969, 493);
+            btnImageFile.Name = "btnImageFile";
+            btnImageFile.Size = new Size(120, 40);
+            btnImageFile.TabIndex = 12;
+            btnImageFile.Text = "Attach Image File";
+            btnImageFile.UseVisualStyleBackColor = true;
+            btnImageFile.Click += btnImageFile_Click;
             // 
             // rtxtNotes
             // 
             rtxtNotes.Location = new Point(712, 88);
             rtxtNotes.Name = "rtxtNotes";
-            rtxtNotes.Size = new Size(464, 387);
+            rtxtNotes.Size = new Size(465, 390);
             rtxtNotes.TabIndex = 13;
             rtxtNotes.Text = "";
             // 
-            // txtCompleteName
+            // txtDetailedName
             // 
-            txtCompleteName.Location = new Point(169, 95);
-            txtCompleteName.Name = "txtCompleteName";
-            txtCompleteName.Size = new Size(475, 23);
-            txtCompleteName.TabIndex = 14;
+            txtDetailedName.Location = new Point(169, 95);
+            txtDetailedName.Name = "txtDetailedName";
+            txtDetailedName.Size = new Size(475, 23);
+            txtDetailedName.TabIndex = 14;
             // 
-            // cboGeneralName
+            // cboVaccineName
             // 
-            cboGeneralName.FormattingEnabled = true;
-            cboGeneralName.Location = new Point(169, 55);
-            cboGeneralName.Name = "cboGeneralName";
-            cboGeneralName.Size = new Size(475, 23);
-            cboGeneralName.TabIndex = 15;
-            cboGeneralName.SelectedIndexChanged += cboGeneralName_SelectedIndexChanged;
+            cboVaccineName.FormattingEnabled = true;
+            cboVaccineName.Location = new Point(169, 55);
+            cboVaccineName.Name = "cboVaccineName";
+            cboVaccineName.Size = new Size(475, 23);
+            cboVaccineName.TabIndex = 15;
             // 
             // txtRXNum
             // 
@@ -230,21 +218,13 @@
             txtLotNum.Size = new Size(300, 23);
             txtLotNum.TabIndex = 19;
             // 
-            // dtpDateGiven
+            // dtpDoseDate
             // 
-            dtpDateGiven.Format = DateTimePickerFormat.Short;
-            dtpDateGiven.Location = new Point(169, 135);
-            dtpDateGiven.Name = "dtpDateGiven";
-            dtpDateGiven.Size = new Size(100, 23);
-            dtpDateGiven.TabIndex = 21;
-            // 
-            // cboGivenBy
-            // 
-            cboGivenBy.FormattingEnabled = true;
-            cboGivenBy.Location = new Point(169, 175);
-            cboGivenBy.Name = "cboGivenBy";
-            cboGivenBy.Size = new Size(300, 23);
-            cboGivenBy.TabIndex = 22;
+            dtpDoseDate.Format = DateTimePickerFormat.Short;
+            dtpDoseDate.Location = new Point(169, 135);
+            dtpDoseDate.Name = "dtpDoseDate";
+            dtpDoseDate.Size = new Size(100, 23);
+            dtpDoseDate.TabIndex = 21;
             // 
             // cboManufacturer
             // 
@@ -254,37 +234,45 @@
             cboManufacturer.Size = new Size(300, 23);
             cboManufacturer.TabIndex = 23;
             // 
-            // lblClass
+            // label11
             // 
-            lblClass.AutoSize = true;
-            lblClass.Location = new Point(1076, 493);
-            lblClass.Name = "lblClass";
-            lblClass.Size = new Size(44, 15);
-            lblClass.TabIndex = 24;
-            lblClass.Text = "label11";
+            label11.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label11.Location = new Point(3, 175);
+            label11.Name = "label11";
+            label11.Size = new Size(160, 23);
+            label11.TabIndex = 25;
+            label11.Text = "Facility:";
+            label11.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // cboFacility
+            // 
+            cboFacility.FormattingEnabled = true;
+            cboFacility.Location = new Point(169, 175);
+            cboFacility.Name = "cboFacility";
+            cboFacility.Size = new Size(300, 23);
+            cboFacility.TabIndex = 26;
             // 
             // ImmunizationDetailControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(lblClass);
+            Controls.Add(cboFacility);
+            Controls.Add(label11);
             Controls.Add(cboManufacturer);
-            Controls.Add(cboGivenBy);
-            Controls.Add(dtpDateGiven);
+            Controls.Add(dtpDoseDate);
             Controls.Add(txtLotNum);
             Controls.Add(txtNDCNum);
             Controls.Add(txtRXNum);
-            Controls.Add(cboGeneralName);
-            Controls.Add(txtCompleteName);
+            Controls.Add(cboVaccineName);
+            Controls.Add(txtDetailedName);
             Controls.Add(rtxtNotes);
-            Controls.Add(btnImage);
+            Controls.Add(btnImageFile);
             Controls.Add(btnPDFFile);
             Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
-            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(pnlHeading);
             Controls.Add(label2);
@@ -312,16 +300,17 @@
         private Label label9;
         private Label label10;
         private Button btnPDFFile;
-        private Button btnImage;
+        private Button btnImageFile;
         private RichTextBox rtxtNotes;
-        private TextBox txtCompleteName;
-        private ComboBox cboGeneralName;
+        private TextBox txtDetailedName;
+        private ComboBox cboVaccineName;
         private TextBox txtRXNum;
         private TextBox txtNDCNum;
         private TextBox txtLotNum;
-        private DateTimePicker dtpDateGiven;
+        private DateTimePicker dtpDoseDate;
         private ComboBox cboGivenBy;
         private ComboBox cboManufacturer;
-        private Label lblClass;
+        private Label label11;
+        private ComboBox cboFacility;
     }
 }

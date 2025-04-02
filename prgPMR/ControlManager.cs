@@ -29,7 +29,7 @@ namespace prgPMR
                     MedicalControls.Add(new MedicationsControl(this));
                     break;
                 case MainForm.MedicalControlType.Immunization:
-                    MedicalControls.AddRange(new ImmunizationControl(this), new ImmunizationDetailGridControl(this), new ImmunizationDetailControl(this));
+                    MedicalControls.AddRange(new ImmunizationControl(this), new ImmunizationDetailControl(this));
                     break;
                 case MainForm.MedicalControlType.DoctorVisit:
                     MedicalControls.Add(new DoctorVisitsControl(this));
@@ -74,6 +74,7 @@ namespace prgPMR
                 {
                     // Set the visibility property of the panel of the ActiveControl/m to true/visible
                     m.Visible = true;
+                    m.PanelLoad();
 
                     //Loop through all the buttons on the panel
                     for (int i = 0; i < Buttons.Length; i++)

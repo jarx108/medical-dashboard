@@ -60,9 +60,9 @@
             // lblHospitalPhone
             // 
             lblHospitalPhone.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblHospitalPhone.Location = new Point(293, 437);
+            lblHospitalPhone.Location = new Point(256, 328);
             lblHospitalPhone.Name = "lblHospitalPhone";
-            lblHospitalPhone.Size = new Size(457, 31);
+            lblHospitalPhone.Size = new Size(400, 23);
             lblHospitalPhone.TabIndex = 77;
             lblHospitalPhone.Text = "unknown";
             lblHospitalPhone.TextAlign = ContentAlignment.MiddleLeft;
@@ -70,9 +70,9 @@
             // label16
             // 
             label16.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label16.Location = new Point(195, 437);
+            label16.Location = new Point(171, 328);
             label16.Name = "label16";
-            label16.Size = new Size(103, 31);
+            label16.Size = new Size(90, 23);
             label16.TabIndex = 76;
             label16.Text = "Phone:";
             label16.TextAlign = ContentAlignment.MiddleRight;
@@ -80,9 +80,9 @@
             // lblHospitalLocation
             // 
             lblHospitalLocation.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblHospitalLocation.Location = new Point(293, 407);
+            lblHospitalLocation.Location = new Point(256, 305);
             lblHospitalLocation.Name = "lblHospitalLocation";
-            lblHospitalLocation.Size = new Size(457, 31);
+            lblHospitalLocation.Size = new Size(400, 23);
             lblHospitalLocation.TabIndex = 75;
             lblHospitalLocation.Text = "unknown";
             lblHospitalLocation.TextAlign = ContentAlignment.MiddleLeft;
@@ -90,9 +90,9 @@
             // label18
             // 
             label18.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label18.Location = new Point(195, 407);
+            label18.Location = new Point(171, 305);
             label18.Name = "label18";
-            label18.Size = new Size(103, 31);
+            label18.Size = new Size(90, 23);
             label18.TabIndex = 74;
             label18.Text = "Location:";
             label18.TextAlign = ContentAlignment.MiddleRight;
@@ -100,9 +100,9 @@
             // lblDoctorPhone
             // 
             lblDoctorPhone.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblDoctorPhone.Location = new Point(293, 331);
+            lblDoctorPhone.Location = new Point(256, 248);
             lblDoctorPhone.Name = "lblDoctorPhone";
-            lblDoctorPhone.Size = new Size(457, 31);
+            lblDoctorPhone.Size = new Size(400, 23);
             lblDoctorPhone.TabIndex = 73;
             lblDoctorPhone.Text = "unknown";
             lblDoctorPhone.TextAlign = ContentAlignment.MiddleLeft;
@@ -110,9 +110,9 @@
             // lblLocationLocation
             // 
             lblLocationLocation.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblLocationLocation.Location = new Point(293, 300);
+            lblLocationLocation.Location = new Point(256, 225);
             lblLocationLocation.Name = "lblLocationLocation";
-            lblLocationLocation.Size = new Size(457, 31);
+            lblLocationLocation.Size = new Size(400, 23);
             lblLocationLocation.TabIndex = 72;
             lblLocationLocation.Text = "unknown";
             lblLocationLocation.TextAlign = ContentAlignment.MiddleLeft;
@@ -120,9 +120,9 @@
             // label13
             // 
             label13.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label13.Location = new Point(195, 331);
+            label13.Location = new Point(171, 248);
             label13.Name = "label13";
-            label13.Size = new Size(103, 31);
+            label13.Size = new Size(90, 23);
             label13.TabIndex = 71;
             label13.Text = "Phone:";
             label13.TextAlign = ContentAlignment.MiddleRight;
@@ -130,9 +130,9 @@
             // label12
             // 
             label12.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label12.Location = new Point(195, 300);
+            label12.Location = new Point(171, 225);
             label12.Name = "label12";
-            label12.Size = new Size(103, 31);
+            label12.Size = new Size(90, 23);
             label12.TabIndex = 70;
             label12.Text = "Location:";
             label12.TextAlign = ContentAlignment.MiddleRight;
@@ -140,9 +140,9 @@
             // lblDoctorSpeciality
             // 
             lblDoctorSpeciality.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblDoctorSpeciality.Location = new Point(293, 269);
+            lblDoctorSpeciality.Location = new Point(256, 202);
             lblDoctorSpeciality.Name = "lblDoctorSpeciality";
-            lblDoctorSpeciality.Size = new Size(457, 31);
+            lblDoctorSpeciality.Size = new Size(400, 23);
             lblDoctorSpeciality.TabIndex = 69;
             lblDoctorSpeciality.Text = "unknown";
             lblDoctorSpeciality.TextAlign = ContentAlignment.MiddleLeft;
@@ -150,64 +150,57 @@
             // cboHospital
             // 
             cboHospital.FormattingEnabled = true;
-            cboHospital.Location = new Point(195, 377);
-            cboHospital.Margin = new Padding(3, 4, 3, 4);
+            cboHospital.Location = new Point(171, 283);
             cboHospital.Name = "cboHospital";
-            cboHospital.Size = new Size(342, 28);
+            cboHospital.Size = new Size(300, 23);
             cboHospital.TabIndex = 68;
             // 
             // cboDoctor
             // 
             cboDoctor.FormattingEnabled = true;
-            cboDoctor.Location = new Point(193, 235);
-            cboDoctor.Margin = new Padding(3, 4, 3, 4);
+            cboDoctor.Location = new Point(169, 176);
             cboDoctor.Name = "cboDoctor";
-            cboDoctor.Size = new Size(342, 28);
+            cboDoctor.Size = new Size(300, 23);
             cboDoctor.TabIndex = 67;
             // 
             // dtpAdmissionDate
             // 
             dtpAdmissionDate.Format = DateTimePickerFormat.Short;
-            dtpAdmissionDate.Location = new Point(193, 73);
-            dtpAdmissionDate.Margin = new Padding(3, 4, 3, 4);
+            dtpAdmissionDate.Location = new Point(169, 55);
             dtpAdmissionDate.Name = "dtpAdmissionDate";
-            dtpAdmissionDate.Size = new Size(114, 27);
+            dtpAdmissionDate.Size = new Size(100, 23);
             dtpAdmissionDate.TabIndex = 66;
             // 
             // cboMedicalCondition
             // 
             cboMedicalCondition.FormattingEnabled = true;
-            cboMedicalCondition.Location = new Point(193, 180);
-            cboMedicalCondition.Margin = new Padding(3, 4, 3, 4);
+            cboMedicalCondition.Location = new Point(169, 135);
             cboMedicalCondition.Name = "cboMedicalCondition";
-            cboMedicalCondition.Size = new Size(542, 28);
+            cboMedicalCondition.Size = new Size(475, 23);
             cboMedicalCondition.TabIndex = 65;
             // 
             // rtxtNotes
             // 
-            rtxtNotes.Location = new Point(814, 133);
-            rtxtNotes.Margin = new Padding(3, 4, 3, 4);
+            rtxtNotes.Location = new Point(712, 100);
             rtxtNotes.Name = "rtxtNotes";
-            rtxtNotes.Size = new Size(530, 515);
+            rtxtNotes.Size = new Size(464, 387);
             rtxtNotes.TabIndex = 64;
             rtxtNotes.Text = "";
             // 
             // btnImage
             // 
-            btnImage.Location = new Point(981, 669);
-            btnImage.Margin = new Padding(3, 4, 3, 4);
+            btnImage.Location = new Point(858, 502);
             btnImage.Name = "btnImage";
-            btnImage.Size = new Size(137, 53);
+            btnImage.Size = new Size(120, 40);
             btnImage.TabIndex = 63;
             btnImage.Text = "Attach Image File";
             btnImage.UseVisualStyleBackColor = true;
             // 
             // btnPDFFile
             // 
-            btnPDFFile.Location = new Point(814, 669);
-            btnPDFFile.Margin = new Padding(3, 4, 3, 4);
+            btnPDFFile.Location = new Point(712, 502);
             btnPDFFile.Name = "btnPDFFile";
-            btnPDFFile.Size = new Size(137, 53);
+            btnPDFFile.Size = new Size(120, 40);
             btnPDFFile.TabIndex = 62;
             btnPDFFile.Text = "Attach PDF File";
             btnPDFFile.UseVisualStyleBackColor = true;
@@ -216,18 +209,18 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.Location = new Point(814, 101);
+            label10.Location = new Point(712, 76);
             label10.Name = "label10";
-            label10.Size = new Size(68, 28);
+            label10.Size = new Size(54, 21);
             label10.TabIndex = 61;
             label10.Text = "Notes:";
             // 
             // label6
             // 
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(3, 373);
+            label6.Location = new Point(3, 280);
             label6.Name = "label6";
-            label6.Size = new Size(183, 31);
+            label6.Size = new Size(160, 23);
             label6.TabIndex = 60;
             label6.Text = "Hospital:";
             label6.TextAlign = ContentAlignment.MiddleRight;
@@ -235,9 +228,9 @@
             // label5
             // 
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(195, 269);
+            label5.Location = new Point(171, 202);
             label5.Name = "label5";
-            label5.Size = new Size(103, 31);
+            label5.Size = new Size(90, 23);
             label5.TabIndex = 59;
             label5.Text = "Specialty:";
             label5.TextAlign = ContentAlignment.MiddleRight;
@@ -245,9 +238,9 @@
             // label4
             // 
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(3, 235);
+            label4.Location = new Point(3, 176);
             label4.Name = "label4";
-            label4.Size = new Size(183, 31);
+            label4.Size = new Size(160, 23);
             label4.TabIndex = 58;
             label4.Text = "Doctor:";
             label4.TextAlign = ContentAlignment.MiddleRight;
@@ -258,9 +251,8 @@
             pnlHeading.Controls.Add(label3);
             pnlHeading.Dock = DockStyle.Top;
             pnlHeading.Location = new Point(0, 0);
-            pnlHeading.Margin = new Padding(3, 4, 3, 4);
             pnlHeading.Name = "pnlHeading";
-            pnlHeading.Size = new Size(1371, 33);
+            pnlHeading.Size = new Size(1200, 25);
             pnlHeading.TabIndex = 57;
             // 
             // label3
@@ -270,16 +262,16 @@
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(0, 0);
             label3.Name = "label3";
-            label3.Size = new Size(355, 28);
+            label3.Size = new Size(287, 21);
             label3.TabIndex = 2;
             label3.Text = "Detailed Hosptalization Information";
             // 
             // label2
             // 
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(3, 73);
+            label2.Location = new Point(3, 55);
             label2.Name = "label2";
-            label2.Size = new Size(183, 31);
+            label2.Size = new Size(160, 23);
             label2.TabIndex = 56;
             label2.Text = "Admission Date:";
             label2.TextAlign = ContentAlignment.MiddleRight;
@@ -287,9 +279,9 @@
             // label1
             // 
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(3, 180);
+            label1.Location = new Point(3, 135);
             label1.Name = "label1";
-            label1.Size = new Size(183, 31);
+            label1.Size = new Size(160, 23);
             label1.TabIndex = 55;
             label1.Text = "Medical Condition:";
             label1.TextAlign = ContentAlignment.MiddleRight;
@@ -297,25 +289,24 @@
             // dtpDischargeDate
             // 
             dtpDischargeDate.Format = DateTimePickerFormat.Short;
-            dtpDischargeDate.Location = new Point(193, 127);
-            dtpDischargeDate.Margin = new Padding(3, 4, 3, 4);
+            dtpDischargeDate.Location = new Point(169, 95);
             dtpDischargeDate.Name = "dtpDischargeDate";
-            dtpDischargeDate.Size = new Size(114, 27);
+            dtpDischargeDate.Size = new Size(100, 23);
             dtpDischargeDate.TabIndex = 79;
             // 
             // label7
             // 
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(3, 127);
+            label7.Location = new Point(3, 95);
             label7.Name = "label7";
-            label7.Size = new Size(183, 31);
+            label7.Size = new Size(160, 23);
             label7.TabIndex = 78;
             label7.Text = "Date of Discharge:";
             label7.TextAlign = ContentAlignment.MiddleRight;
             // 
             // HospitalizationsDetailControl
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(dtpDischargeDate);
             Controls.Add(label7);
@@ -342,9 +333,8 @@
             Controls.Add(pnlHeading);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "HospitalizationsDetailControl";
-            Size = new Size(1371, 731);
+            Size = new Size(1200, 548);
             pnlHeading.ResumeLayout(false);
             pnlHeading.PerformLayout();
             ResumeLayout(false);
