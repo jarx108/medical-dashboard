@@ -22,11 +22,11 @@ namespace prgPMR
         // Enumerated list for the buttons
         public enum lowerbuttonBarPresetGrouping
         {
-            Initial,     // Add,                             Refresh
-            Select,      // Add, Edit, Delete, Cancel,       Refresh
-            MultiSelect, //            Delete, Cancel,       Refresh
-            Add,         //                    Cancel, Save, Refresh, Back
-            Edit         //            Delete, Cancel, Save, Refresh, Back
+            Initial,     // Add,               Reset
+            Select,      // Add, Edit, Delete, Reset
+            MultiSelect, //            Delete, Reset
+            Add,         //                    Reset, Save, Cancel
+            Edit         //            Delete, Reset, Save, Cancel
         }
 
         //  Create a private variable "_buttonText" that is an array of strings
@@ -52,11 +52,11 @@ namespace prgPMR
             // Define dictionary
             lowerbuttonBarPresetTextsDict = new Dictionary<lowerbuttonBarPresetGrouping, string[]>
             {
-                {lowerbuttonBarPresetGrouping.Initial,["Add", null, null, null, null, "Refresh", null] },
-                {lowerbuttonBarPresetGrouping.Select,["Add", "Edit", "Delete", "Cancel", null, "Refresh", null] },
-                {lowerbuttonBarPresetGrouping.MultiSelect,[null, null, "Delete", "Cancel", null, "Refresh", null] },
-                {lowerbuttonBarPresetGrouping.Add,[null, null, null, "Cancel", "Save", "Refresh", null] },
-                {lowerbuttonBarPresetGrouping.Edit,[null, null, "Delete", "Cancel", "Save", "Refresh", "Back"] },
+                {lowerbuttonBarPresetGrouping.Initial,["Add", null, null, "Reset", null, null] },
+                {lowerbuttonBarPresetGrouping.Select,["Add", "Edit", "Delete", "Reset", null, null] },
+                {lowerbuttonBarPresetGrouping.MultiSelect,[null, null, "Delete", "Reset", null, null] },
+                {lowerbuttonBarPresetGrouping.Add,[null, null, null, "Reset", "Save", "Cancel"] },
+                {lowerbuttonBarPresetGrouping.Edit,[null, null, "Delete", "Reset", "Save", "Cancel"] },
             };
 
         }
@@ -69,7 +69,12 @@ namespace prgPMR
             Debug.Assert(_buttonText.Length == _buttonActions.Length);
             for(int i = 0; i < text.Length; i++)
                 Debug.Assert((_buttonText[i] == null) == (_buttonActions[i] == null));
-            Manager.RefreshVisibility();
+            // Manager.RefreshVisibility();
+        }
+
+        public virtual void PanelLoad()
+        {
+
         }
     }
 }

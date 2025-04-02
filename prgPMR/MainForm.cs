@@ -40,7 +40,7 @@
 
             // Create and initialize "lowerbuttonBar" with the  Winform names for each button
             // at the bottom of the form
-            Button[] lowerbuttonBar = [btnAction0, btnAction1, btnAction2, btnAction3, btnAction4, btnAction5, btnAction6];
+            Button[] lowerbuttonBar = [btnAction0, btnAction1, btnAction2, btnAction3, btnAction4, btnAction5];
 
 
 

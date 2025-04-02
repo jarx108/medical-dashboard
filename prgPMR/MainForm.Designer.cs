@@ -60,13 +60,12 @@
             label9 = new Label();
             pnlMain = new Panel();
             pnlMainButtons = new Panel();
-            btnAction6 = new Button();
+            btnAction5 = new Button();
             btnAction4 = new Button();
             btnAction3 = new Button();
             btnAction2 = new Button();
             btnAction1 = new Button();
             btnAction0 = new Button();
-            btnAction5 = new Button();
             pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             pnlUser.SuspendLayout();
@@ -475,7 +474,6 @@
             // 
             pnlMainButtons.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             pnlMainButtons.Controls.Add(btnAction5);
-            pnlMainButtons.Controls.Add(btnAction6);
             pnlMainButtons.Controls.Add(btnAction4);
             pnlMainButtons.Controls.Add(btnAction3);
             pnlMainButtons.Controls.Add(btnAction2);
@@ -486,29 +484,28 @@
             pnlMainButtons.Size = new Size(1200, 56);
             pnlMainButtons.TabIndex = 4;
             // 
-            // btnAction6
+            // btnAction5
             // 
-            btnAction6.BackColor = Color.Navy;
-            btnAction6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAction6.ForeColor = Color.White;
-            btnAction6.Location = new Point(1115, 14);
-            btnAction6.Name = "btnAction6";
-            btnAction6.Size = new Size(73, 30);
-            btnAction6.TabIndex = 17;
-            btnAction6.Text = "Back";
-            btnAction6.UseVisualStyleBackColor = false;
-            btnAction6.Click += ButtonBar_Click;
+            btnAction5.BackColor = Color.Navy;
+            btnAction5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAction5.ForeColor = Color.White;
+            btnAction5.Location = new Point(1105, 14);
+            btnAction5.Name = "btnAction5";
+            btnAction5.Size = new Size(73, 30);
+            btnAction5.TabIndex = 18;
+            btnAction5.Text = "Cancel";
+            btnAction5.UseVisualStyleBackColor = false;
             // 
             // btnAction4
             // 
             btnAction4.BackColor = Color.Navy;
             btnAction4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAction4.ForeColor = Color.White;
-            btnAction4.Location = new Point(564, 14);
+            btnAction4.Location = new Point(1026, 14);
             btnAction4.Name = "btnAction4";
             btnAction4.Size = new Size(73, 30);
             btnAction4.TabIndex = 16;
-            btnAction4.Text = "Cancel";
+            btnAction4.Text = "Save";
             btnAction4.UseVisualStyleBackColor = false;
             btnAction4.Click += ButtonBar_Click;
             // 
@@ -517,11 +514,11 @@
             btnAction3.BackColor = Color.Navy;
             btnAction3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAction3.ForeColor = Color.White;
-            btnAction3.Location = new Point(480, 14);
+            btnAction3.Location = new Point(573, 14);
             btnAction3.Name = "btnAction3";
             btnAction3.Size = new Size(73, 30);
             btnAction3.TabIndex = 15;
-            btnAction3.Text = "Save";
+            btnAction3.Text = "Reset";
             btnAction3.UseVisualStyleBackColor = false;
             btnAction3.Click += ButtonBar_Click;
             // 
@@ -563,18 +560,6 @@
             btnAction0.Text = "Add";
             btnAction0.UseVisualStyleBackColor = false;
             btnAction0.Click += ButtonBar_Click;
-            // 
-            // btnAction5
-            // 
-            btnAction5.BackColor = Color.Navy;
-            btnAction5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAction5.ForeColor = Color.White;
-            btnAction5.Location = new Point(1030, 15);
-            btnAction5.Name = "btnAction5";
-            btnAction5.Size = new Size(73, 30);
-            btnAction5.TabIndex = 18;
-            btnAction5.Text = "Refresh";
-            btnAction5.UseVisualStyleBackColor = false;
             // 
             // MainForm
             // 
@@ -635,7 +620,6 @@
         public Button btnAction2;
         public Button btnAction1;
         public Button btnAction4;
-        public Button btnAction6;
         public Button btnAction5;
     }
 }
