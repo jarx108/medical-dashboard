@@ -101,7 +101,7 @@
             btnHospitalization.FlatStyle = FlatStyle.Flat;
             btnHospitalization.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnHospitalization.ForeColor = Color.AliceBlue;
-            btnHospitalization.Location = new Point(3, 418);
+            btnHospitalization.Location = new Point(3, 408);
             btnHospitalization.Name = "btnHospitalization";
             btnHospitalization.Size = new Size(150, 31);
             btnHospitalization.TabIndex = 17;
@@ -282,7 +282,7 @@
             btnCancelUser.BackColor = Color.Navy;
             btnCancelUser.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCancelUser.ForeColor = Color.White;
-            btnCancelUser.Location = new Point(464, 81);
+            btnCancelUser.Location = new Point(535, 76);
             btnCancelUser.Name = "btnCancelUser";
             btnCancelUser.Size = new Size(59, 27);
             btnCancelUser.TabIndex = 16;
@@ -340,7 +340,7 @@
             btnSaveUser.BackColor = Color.Navy;
             btnSaveUser.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSaveUser.ForeColor = Color.White;
-            btnSaveUser.Location = new Point(529, 81);
+            btnSaveUser.Location = new Point(459, 76);
             btnSaveUser.Name = "btnSaveUser";
             btnSaveUser.Size = new Size(59, 27);
             btnSaveUser.TabIndex = 11;
