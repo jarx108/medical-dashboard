@@ -1,6 +1,8 @@
-﻿CREATE TABLE [dbo].[tblSelectVaccineGroupName]
+﻿CREATE TABLE [dbo].[tblSelectVaccineGroupNames](
+	[SelectVaccineGroupId] [int] IDENTITY(1,1) NOT NULL,
+	[VaccineAbbreviation] [varchar](10) NOT NULL,
+PRIMARY KEY CLUSTERED 
 (
-	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
-    [Name] VARCHAR(60) NOT NULL, 
-    [Abbreviation] VARCHAR(10) NULL
-)
+	[SelectVaccineGroupId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]

@@ -1,5 +1,5 @@
-﻿CREATE TABLE [dbo].[tblFamilyMembers](
-	[FamilyMemberId] [int] IDENTITY(1,1) NOT NULL,
+﻿CREATE TABLE [dbo].[tblSelectFamilyMembers](
+	[SelectFamilyMemberId] [int] IDENTITY(1,1) NOT NULL,
 	[Lastname] [varchar](50) NOT NULL,
 	[Firstname] [varchar](50) NOT NULL,
 	[Alive] [bit] NULL,
@@ -10,6 +10,6 @@
 	[Notes] [varchar](max) NULL,
 PRIMARY KEY CLUSTERED 
 (
-	[FamilyMemberId] ASC
+	[SelectFamilyMemberId] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]

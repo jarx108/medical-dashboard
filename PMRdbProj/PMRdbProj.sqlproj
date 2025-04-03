@@ -58,36 +58,39 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Scripts\" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="tblUsernames.sql" />
+    <Build Include="tblUsers.sql" />
     <Build Include="tblSelectVaccineGroupNames.sql" />
     <Build Include="tblSelectDoctors.sql" />
-    <Build Include="tblSelectPharmacies.sql" />
-    <Build Include="tblSelectTestCenters.sql" />
-    <Build Include="tblSelectHospitals.sql" />
+    <Build Include="tblSelectFacilities.sql" />
     <Build Include="tblSelectTestTypes.sql" />
     <Build Include="tblSelectMedicalConditions.sql" />
-    <Build Include="tblSelectBloodworkGroupName.sql" />
-    <Build Include="tblVaccines.sql" />
-    <Build Include="tblVaccineDetails.sql" />
-    <Build Include="tblSelectVaccineFacilities.sql" />
-    <Build Include="tblSelectManufacturer.sql" />
+    <Build Include="tblSelectBloodworkGroupNames.sql" />
+    <Build Include="tblImmunizationDetails.sql" />
+    <Build Include="tblSelectManufacturers.sql" />
     <Build Include="tblDoctorVisits.sql" />
-    <Build Include="tblSelectSurgeryCenters.sql" />
     <Build Include="tblSurgeries.sql" />
     <Build Include="tblFamilyMembers.sql" />
     <Build Include="tblFamilyMemberMedicalConditions.sql" />
     <Build Include="tblHospitalizations.sql" />
     <Build Include="tblSelectMedications.sql" />
-    <Build Include="tblMedications.sql" />
-    <Build Include="tblSelectBloodworkIndiName.sql" />
+    <Build Include="tblMedicationLists.sql" />
+    <Build Include="tblSelectBloodworkIndiNames.sql" />
     <Build Include="tblBloodwork.sql" />
-    <Build Include="tblSelectBloodworkDrawFacility.sql" />
     <Build Include="tblTests.sql" />
-    <Build Include="tblFamilyHistory.sql" />
+    <Build Include="tblFamilyHistories.sql" />
+    <Build Include="tblSelectVaccineNames.sql" />
+    <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
+    <Build Include="dbo\Tables\tblSelectFamilyMembers.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PMRdbProj.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PMRdbProj.publish.xml" />
   </ItemGroup>
 </Project>

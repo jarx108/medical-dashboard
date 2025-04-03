@@ -1,8 +1,8 @@
-﻿CREATE TABLE [dbo].[tblSelectMedicalConditions](
-	[SelectMedicalConditionId] [int] IDENTITY(1,1) NOT NULL,
-	[MedicalConditionName] [varchar](50) NOT NULL,
+﻿CREATE TABLE [dbo].[tblSelectBloodworkGroupNames](
+	[SelectBloodworkGroupNameId] [int] IDENTITY(1,1) NOT NULL,
+	[GroupName] [varchar](50) NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
-	[SelectMedicalConditionId] ASC
+	[SelectBloodworkGroupNameId] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
