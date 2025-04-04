@@ -1,5 +1,6 @@
 ﻿using Microsoft.Identity.Client;
 using prgPMR.Abstraction;
+using prgPMR.DataObjects;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -69,10 +70,10 @@ namespace prgPMR
             Debug.Assert(_buttonText.Length == _buttonActions.Length);
             for(int i = 0; i < text.Length; i++)
                 Debug.Assert((_buttonText[i] == null) == (_buttonActions[i] == null));
-            // Manager.RefreshVisibility();
+            Manager.RefreshVisibility();
         }
 
-        public virtual void PanelLoad()
+        public virtual void DataLoad(DataInterface data)
         {
 
         }
