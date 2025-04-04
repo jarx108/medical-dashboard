@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Timers;
 using System.Transactions;
 using System.Windows.Forms;
+using prgPMR.DataObjects;
 using static prgPMR.MedicalControl;
 using Timer = System.Windows.Forms.Timer;
 
@@ -26,12 +27,7 @@ namespace prgPMR
 
         public Dictionary<lowerbuttonBarPresetGrouping, Action[]> lowerbuttonBarPresetActionDict;
 
-        // boolean flag to indicate that user is adding a record versus editing
-        // true = Add, false = Edit
-        public bool isDetailPanelAdd = true;
-
         
-
         public ImmunizationControl(ControlManager m) : base(m)
         {
             InitializeComponent();
@@ -55,16 +51,14 @@ namespace prgPMR
 
         public void Add()
         {
-            isDetailPanelAdd = true;
-            Manager.NextControl();
-                MessageBox.Show("Add Function Triggered", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Manager.NextControlWithData(new ImmunizationData(true, false));
+            MessageBox.Show("Add Function Triggered", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public void Edit()
         {
             SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Edit], lowerbuttonBarPresetActionDict[lowerbuttonBarPresetGrouping.Edit]);
-            isDetailPanelAdd = false;
-            Manager.NextControl();
+            Manager.NextControlWithData(new ImmunizationData(false, true));
             MessageBox.Show("Edit Function Triggered", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

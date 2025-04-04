@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using prgPMR.DataObjects;
 
 namespace prgPMR
 {
@@ -74,7 +75,6 @@ namespace prgPMR
                 {
                     // Set the visibility property of the panel of the ActiveControl/m to true/visible
                     m.Visible = true;
-                    m.PanelLoad();
 
                     //Loop through all the buttons on the panel
                     for (int i = 0; i < Buttons.Length; i++)
@@ -121,6 +121,23 @@ namespace prgPMR
             if (activeControl == 0)
                 return;
             activeControl--;
+            RefreshVisibility();
+        }
+        public void NextControlWithData(DataInterface data)
+        {
+            if (activeControl == MedicalControls.Count - 1)
+                return;
+            activeControl++;
+            MedicalControls[activeControl].DataLoad(data);
+            RefreshVisibility();
+
+        }
+        public void PreviousControlWithData(DataInterface data)
+        {
+            if (activeControl == 0)
+                return;
+            activeControl--;
+            MedicalControls[activeControl].DataLoad(data);
             RefreshVisibility();
         }
     }

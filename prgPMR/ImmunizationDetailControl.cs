@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.Intrinsics.Arm;
+using prgPMR.DataObjects;
 
 namespace prgPMR
 {
@@ -30,12 +31,16 @@ namespace prgPMR
             AttachEventHandlerstoUserDataControls();
         }
 
-        public override void PanelLoad()
+        public override void DataLoad(DataInterface data)
         {
-            if (isAddDetailControl)
+            if(data is not ImmunizationData iData)
+            {
+                return;
+            }
+            if (iData.isAdd)
             {
                 // Detailed form was called to "Add" a record/  Set the lowerbuttonBar for "Add"
-                SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Add], [null, null, null, Cancel, Save, Refresh, Back]);
+                SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Add], [null, null, null, Save, Refresh, Back]);
 
                 // Call method to clear all TextBoxes, ComboBoxes and RichTextBoxes
                 ClearAllUserDataControls();
@@ -43,10 +48,10 @@ namespace prgPMR
                 // **** DELETE THIS CODE ONCE TESTED ***
                 MessageBox.Show("Add Function Completed", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else
+            else if(iData.isEdit)
             {
                 // Detailed form was called to "Edit" a record.  Set the lowerbuttonBar for "Edit"
-                SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Edit], [null, null, Delete, Cancel, Save, Refresh, Back]);
+                SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Edit], [null, null, Back, Save, Refresh, Cancel]);
 
                 // Call method to gather the data from the database for the specific record selected in previous grid
                 // STILL NEED TO WRITE THIS METHOD
