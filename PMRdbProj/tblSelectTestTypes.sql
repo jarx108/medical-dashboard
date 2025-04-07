@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[tblSelectTestTypes](
 	[SelectTestTypeId] [int] IDENTITY(1,1) NOT NULL,
-	[TestTypeName] [varchar](50) NOT NULL,
+	[TestTypeName] [varchar](100) NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[SelectTestTypeId] ASC

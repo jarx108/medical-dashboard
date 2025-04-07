@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[tblSelectMedicalConditions](
 	[SelectMedicalConditionId] [int] IDENTITY(1,1) NOT NULL,
-	[MedicalConditionName] [varchar](50) NOT NULL,
+	[MedicalConditionName] [varchar](100) NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[SelectMedicalConditionId] ASC

@@ -42,6 +42,7 @@
             btnLogin = new Button();
             lblForgotPW = new Label();
             chkShowPW = new CheckBox();
+            lblForgotUsername = new Label();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -111,7 +112,7 @@
             btnCancel.BackColor = Color.DarkBlue;
             btnCancel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCancel.ForeColor = Color.White;
-            btnCancel.Location = new Point(617, 380);
+            btnCancel.Location = new Point(614, 421);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(107, 38);
             btnCancel.TabIndex = 10;
@@ -156,7 +157,7 @@
             btnLogin.BackColor = Color.DarkBlue;
             btnLogin.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(560, 309);
+            btnLogin.Location = new Point(557, 350);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(230, 38);
             btnLogin.TabIndex = 6;
@@ -188,12 +189,24 @@
             chkShowPW.UseVisualStyleBackColor = true;
             chkShowPW.CheckedChanged += chkShowPW_CheckedChanged;
             // 
+            // lblForgotUsername
+            // 
+            lblForgotUsername.AutoSize = true;
+            lblForgotUsername.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblForgotUsername.ForeColor = Color.MidnightBlue;
+            lblForgotUsername.Location = new Point(782, 291);
+            lblForgotUsername.Name = "lblForgotUsername";
+            lblForgotUsername.Size = new Size(104, 15);
+            lblForgotUsername.TabIndex = 12;
+            lblForgotUsername.Text = "Forgot Username";
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(192, 192, 255);
             ClientSize = new Size(1059, 514);
+            Controls.Add(lblForgotUsername);
             Controls.Add(btnCancel);
             Controls.Add(chkShowPW);
             Controls.Add(lblForgotPW);
@@ -229,5 +242,6 @@
         private CheckBox chkShowPW;
         private Label label2;
         private Label label1;
+        private Label lblForgotUsername;
     }
 }

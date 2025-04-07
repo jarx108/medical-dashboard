@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[tblSelectManufacturers](
 	[SelectManufacturerId] [int] NOT NULL,
-	[ManufacturerName] [varchar](50) NOT NULL,
+	[ManufacturerName] [varchar](60) NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[SelectManufacturerId] ASC

@@ -16,23 +16,23 @@ namespace prgPMR
         {
             InitializeComponent();
             SetButtons(
-                ["Refresh", "Add", "Edit", "Delete", null, "Cancel"],
+                ["Reset", "DetailAdd", "DetailEdit", "Delete", null, "Cancel"],
                 [Refresh, Add, Edit, Delete, null, Cancel]);
         }
 
         public override void Refresh()
         {
             base.Refresh();
-            lblClass.Text = "Refresh was Pushed";
+            lblClass.Text = "Reset was Pushed";
 
         }
         public void Add()
         {
-            lblClass.Text = "Add was Pushed";
+            lblClass.Text = "DetailAdd was Pushed";
         }
         public void Edit()
         {
-            lblClass.Text = "Edit was Pushed";
+            lblClass.Text = "DetailEdit was Pushed";
         }
 
         public void Delete()

@@ -15,7 +15,7 @@ namespace prgPMR
         // Can't get the breaking up of connection string to work
 
         // string strDataConnString = @"Data Source = EJVIDSYS\SQLEXPRESS; " + 
-        //                             "Initial Catalog=dbPMR; " +
+        //                             "GridInitial Catalog=dbPMR; " +
         //                             "Integrated Security=True; " +
         //                             "Connect Timeout=30; " +
         //                             "Encrypt=True; " +
@@ -25,7 +25,7 @@ namespace prgPMR
 
         // SqlConnection strConnectionDB = new SqlConnection(strDataConnString);
 
-        SqlConnection strConnectionDB = new SqlConnection(@"Data Source = EJVIDSYS\SQLEXPRESS; Initial Catalog = dbPMR; Integrated Security = True; Connect Timeout = 30; Encrypt=True;Trust Server Certificate=True;Application Intent = ReadWrite; Multi Subnet Failover=False");
+        SqlConnection strConnectionDB = new SqlConnection(@"Data Source = EJVIDSYS\SQLEXPRESS; GridInitial Catalog = dbPMR; Integrated Security = True; Connect Timeout = 30; Encrypt=True;Trust Server Certificate=True;Application Intent = ReadWrite; Multi Subnet Failover=False");
 
         public LoginForm()
 

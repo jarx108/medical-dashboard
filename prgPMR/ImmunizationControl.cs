@@ -18,15 +18,14 @@ using Timer = System.Windows.Forms.Timer;
 
 namespace prgPMR
 {
-
     public partial class ImmunizationControl : MedicalControl
     {
-
-        private Timer clickTimer;
+        private readonly Timer clickTimer;
         private bool DoubleClickTriggered=false;  // flag to determine if Click or DoubleClick was triggered
 
-        public Dictionary<lowerbuttonBarPresetGrouping, Action[]> lowerbuttonBarPresetActionDict;
+        private Dictionary<LowerbuttonBarPresetGrouping, Action[]> lowerbuttonBarPresetActionDict;
 
+        private int CurrentRow=0, CurrentColumn=0;
         
         public ImmunizationControl(ControlManager m) : base(m)
         {
@@ -36,69 +35,72 @@ namespace prgPMR
             clickTimer.Interval = SystemInformation.DoubleClickTime; // Match the system's double-click time
             clickTimer.Tick += ClickTimer_Tick;
 
-            lowerbuttonBarPresetActionDict = new Dictionary<lowerbuttonBarPresetGrouping, Action[]>
+            lowerbuttonBarPresetActionDict = new Dictionary<LowerbuttonBarPresetGrouping, Action[]>
             {
-                {lowerbuttonBarPresetGrouping.Initial,[Add, null, null, Reset, null, null] },
-                {lowerbuttonBarPresetGrouping.Select,[Add, Edit, Delete, Reset, null, null] },
-                {lowerbuttonBarPresetGrouping.MultiSelect,[null, null, Delete, Reset, null, null] },
-                {lowerbuttonBarPresetGrouping.Add,[null, null, null, Reset, Save, Cancel] },
-                {lowerbuttonBarPresetGrouping.Edit,[null, null, Delete, Reset, Save, Cancel] },
+                {LowerbuttonBarPresetGrouping.GridInitial,[Add, null, null, Reset, null, null] },
+                {LowerbuttonBarPresetGrouping.GridSelect,[Add, Edit, Delete, Reset, null, null] },
+                {LowerbuttonBarPresetGrouping.GridMultiSelect,[null, null, Delete, Reset, null, null] },
             };
-
             InitializeGrid();
-
         }
 
+        public override void DataLoad(DataInterface? data)
+        {
+            if (data == null)
+            {
+                InitializeGrid();
+            }
+            else
+            {
+                throw new ArgumentException("Bad Immunization Data");
+            }
+        }
         public void Add()
         {
-            Manager.NextControlWithData(new ImmunizationData(true, false));
-            MessageBox.Show("Add Function Triggered", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Manager.NextControl(new ImmunizationAddData("test"));
         }
 
         public void Edit()
         {
-            SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Edit], lowerbuttonBarPresetActionDict[lowerbuttonBarPresetGrouping.Edit]);
-            Manager.NextControlWithData(new ImmunizationData(false, true));
-            MessageBox.Show("Edit Function Triggered", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Manager.NextControl(new ImmunizationEditData());
         }
 
         public void Delete()
         {
-            SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Initial], lowerbuttonBarPresetActionDict[lowerbuttonBarPresetGrouping.Initial]);
-            MessageBox.Show("Delete Function Triggered", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DialogResult result = MessageBox.Show("Are you sure you want to delete?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            SetButtons(lowerbuttonBarPresetTextsDict[LowerbuttonBarPresetGrouping.GridInitial], lowerbuttonBarPresetActionDict[LowerbuttonBarPresetGrouping.GridInitial]);
+
+            if (result == DialogResult.Yes)
+            {
+                // Call method that will delete the specific record from the database
+                // STILL NEED TO WRITE THIS CODE
+
+                // **** DELETE THIS CODE ONCE TESTED ***
+                MessageBox.Show("Delete Function Completed", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                Reset();
+            }
         }
+
 
         public void Reset() 
         {
             // Reset all the buttons and refresh the data in the grid
             ImmunizationDataGrid.CurrentCell = null;
-            SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Initial], lowerbuttonBarPresetActionDict[lowerbuttonBarPresetGrouping.Initial]);
-            MessageBox.Show("Refresh Function Triggered", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-
-        public void Cancel()
-        {
-            SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Initial], lowerbuttonBarPresetActionDict[lowerbuttonBarPresetGrouping.Initial]);
-            ImmunizationDataGrid.CurrentCell = null;
-            MessageBox.Show("Cancel Function Triggered", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        public void Save()
-        {
-            SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Initial], lowerbuttonBarPresetActionDict[lowerbuttonBarPresetGrouping.Initial]);
-            MessageBox.Show("Save Function Triggered", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            SetButtons(lowerbuttonBarPresetTextsDict[LowerbuttonBarPresetGrouping.GridInitial], lowerbuttonBarPresetActionDict[LowerbuttonBarPresetGrouping.GridInitial]);
         }
 
         private void InitializeGrid()
         {
             ImmunizationDataGrid.CurrentCell = null;
-            SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Initial], lowerbuttonBarPresetActionDict[lowerbuttonBarPresetGrouping.Initial]);
+            SetButtons(lowerbuttonBarPresetTextsDict[LowerbuttonBarPresetGrouping.GridInitial], lowerbuttonBarPresetActionDict[LowerbuttonBarPresetGrouping.GridInitial]);
 
             // Define new DataTable called "dt"
             DataTable dt = new();
 
-            // Add 1st four column definitions into the data table
+            // DetailAdd 1st four column definitions into the data table
             dt.Columns.Add("Vaccine", typeof(string));
             dt.Columns.Add("VaccineGroup", typeof(string));
             dt.Columns.Add("DateLastDose", typeof(DateOnly));
@@ -109,7 +111,8 @@ namespace prgPMR
             dt.Columns.Add("DateDose4", typeof(DateOnly));
             dt.Columns.Add("DateDose5", typeof(DateOnly));
 
-            // fill the data table with dummy data, replace with appropriate code once database is implemented
+            // *** NEED CODE FOR GETTING DATA FROM DATABASE
+            // *** USING DUMMY DATA
             dt.Rows.Add("Tetanus, Diptheria, Pertussis", "Tdap", new DateOnly(2005, 11, 22), 1, new DateOnly(2005, 11, 22), DBNull.Value, DBNull.Value, DBNull.Value, DBNull.Value);
             dt.Rows.Add("Influenza IIV3 PF", "Influenza", new DateOnly(2024, 8, 27), 5, new DateOnly(2010, 10, 30), new DateOnly(2008, 12, 10), new DateOnly(2007, 12, 6), new DateOnly(2005, 11, 22), new DateOnly(2002, 9, 30));
             dt.Rows.Add("Influenza IIV4", "Influenza", new DateOnly(2023, 10, 4), 2, new DateOnly(2016, 8, 18), new DateOnly(2016, 1, 8), DBNull.Value, DBNull.Value, DBNull.Value);
@@ -129,7 +132,9 @@ namespace prgPMR
         // if DoubleClick gets triggered
         private void ImmunizationDataGrid_CellClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.ColumnIndex >= 4)
+            CurrentColumn = e.ColumnIndex;
+            CurrentRow = e.RowIndex;
+            if (CurrentRow >= 0 && CurrentColumn >= 4)
             {
                 DoubleClickTriggered = false; // set the flag to the default of false - Single Click
                 clickTimer.Start(); // Start timer to wait for possible double-click
@@ -137,7 +142,6 @@ namespace prgPMR
         }
 
         // Time interval for DoubleClick exceeded
-        // This method runs once DoubleClick timer interval has exceeded
         // Method utilizes the "DoubleCLickTrigged" boolean to determine if Single or Double click was triggered
         private void ClickTimer_Tick(object sender, EventArgs e)
         {
@@ -150,28 +154,29 @@ namespace prgPMR
 
                 if (ImmunizationDataGrid.SelectedCells.Count > 1)
                 {
-                    // Multiple cells have been selected, change the buttons in the lower bar to MultiSelect
-                    SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.MultiSelect], lowerbuttonBarPresetActionDict[lowerbuttonBarPresetGrouping.MultiSelect]);
+                    // Multiple cells have been selected, change the buttons in the lower bar to GridMultiSelect
+                    SetButtons(lowerbuttonBarPresetTextsDict[LowerbuttonBarPresetGrouping.GridMultiSelect], lowerbuttonBarPresetActionDict[LowerbuttonBarPresetGrouping.GridMultiSelect]);
                 }
                 else
                 { 
-                    // Single cell has been selected, change the buttons in the lower bar to Select
-                    SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Select], lowerbuttonBarPresetActionDict[lowerbuttonBarPresetGrouping.Select]); 
+                    // Single cell has been selected, change the buttons in the lower bar to GridSelect
+                    SetButtons(lowerbuttonBarPresetTextsDict[LowerbuttonBarPresetGrouping.GridSelect], lowerbuttonBarPresetActionDict[LowerbuttonBarPresetGrouping.GridSelect]); 
                 }
             }
         }
 
-        // DoubleClick triggered
         private void ImmunizationDataGrid_DoubleCellClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             clickTimer.Stop(); // Stop timer to prevent execution if double-click occurs
-            DoubleClickTriggered = true;  //set flag to true becasue DoubleClick was triggered
 
-            SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Edit], lowerbuttonBarPresetActionDict[lowerbuttonBarPresetGrouping.Edit]);
+            if (CurrentRow >= 0 && CurrentColumn >= 4)
+            {
+                DoubleClickTriggered = true;
 
+                // *** NEED CODE TO PASS CELL DATA TO IMMUNIZATIONDETAILCONTROL
+                Manager.NextControl(new ImmunizationEditData());
 
-            // Code goes here when a DoubleClick was triggered
-
+            }
         }
 
     }

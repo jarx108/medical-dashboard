@@ -47,6 +47,9 @@ namespace prgPMR
                 case MainForm.MedicalControlType.Hospitalization:
                     MedicalControls.Add(new HospitalizationsControl(this));
                     break;
+                case MainForm.MedicalControlType.UpdateUserInfo:
+                    MedicalControls.Add(new UpdateUserInfoControl(this));
+                    break;
                 default:
                     throw new ArgumentException("Invalid Medical Control type");
             }
@@ -59,8 +62,7 @@ namespace prgPMR
         {
             SetVisible(visible);
         }
-        // Method to make the selected panel either visible or hide it
-        // and also make visible or hide the appropriate buttons at the bottom of the panel
+        // Method to make the selected panel and buttons at bottom of panel either visible or hide it
         public void SetVisible(bool isVisible)
         {
             // Set local variable to the valued passed to the Method for use by other Methods in this class
@@ -102,37 +104,32 @@ namespace prgPMR
                 }
             }
         }
+
         public bool GetVisible()
         {
             return visible;
         }
 
-        // TODO: replace dummy method
         public void NextControl()
         {
-            if (activeControl == MedicalControls.Count - 1)
-                return;
-            activeControl++;
-            RefreshVisibility();
+            NextControl(null);
         }
-        // TODO: replace dummy method
+
         public void PreviousControl()
         {
-            if (activeControl == 0)
-                return;
-            activeControl--;
-            RefreshVisibility();
+            PreviousControl(null);
         }
-        public void NextControlWithData(DataInterface data)
+
+        public void NextControl(DataInterface? data)
         {
             if (activeControl == MedicalControls.Count - 1)
                 return;
             activeControl++;
             MedicalControls[activeControl].DataLoad(data);
             RefreshVisibility();
-
         }
-        public void PreviousControlWithData(DataInterface data)
+
+        public void PreviousControl(DataInterface? data)
         {
             if (activeControl == 0)
                 return;

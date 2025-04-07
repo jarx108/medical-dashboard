@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             pnlMenu = new Panel();
+            btnUpdateUserInfo = new Button();
             btnHospitalization = new Button();
             btnSurgery = new Button();
             btnBloodwork = new Button();
@@ -41,22 +42,11 @@
             panel2 = new Panel();
             btnFamilyHistory = new Button();
             pnlUser = new Panel();
-            btnCancelUser = new Button();
-            lblUsername = new Label();
-            lblDOB = new Label();
-            lblFirstName = new Label();
-            lblLastName = new Label();
-            btnSaveUser = new Button();
-            btnChangePW = new Button();
-            btnDeleteUser = new Button();
-            txtUsername = new TextBox();
             txtDOB = new TextBox();
             txtFirstName = new TextBox();
             txtLastName = new TextBox();
-            label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            btnEditUser = new Button();
             label9 = new Label();
             pnlMain = new Panel();
             pnlMainButtons = new Panel();
@@ -76,6 +66,7 @@
             // 
             pnlMenu.BackColor = Color.MidnightBlue;
             pnlMenu.BorderStyle = BorderStyle.Fixed3D;
+            pnlMenu.Controls.Add(btnUpdateUserInfo);
             pnlMenu.Controls.Add(btnHospitalization);
             pnlMenu.Controls.Add(btnSurgery);
             pnlMenu.Controls.Add(btnBloodwork);
@@ -92,6 +83,21 @@
             pnlMenu.Name = "pnlMenu";
             pnlMenu.Size = new Size(150, 729);
             pnlMenu.TabIndex = 1;
+            // 
+            // btnUpdateUserInfo
+            // 
+            btnUpdateUserInfo.BackColor = Color.MidnightBlue;
+            btnUpdateUserInfo.FlatAppearance.BorderColor = Color.MidnightBlue;
+            btnUpdateUserInfo.FlatAppearance.MouseOverBackColor = Color.MediumBlue;
+            btnUpdateUserInfo.FlatStyle = FlatStyle.Flat;
+            btnUpdateUserInfo.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnUpdateUserInfo.ForeColor = Color.AliceBlue;
+            btnUpdateUserInfo.Location = new Point(-2, 468);
+            btnUpdateUserInfo.Name = "btnUpdateUserInfo";
+            btnUpdateUserInfo.Size = new Size(150, 31);
+            btnUpdateUserInfo.TabIndex = 18;
+            btnUpdateUserInfo.Text = "Update User Info";
+            btnUpdateUserInfo.UseVisualStyleBackColor = false;
             // 
             // btnHospitalization
             // 
@@ -254,22 +260,11 @@
             // pnlUser
             // 
             pnlUser.BackColor = Color.RoyalBlue;
-            pnlUser.Controls.Add(btnCancelUser);
-            pnlUser.Controls.Add(lblUsername);
-            pnlUser.Controls.Add(lblDOB);
-            pnlUser.Controls.Add(lblFirstName);
-            pnlUser.Controls.Add(lblLastName);
-            pnlUser.Controls.Add(btnSaveUser);
-            pnlUser.Controls.Add(btnChangePW);
-            pnlUser.Controls.Add(btnDeleteUser);
-            pnlUser.Controls.Add(txtUsername);
             pnlUser.Controls.Add(txtDOB);
             pnlUser.Controls.Add(txtFirstName);
             pnlUser.Controls.Add(txtLastName);
-            pnlUser.Controls.Add(label3);
             pnlUser.Controls.Add(label2);
             pnlUser.Controls.Add(label1);
-            pnlUser.Controls.Add(btnEditUser);
             pnlUser.Controls.Add(label9);
             pnlUser.Dock = DockStyle.Top;
             pnlUser.Location = new Point(150, 0);
@@ -277,118 +272,15 @@
             pnlUser.Size = new Size(1200, 119);
             pnlUser.TabIndex = 2;
             // 
-            // btnCancelUser
-            // 
-            btnCancelUser.BackColor = Color.Navy;
-            btnCancelUser.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCancelUser.ForeColor = Color.White;
-            btnCancelUser.Location = new Point(535, 76);
-            btnCancelUser.Name = "btnCancelUser";
-            btnCancelUser.Size = new Size(59, 27);
-            btnCancelUser.TabIndex = 16;
-            btnCancelUser.Text = "Cancel";
-            btnCancelUser.UseVisualStyleBackColor = false;
-            btnCancelUser.Click += CancelUserButton_Click;
-            // 
-            // lblUsername
-            // 
-            lblUsername.AutoSize = true;
-            lblUsername.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblUsername.ForeColor = Color.Yellow;
-            lblUsername.Location = new Point(549, 18);
-            lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(85, 21);
-            lblUsername.TabIndex = 15;
-            lblUsername.Text = "Username";
-            // 
-            // lblDOB
-            // 
-            lblDOB.AutoSize = true;
-            lblDOB.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblDOB.ForeColor = Color.Yellow;
-            lblDOB.Location = new Point(130, 77);
-            lblDOB.Name = "lblDOB";
-            lblDOB.Size = new Size(78, 21);
-            lblDOB.TabIndex = 14;
-            lblDOB.Text = "00/00/00";
-            // 
-            // lblFirstName
-            // 
-            lblFirstName.AutoSize = true;
-            lblFirstName.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblFirstName.ForeColor = Color.Yellow;
-            lblFirstName.Location = new Point(130, 47);
-            lblFirstName.Name = "lblFirstName";
-            lblFirstName.Size = new Size(91, 21);
-            lblFirstName.TabIndex = 13;
-            lblFirstName.Text = "First Name";
-            // 
-            // lblLastName
-            // 
-            lblLastName.AutoSize = true;
-            lblLastName.BackColor = Color.RoyalBlue;
-            lblLastName.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblLastName.ForeColor = Color.Yellow;
-            lblLastName.Location = new Point(130, 18);
-            lblLastName.Name = "lblLastName";
-            lblLastName.Size = new Size(89, 21);
-            lblLastName.TabIndex = 12;
-            lblLastName.Text = "Last Name";
-            // 
-            // btnSaveUser
-            // 
-            btnSaveUser.BackColor = Color.Navy;
-            btnSaveUser.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSaveUser.ForeColor = Color.White;
-            btnSaveUser.Location = new Point(459, 76);
-            btnSaveUser.Name = "btnSaveUser";
-            btnSaveUser.Size = new Size(59, 27);
-            btnSaveUser.TabIndex = 11;
-            btnSaveUser.Text = "Save";
-            btnSaveUser.UseVisualStyleBackColor = false;
-            btnSaveUser.Click += SaveUserButton_Click;
-            // 
-            // btnChangePW
-            // 
-            btnChangePW.BackColor = Color.Navy;
-            btnChangePW.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnChangePW.ForeColor = Color.White;
-            btnChangePW.Location = new Point(446, 41);
-            btnChangePW.Name = "btnChangePW";
-            btnChangePW.Size = new Size(161, 30);
-            btnChangePW.TabIndex = 10;
-            btnChangePW.Text = "Change Password";
-            btnChangePW.UseVisualStyleBackColor = false;
-            // 
-            // btnDeleteUser
-            // 
-            btnDeleteUser.BackColor = Color.Navy;
-            btnDeleteUser.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDeleteUser.ForeColor = Color.White;
-            btnDeleteUser.Location = new Point(778, 46);
-            btnDeleteUser.Name = "btnDeleteUser";
-            btnDeleteUser.Size = new Size(59, 27);
-            btnDeleteUser.TabIndex = 9;
-            btnDeleteUser.Text = "Delete";
-            btnDeleteUser.UseVisualStyleBackColor = false;
-            // 
-            // txtUsername
-            // 
-            txtUsername.Font = new Font("Segoe UI Light", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            txtUsername.Location = new Point(549, 18);
-            txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(161, 23);
-            txtUsername.TabIndex = 8;
-            txtUsername.Text = "Username";
-            // 
             // txtDOB
             // 
             txtDOB.Font = new Font("Segoe UI Light", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            txtDOB.Location = new Point(130, 77);
+            txtDOB.Location = new Point(585, 20);
             txtDOB.Name = "txtDOB";
-            txtDOB.Size = new Size(114, 23);
+            txtDOB.Size = new Size(95, 23);
             txtDOB.TabIndex = 7;
-            txtDOB.Text = "00/00/00";
+            txtDOB.Text = "04/09/1963";
+            txtDOB.TextAlign = HorizontalAlignment.Center;
             // 
             // txtFirstName
             // 
@@ -408,48 +300,27 @@
             txtLastName.TabIndex = 5;
             txtLastName.Text = "Last Name";
             // 
-            // label3
-            // 
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.AliceBlue;
-            label3.Location = new Point(446, 16);
-            label3.Name = "label3";
-            label3.Size = new Size(107, 31);
-            label3.TabIndex = 4;
-            label3.Text = "Username:";
-            // 
             // label2
             // 
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.AliceBlue;
-            label2.Location = new Point(17, 77);
+            label2.Location = new Point(456, 13);
             label2.Name = "label2";
             label2.Size = new Size(123, 31);
             label2.TabIndex = 3;
             label2.Text = "Date of Birth:";
+            label2.TextAlign = ContentAlignment.MiddleRight;
             // 
             // label1
             // 
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.AliceBlue;
-            label1.Location = new Point(17, 46);
+            label1.Location = new Point(17, 40);
             label1.Name = "label1";
             label1.Size = new Size(107, 31);
             label1.TabIndex = 2;
             label1.Text = "First Name:";
-            // 
-            // btnEditUser
-            // 
-            btnEditUser.BackColor = Color.Navy;
-            btnEditUser.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnEditUser.ForeColor = Color.White;
-            btnEditUser.Location = new Point(778, 15);
-            btnEditUser.Name = "btnEditUser";
-            btnEditUser.Size = new Size(59, 27);
-            btnEditUser.TabIndex = 1;
-            btnEditUser.Text = "Edit";
-            btnEditUser.UseVisualStyleBackColor = false;
-            btnEditUser.Click += EditUserButton_Click;
+            label1.TextAlign = ContentAlignment.MiddleRight;
             // 
             // label9
             // 
@@ -460,6 +331,7 @@
             label9.Size = new Size(110, 31);
             label9.TabIndex = 0;
             label9.Text = "Last Name:";
+            label9.TextAlign = ContentAlignment.MiddleRight;
             // 
             // pnlMain
             // 
@@ -468,7 +340,6 @@
             pnlMain.Name = "pnlMain";
             pnlMain.Size = new Size(1200, 548);
             pnlMain.TabIndex = 3;
-            pnlMain.Paint += MainPanel_Paint;
             // 
             // pnlMainButtons
             // 
@@ -495,6 +366,7 @@
             btnAction5.TabIndex = 18;
             btnAction5.Text = "Cancel";
             btnAction5.UseVisualStyleBackColor = false;
+            btnAction5.Click += ButtonBar_Click;
             // 
             // btnAction4
             // 
@@ -572,7 +444,6 @@
             Controls.Add(pnlMenu);
             Name = "MainForm";
             Text = "Personal Medical Records System";
-            Load += MainForm_Load;
             pnlMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             pnlUser.ResumeLayout(false);
@@ -590,18 +461,11 @@
         private Panel pnlMain;
         private Label label9;
         private Button btnMedication;
-        public Button btnEditUser;
         private PictureBox pictureBox1;
-        private Label label3;
         private Label label2;
         private Label label1;
-        public Button btnChangePW;
-        public Button btnDeleteUser;
-        private TextBox txtUsername;
-        private TextBox txtDOB;
         private TextBox txtFirstName;
         private TextBox txtLastName;
-        public Button btnSaveUser;
         public Button btnLogout;
         private Button btnDoctorVisit;
         private Button btnImmunization;
@@ -609,11 +473,6 @@
         private Button btnSurgery;
         private Button btnBloodwork;
         private Button btnMedicalTest;
-        private Label lblFirstName;
-        private Label lblLastName;
-        private Label lblUsername;
-        private Label lblDOB;
-        public Button btnCancelUser;
         private Panel pnlMainButtons;
         public Button btnAction0;
         public Button btnAction3;
@@ -621,5 +480,7 @@
         public Button btnAction1;
         public Button btnAction4;
         public Button btnAction5;
+        private Button btnUpdateUserInfo;
+        private TextBox txtDOB;
     }
 }

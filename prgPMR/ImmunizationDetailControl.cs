@@ -14,14 +14,9 @@ namespace prgPMR
 {
     public partial class ImmunizationDetailControl : MedicalControl
     {
-
-
-        // Flag to show whether Add or Edit button was clicked
-        // *** THIS FLAG WILL BE PASSED FROM PREVIOUS DataGrid
-        private bool isAddDetailControl=false;
-           
-        // Flag that gets set if any of the UserDataControls on the form are modified
         private bool isUserDataControlsModified = false;
+
+        private Dictionary<LowerbuttonBarPresetGrouping, Action[]> lowerbuttonBarPresetActionDict;
 
         public ImmunizationDetailControl(ControlManager m) : base(m)
         {
@@ -29,39 +24,39 @@ namespace prgPMR
 
             // Call method that attaches event handlers to User Data Controls for when they are modified by user so flag can be set
             AttachEventHandlerstoUserDataControls();
+
+            lowerbuttonBarPresetActionDict = new Dictionary<LowerbuttonBarPresetGrouping, Action[]>
+            {
+                {LowerbuttonBarPresetGrouping.DetailAdd,[null, null, null, Reset, Save, Cancel] },
+                {LowerbuttonBarPresetGrouping.DetailEdit,[null, null, Delete, Reset, Save, Cancel] },
+            };
         }
 
-        public override void DataLoad(DataInterface data)
+        public override void DataLoad(DataInterface? data)
         {
-            if(data is not ImmunizationData iData)
+            isUserDataControlsModified = false;
+            if(data is ImmunizationAddData aData)
             {
-                return;
-            }
-            if (iData.isAdd)
-            {
-                // Detailed form was called to "Add" a record/  Set the lowerbuttonBar for "Add"
-                SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Add], [null, null, null, Save, Refresh, Back]);
+                // Detailed form was called to "DetailAdd" a record/  Set the lowerbuttonBar for "DetailAdd"
+                SetButtons(lowerbuttonBarPresetTextsDict[LowerbuttonBarPresetGrouping.DetailAdd], lowerbuttonBarPresetActionDict[LowerbuttonBarPresetGrouping.DetailAdd]);
 
                 // Call method to clear all TextBoxes, ComboBoxes and RichTextBoxes
                 ClearAllUserDataControls();
-
-                // **** DELETE THIS CODE ONCE TESTED ***
-                MessageBox.Show("Add Function Completed", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else if(iData.isEdit)
+            else if(data is ImmunizationEditData eData)
             {
-                // Detailed form was called to "Edit" a record.  Set the lowerbuttonBar for "Edit"
-                SetButtons(lowerbuttonBarPresetTextsDict[lowerbuttonBarPresetGrouping.Edit], [null, null, Back, Save, Refresh, Cancel]);
+                // Detailed form was called to "DetailEdit" a record.  Set the lowerbuttonBar for "DetailEdit"
+                SetButtons(lowerbuttonBarPresetTextsDict[LowerbuttonBarPresetGrouping.DetailEdit], lowerbuttonBarPresetActionDict[LowerbuttonBarPresetGrouping.DetailEdit]);
 
-                // Call method to gather the data from the database for the specific record selected in previous grid
-                // STILL NEED TO WRITE THIS METHOD
-
-                
-                // Call method to populate all TextBoxes, ComboBoxes and RichTextBoxes
+                // Call method to get data from DB and populate all TextBoxes, ComboBoxes and RichTextBoxes
                 FillAllUserControls();
 
                 // **** DELETE THIS CODE ONCE TESTED ***
-                MessageBox.Show("Edit Function Completed", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("DetailEdit Function Completed", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                throw new ArgumentException("Bad Immunization Data");
             }
         }
         private void ClearAllUserDataControls()
@@ -121,29 +116,36 @@ namespace prgPMR
                 // STILL NEED TO WRITE THIS CODE
 
                 // **** DELETE THIS CODE ONCE TESTED ***
-                MessageBox.Show("Refresh Function Completed", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("DetailedDelete Function Completed", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 //Return to the previous control
+                // *** Need to change the class being passed
                 Manager.PreviousControl();
 
-            }
-            else
-            {
-                // **** DELETE THIS ENTIRE ELSE CODE ONCE TESTED.  NOT NEEDED BECAUSE YOU DO NOTHING WHEN SELECTED BY USER ***
-                MessageBox.Show("You clicked No!", "Response", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
         public void Cancel()
         {
-            Manager.PreviousControl();
+            if (isUserDataControlsModified)
+            {
+                DialogResult result = MessageBox.Show("Data has been modified.  Are you sure you want to cancel without saving your data?",
+                                      "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    Manager.PreviousControl();
+                }
+            }
         }
 
         public void Save()
         {
-            //Manager.NextControl();
+            // *** WRITE THE CODE TO SAVE THE DATA TO THE DATABASE
+            MessageBox.Show("Save Function Completed", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-        public void Refresh()
+
+        public void Reset()
         {
             if (isUserDataControlsModified)
             {
@@ -152,45 +154,15 @@ namespace prgPMR
                 if (result == DialogResult.Yes)
                 {
                     ClearAllUserDataControls();
-                    MessageBox.Show("Refresh Function Completed", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    // *** ONCE CODE IS TESTED, THIS "else" CODE CAN BE REMOVED BECAUSE NOT NOTHING DONE IF USE ANSWERS NO
-                    MessageBox.Show("You clicked No!", "Response", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Reset Function Completed", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
-        public void Back()
-        {
-            if (isUserDataControlsModified)
-            {
-                DialogResult result = MessageBox.Show("Data has been modified are you sure you want to lose your changes and return to the previous screen?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                if (result == DialogResult.Yes)
-                {
-                    Manager.PreviousControl();
-                    MessageBox.Show("Refresh Function Completed", "Greeting", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    // *** ONCE CODE IS TESTED,DELETE THE MESSAGEBOX
-                    MessageBox.Show("You clicked No!", "Response", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-            }
-        }
-
 
         private void btnPDFFile_Click(object sender, EventArgs e)
         {
             // Method will enable the user to add a PDF file to the record
             // *** NEED TO WRITE THIS CODE
-        }
-
-        private void VaccinesDetailControl_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnImageFile_Click(object sender, EventArgs e)
