@@ -4,7 +4,7 @@
 	[Firstname] [varchar](50) NOT NULL,
 	[Specialty] [varchar](30) NOT NULL,
 	[Location] [varchar](100) NULL,
-	[Phone] [int] NULL,
+	[Phone] [varchar](20) NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[SelectDoctorId] ASC

@@ -64,12 +64,10 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="tblUsers.sql" />
-    <Build Include="tblSelectVaccineGroupNames.sql" />
     <Build Include="tblSelectDoctors.sql" />
     <Build Include="tblSelectFacilities.sql" />
     <Build Include="tblSelectTestTypes.sql" />
     <Build Include="tblSelectMedicalConditions.sql" />
-    <Build Include="tblSelectBloodworkGroupNames.sql" />
     <Build Include="tblImmunizationDetails.sql" />
     <Build Include="tblSelectManufacturers.sql" />
     <Build Include="tblDoctorVisits.sql" />
@@ -86,6 +84,7 @@
     <Build Include="tblSelectVaccineNames.sql" />
     <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
     <Build Include="dbo\Tables\tblSelectFamilyMembers.sql" />
+    <Build Include="tblSelectBloodworkGroupNames.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PMRdbProj.refactorlog" />

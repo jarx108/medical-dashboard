@@ -2,7 +2,7 @@
 	[SelectFacilityId] [int] IDENTITY(1,1) NOT NULL,
 	[SelectFacilityName] [varchar](50) NOT NULL,
 	[Location] [varchar](100) NULL,
-	[Phone] [int] NULL,
+	[Phone] [varchar](20) NULL,
 	[isHospital] [bit] NULL,
 	[isPharmacy] [bit] NULL,
 	[isSurgery] [bit] NULL,

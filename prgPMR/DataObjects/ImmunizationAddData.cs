@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace prgPMR.DataObjects
 {
-    public class ImmunizationData(bool isAdd, bool isEdit) : DataInterface
+    public class ImmunizationAddData(string text) : DataInterface
     {
-        public bool isAdd = isAdd;
-        public bool isEdit = isEdit;
+        public readonly string SampleText = text;
     }
 }
