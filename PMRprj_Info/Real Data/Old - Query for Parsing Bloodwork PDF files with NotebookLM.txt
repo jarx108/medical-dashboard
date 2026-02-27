@@ -1,0 +1,113 @@
+===============================
+For use with NotebookLM
+================================
+
+
+You will parse the uploaded bloodwork PDFs using the following strict rules. 
+Apply these rules consistently for every batch of files.
+
+===========================================================
+                BLOODWORK PARSING RULES
+===========================================================
+
+1. FILE DATE EXTRACTION
+• Extract the test date from the filename.
+• Filenames contain a prefix in the format: yyyy_mmdd
+• Convert this to mm/dd/yyyy.
+• Use these dates as column headers.
+• Sort date columns in descending order (newest → oldest).
+• If there are files with the same name,merge them into one column
+	• If the files to be merged have the same test but different values, 
+	  then put 2nd value into the anomoly file and add "(DUPLICATE)" to the end of the line
+
+2. FILES
+Create an comma delimited text file for the data and call it RawData_01
+Create a text file for the anomolies  and call it Anomolies
+
+3.  TABLE STRUCTURE
+Columns are defined as:
+	Test Group | Test | Units | Reference Range | [date1] | [date2]| [date3] ...
+
+Rows are defined as:
+	Row 1: date columns (descending order)
+	Row 2: blank
+	Row 3: column headers
+	Rows below: test data
+
+3. TEST GROUPS (normalize into categories).
+The Data to be collected for each row consists of a 
+	Test Group Name - Example: CMP, CBC, Iron Panel, Lipid Panel, etc
+					  Note: it will typically be on a line on its one and have no values
+	Test Name - Example: HDL CHOLESTEROL, MPV, PLATELET COUNT, etc 
+				Note: it will have a value, units and often Reference Range associated with it
+	Units - Example: g/dL, %, ng/mL, etc
+	Reference Range - Example: 45-160 mcg/dL, <200 mg/dL, OR = 50 mg/dL, etc
+					  Note: it will often have the phrase "Reference Range" before it.
+	Data - Example: numeric value or text such as "E3/E3", "Reactive", ">1000", "1:1289", "Not Detected", "Negative", "Trace", etc
+	
+
+Typically a group will be listed and then several tests afterwards with values
+Examples:
+• CMP (Comprehensive Metabolic Panel)
+• CBC
+• Lipid Panel
+• Hemoglobin A1c
+• TSH / Thyroid Panel
+• Vitamin D
+• Vitamin B12
+• Iron Panel
+• Urine Microalbumin
+
+Sometimes a group will only havee one test.
+Sometimes a the test name and the group name are the same
+If a test does not clearly belong to a group, leave Test Group blank.
+
+4.VALUES EXTRACTION
+• Values include numbers and text
+• Exclude from a numeric value the suffice like %, "L" or "H"
+• Include Text, like NEG, POS
+• Include Text, like NON-REACTIVE, REACTIVE
+• Include ratios based values like 1:1280
+• Include Comparative like > or <
+• If a value is missing, leave the cell blank.
+
+
+5. TEST NAME NORMALIZATION
+Normalize test names so they match across all PDFs.
+Examples:
+• “F GLUCOSE”, “A GLUCOSE”, “GLUCOSE (FASTING)” → “Glucose”
+• “F HDL CHOLESTEROL”, “HDL CHOL”, “A HDL” → “HDL”
+• “F VITAMIN D,25-OH,TOTAL,IA” → “Vitamin D 25-OH”
+• “F HEMOGLOBIN A1c” → “Hemoglobin A1c”
+
+
+7. UNITS
+• Extract units when present (mg/dL, mmol/L, %, pg/mL, etc.)
+• If units are missing but obvious from context, fill them in.
+• If truly unknown, leave units blank.
+
+8. IGNORE THE FOLLOWING
+• Comments
+• Notes
+• Interpretations
+• “Test not performed”
+• “Improper specimen”
+• “Fasting: Yes”
+• Lab addresses
+• Physician names
+
+
+9. ANOMALIES FILE
+Create a separate anomalies.txt list containing any items that are in error or ambiguous
+Format each anomaly as:
+	[filename]: [exact text]
+	
+Each anomoly is a separate line
+
+
+
+===========================================================
+                END OF PARSING RULES
+===========================================================
+
+Now parse the uploaded PDFs using these rules.

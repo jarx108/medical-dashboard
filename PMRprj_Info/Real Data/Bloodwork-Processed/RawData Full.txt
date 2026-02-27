@@ -1,0 +1,94 @@
+Test Group Name,Test Name,Units of Measure,Reference Range,11/11/2025,09/22/2025,06/13/2025,12/04/2024,06/13/2024,02/01/2024,11/07/2023,03/24/2023,12/21/2021,06/14/2021,06/12/2020,03/23/2016,01/27/2016,06/16/2015,01/15/2015
+CMP,Glucose,mg/dL,65-99,105,106,99,120,106,105,N/A,97,N/A,110,115,107,102,120,103
+CMP,Urea Nitrogen (BUN),mg/dL,7-25,22,17,20,20,19,18,N/A,23,N/A,19,21,12,N/A,11,16
+CMP,Creatinine,mg/dL,0.50-1.05,0.91,0.73,0.67,0.66,0.66,0.65,N/A,0.66,N/A,0.69,0.69,0.67,N/A,0.57,0.67
+CMP,eGFR,mL/min/1.73m2,>= 60,71,93,99,100,100,101,N/A,101,N/A,96,97,101,N/A,107,102
+CMP,BUN/Creatinine Ratio,ratio,6-22 (calc),SEE NOTE,SEE NOTE,SEE NOTE,SEE NOTE,SEE NOTE,SEE NOTE,N/A,NOT APPLICABLE,N/A,28,30,NOT APPLICABLE,N/A,NOT APPLICABLE,NOT APPLICABLE
+CMP,Sodium,mmol/L,135-146,138,139,142,144,141,144,N/A,143,N/A,142,144,138,N/A,140,140
+CMP,Potassium,mmol/L,3.5-5.3,4.3,4.0,4.2,4.6,4.0,4.3,N/A,4.0,N/A,4.8,5.2,4.4,N/A,4.5,4.2
+CMP,Chloride,mmol/L,98-110,101,103,103,107,102,107,N/A,106,N/A,103,104,101,N/A,102,103
+CMP,Carbon Dioxide,mmol/L,20-32,28,29,24,30,27,29,N/A,30,N/A,26,28,26,N/A,25,24
+CMP,Calcium,mg/dL,8.6-10.4,9.5,9.5,9.4,9.5,9.5,9.4,N/A,9.3,N/A,9.4,9.3,9.5,N/A,9.3,9.3
+CMP,Protein Total,g/dL,6.1-8.1,7.3,7.3,7.9,7.0,7.3,7.0,7.1,7.3,N/A,7.2,7.2,7.5,N/A,7.5,7.7
+CMP,Albumin,g/dL,3.6-5.1,4.3,4.3,4.4,4.2,4.3,4.2,4.1,4.4,N/A,4.2,4.4,4.3,N/A,4.3,4.4
+CMP,Globulin,g/dL,1.9-3.7 (calc),3.0,3.0,3.5,2.8,3.0,2.8,3.0,2.9,N/A,3.0,2.8,3.2,N/A,3.2,3.3
+CMP,Albumin/Globulin Ratio,ratio,1.0-2.5 (calc),1.4,1.4,1.3,1.5,1.4,1.5,1.4,1.5,N/A,1.4,1.6,1.3,N/A,1.3,1.3
+CMP,Bilirubin Total,mg/dL,0.2-1.2,0.6,0.5,0.7,0.5,0.7,0.7,0.7,0.7,N/A,0.6,0.5,0.7,N/A,0.5,0.8
+CMP,Bilirubin Direct,mg/dL,<= 0.2,N/A,N/A,N/A,N/A,N/A,N/A,0.1,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+CMP,Bilirubin Indirect,mg/dL,0.2-1.2 (calc),N/A,N/A,N/A,N/A,N/A,N/A,0.6,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+CMP,Alkaline Phosphatase,U/L,37-153,58,61,61,56,61,53,56,58,N/A,73,66,69,N/A,70,59
+CMP,AST,U/L,10-35,14,16,18,13,14,13,14,12,N/A,15,18,15,N/A,15,21
+CMP,ALT,U/L,6-29,9,11,13,11,11,9,16,10,N/A,12,12,13,N/A,14,14
+A1c,Hemoglobin A1c,%,<5.7,6.3,6.1,6.2,6.2,N/A,N/A,N/A,5.8,N/A,6.4,6.0,6.8,N/A,N/A,6.7
+Lipid Panel,Cholesterol Total,mg/dL,<200,130,130,158,131,155,139,N/A,N/A,N/A,143,130,181,N/A,N/A,153
+Lipid Panel,HDL Cholesterol,mg/dL,>= 50,53,50,55,48,50,53,N/A,N/A,N/A,48,49,44,N/A,N/A,45
+Lipid Panel,Triglycerides,mg/dL,<150,97,131,71,70,79,85,N/A,N/A,N/A,96,65,129,N/A,N/A,79
+Lipid Panel,LDL-Cholesterol,mg/dL,<100 (calc),59,59,87,68,88,69,N/A,N/A,N/A,77,68,111,N/A,N/A,92
+Lipid Panel,Chol/HDL Ratio,ratio,<= 5.0 (calc),2.5,2.6,2.9,2.7,3.1,2.6,N/A,N/A,N/A,N/A,N/A,4.1,N/A,N/A,3.4
+Lipid Panel,Non-HDL Cholesterol,mg/dL,<130 (calc),77,80,103,83,105,86,N/A,N/A,N/A,N/A,N/A,137,N/A,N/A,108
+CBC,White Blood Cell Count,Thousand/uL,3.8-10.8,6.3,N/A,N/A,5.7,N/A,N/A,N/A,N/A,8.1,6.2,5.5,N/A,N/A,5.5,N/A
+CBC,Red Blood Cell Count,Million/uL,3.80-5.10,4.03,N/A,N/A,4.04,N/A,N/A,N/A,N/A,4.12,4.15,4.00,N/A,N/A,4.06,N/A
+CBC,Hemoglobin,g/dL,11.7-15.5,11.8,N/A,N/A,12.0,N/A,N/A,N/A,N/A,12.2,12.6,12.2,N/A,N/A,12.4,N/A
+CBC,Hematocrit,%,35.0-45.0,37.9,N/A,N/A,37.8,N/A,N/A,N/A,N/A,37.4,38.6,36.7,N/A,N/A,37.7,N/A
+CBC,MCV,fL,80.0-100.0,94.0,N/A,N/A,93.6,N/A,N/A,N/A,N/A,91,93,92,N/A,N/A,92.9,N/A
+CBC,MCH,pg,27.0-33.0,29.3,N/A,N/A,29.7,N/A,N/A,N/A,N/A,29.6,30.4,30.5,N/A,N/A,30.6,N/A
+CBC,MCHC,g/dL,32.0-36.0,31.1,N/A,N/A,31.7,N/A,N/A,N/A,N/A,32.6,32.6,33.2,N/A,N/A,33.0,N/A
+CBC,RDW,%,11.0-15.0,12.9,N/A,N/A,13.2,N/A,N/A,N/A,N/A,13.6,13.0,13.6,N/A,N/A,14.0,N/A
+CBC,Platelet Count,Thousand/uL,140-400,273,N/A,N/A,247,N/A,N/A,N/A,N/A,276,263,250,N/A,N/A,235,N/A
+CBC,MPV,fL,7.5-12.5,11.0,N/A,N/A,11.2,N/A,N/A,N/A,N/A,11.1,N/A,N/A,N/A,N/A,9.6,N/A
+CBC,Absolute Neutrophils,cells/uL,1500-7800,3730,N/A,N/A,3374,N/A,N/A,N/A,N/A,5400,3900,3300,N/A,N/A,3361,N/A
+CBC,Absolute Lymphocytes,cells/uL,850-3900,1739,N/A,N/A,1778,N/A,N/A,N/A,N/A,1840,1600,1600,N/A,N/A,1441,N/A
+CBC,Absolute Monocytes,cells/uL,200-950,529,N/A,N/A,428,N/A,N/A,N/A,N/A,750,500,500,N/A,N/A,512,N/A
+CBC,Absolute Eosinophils,cells/uL,15-500,252,N/A,N/A,91,N/A,N/A,N/A,N/A,40,100,100,N/A,N/A,154,N/A
+CBC,Absolute Basophils,cells/uL,0-200,50,N/A,N/A,29,N/A,N/A,N/A,N/A,50,100,0,N/A,N/A,33,N/A
+Autoimmune,ANA Screen IFA,text,NEGATIVE,N/A,POSITIVE,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,POSITIVE,N/A,POSITIVE,N/A
+Autoimmune,ANA Titer,titer,>1:80,N/A,1:1280,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,1:320,N/A,1:160,N/A
+Autoimmune,ANA Pattern,text,N/A,N/A,Nuclear Dense Fine Speckled,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Homogeneous,N/A,Homogeneous,N/A
+Autoimmune,dsDNA Antibody,IU/mL,<= 4,N/A,NEGATIVE,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,1,N/A,N/A,N/A
+Autoimmune,Sm Antibody,AI,<1.0 NEG,N/A,<1.0 NEG,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,<1.0 NEG,N/A,N/A,N/A
+Autoimmune,Sm/RNP Antibody,AI,<1.0 NEG,N/A,<1.0 NEG,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,<1.0 NEG,N/A,N/A,N/A
+Autoimmune,RNP Antibody,AI,<1.0 NEG,N/A,<1.0 NEG,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,<1.0 NEG,N/A,N/A,N/A
+Autoimmune,Chromatin Antibody,AI,<1.0 NEG,N/A,<1.0 NEG,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,<1.0 NEG,N/A,N/A,N/A
+Autoimmune,SS-A Antibody,AI,<1.0 NEG,N/A,<1.0 NEG,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,<1.0 NEG,N/A,N/A,N/A
+Autoimmune,SS-B Antibody,AI,<1.0 NEG,N/A,<1.0 NEG,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,<1.0 NEG,N/A,N/A,N/A
+Autoimmune,Scl-70 Antibody,AI,<1.0 NEG,N/A,<1.0 NEG,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,<1.0 NEG,N/A,N/A,N/A
+Autoimmune,Jo-1 Antibody,AI,<1.0 NEG,N/A,<1.0 NEG,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,<1.0 NEG,N/A,N/A,N/A
+Autoimmune,Centromere B Antibody,AI,<1.0 NEG,N/A,<1.0 NEG,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,<1.0 NEG,N/A,N/A,N/A
+Autoimmune,Ribosomal P Antibody,AI,<1.0 NEG,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,<1.0 NEG,N/A,N/A,N/A
+Autoimmune,Smooth Muscle Antibody,text,NEGATIVE,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,NEGATIVE,N/A,N/A,N/A
+Autoimmune,Mitochondrial Antibody,text,NEGATIVE,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,NEGATIVE,N/A,N/A,N/A
+Autoimmune,Rheumatoid Factor,IU/mL,<= 6,N/A,<5,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,7,N/A,5,N/A
+Autoimmune,CCP Antibody,Units,<20,N/A,<16,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,<16,N/A,N/A,N/A
+Autoimmune,MCV Antibody,U/mL,<20,N/A,<20,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Autoimmune,C3 Complement,mg/dL,83-193,N/A,149,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,150,N/A,N/A,N/A
+Autoimmune,C4 Complement,mg/dL,15-57,N/A,30,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,35,N/A,N/A,N/A
+Autoimmune,Cardiolipin Ab (IgG),GPL-U/mL,<20,N/A,<2.0,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Autoimmune,B2 Glycoprotein I (IgG),U/mL,<20,N/A,<2.0,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Autoimmune,Sed Rate,mm/h,<= 30,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,11,N/A
+Urinalysis,Appearance,text,CLEAR,N/A,N/A,N/A,CLOUDY,N/A,N/A,N/A,N/A,N/A,CLEAR,CLEAR,N/A,N/A,N/A,N/A
+Urinalysis,Specific Gravity,ratio,1.001-1.035,N/A,N/A,N/A,1.026,N/A,N/A,N/A,N/A,N/A,1.029,1.027,N/A,N/A,N/A,N/A
+Urinalysis,pH,ratio,5.0-8.0,N/A,N/A,N/A,5.5,N/A,N/A,N/A,N/A,N/A,5.5,6.0,N/A,N/A,N/A,N/A
+Urinalysis,WBC Esterase,text,NEGATIVE,N/A,N/A,N/A,2+,N/A,N/A,N/A,N/A,N/A,1+,1+,N/A,N/A,N/A,N/A
+Urinalysis,Protein,text,NEGATIVE,N/A,N/A,N/A,1+,N/A,N/A,N/A,N/A,N/A,Trace,Trace,N/A,N/A,N/A,N/A
+Urinalysis,Occult Blood,text,NEGATIVE,N/A,N/A,N/A,2+,N/A,N/A,N/A,N/A,N/A,Trace,1+,N/A,N/A,N/A,N/A
+Urinalysis,WBC,/HPF,<= 5,N/A,N/A,N/A,20-40,N/A,N/A,N/A,N/A,N/A,0-5,6-10,N/A,N/A,N/A,N/A
+Urinalysis,RBC,/HPF,<= 2,N/A,N/A,N/A,3-10,N/A,N/A,N/A,N/A,N/A,11-30,3-10,N/A,N/A,N/A,N/A
+Urinalysis,Bacteria,text,NONE SEEN,N/A,N/A,N/A,MODERATE,N/A,N/A,N/A,N/A,N/A,NONE SEEN,FEW,N/A,N/A,N/A,N/A
+Urinalysis,Squamous Epithelial Cells,/HPF,<= 5,N/A,N/A,N/A,10-20,N/A,N/A,N/A,N/A,N/A,0-10,0-10,N/A,N/A,N/A,N/A
+Hepatitis,Hepatitis Be Antibody,text,NON-REACTIVE,N/A,N/A,N/A,N/A,N/A,N/A,REACTIVE,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Hepatitis,Hepatitis Be Antigen,text,NON-REACTIVE,N/A,N/A,N/A,N/A,N/A,N/A,NON-REACTIVE,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Hepatitis,Hepatitis B Surface Antigen,text,NON-REACTIVE,N/A,N/A,N/A,N/A,N/A,N/A,NON-REACTIVE,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Hepatitis,Hepatitis B Surface Antibody,mIU/mL,>= 10,N/A,N/A,N/A,N/A,N/A,N/A,>1000,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Hepatitis,HBV DNA,IU/mL,NOT DETECTED,N/A,N/A,N/A,N/A,N/A,N/A,NOT DETECTED,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Vitamins,Vitamin D 25-OH Total,ng/mL,30-100,36,N/A,40,28,N/A,32,N/A,45,N/A,24.0,51.8,N/A,N/A,N/A,39
+Vitamins,Vitamin B12,pg/mL,200-1100,577,N/A,305,284,N/A,269,N/A,N/A,N/A,404,403,N/A,N/A,N/A,N/A
+Vitamins,Folate Serum,ng/mL,>5.4,13.6,N/A,17.3,12.3,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Vitamins,Magnesium,mg/dL,1.5-2.5,2.3,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,2.1,2.1,N/A,N/A,N/A,N/A
+Thyroid,TSH,mIU/L,0.40-4.50,N/A,N/A,N/A,1.27,N/A,N/A,N/A,N/A,N/A,1.020,1.410,N/A,N/A,N/A,N/A
+Thyroid,T4 Free,ng/dL,0.8-1.8,N/A,N/A,N/A,1.3,N/A,N/A,N/A,N/A,N/A,1.56,1.46,N/A,N/A,N/A,N/A
+Specialty,Uric Acid,mg/dL,2.5-7.0,N/A,N/A,N/A,3.9,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Specialty,Creatine Kinase Total,U/L,29-143,N/A,51,N/A,N/A,59,N/A,N/A,N/A,N/A,N/A,N/A,96,N/A,N/A,N/A
+Specialty,Phosphate,mg/dL,2.5-4.5,4.2,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Specialty,p-tau181,pg/mL,<= 1.07,0.66,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Specialty,APOE Isoform,text,N/A,E3/E3,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Specialty,Beta Amyloid 42/40 Ratio,ratio,>= 0.170,0.178,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
