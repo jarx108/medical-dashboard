@@ -1,0 +1,94 @@
+Parse the uploaded bloodwork PDF files using the following rules:
+
+===========================================================
+                BLOODWORK PARSING RULES
+===========================================================
+
+
+Each PDF file contains test results from bloodwork
+Parse through each file and get the Test Group, Test Name, Units of Measure, Reference Range and the value for each test in the file
+Each PDF file will be a column in the new file called RawData
+
+
+1) File Date Extraction from PDF file
+	For each PDF file, extract the test date from the filename
+	Filenames contain a prefix in the format: YYYY_MMDD
+		Convert this to MM/DD/YYYY
+		Use these dates as the column header in the new file for that PDF
+
+2) New Consolidated File
+	RawData needs to be a comma delimited file
+	RawData needs to be in a format that can easily be imported into Excel	This new file will contain the data collected from all the PDFs
+	The name of the new file is RawData
+	Each PDF will be a new column in RawData
+	The data columns being added, are to be sorted in descending order (newest → oldest)
+
+	The first row in the file is a header, with the following text
+		Column 1 = "Test Group Name"
+		Column 2 = "Test Name"
+		Column 3 = "Units of Measure"
+		Column 4 = "Reference Range"
+		Column 5 and beyond = date extracted from PDF File
+
+	Each row in RawData is a Unique Test for example "Glucose", "HDL Cholesterol"
+
+3) Parsing Data
+	The data to be collected for each row consist of:
+
+	For "Test Group Name"
+		Is a standard name used by the medical industry for a group of tests
+		In the PDF it typically will be on it's own line with no accompanying text
+		Each Test Group can have one or more tests
+		If a test does not clearly belong to a group then leave "Test Group Name" blank
+		Some examples are (not exclusive list) = CMP, CBC, Iron Panel, Lipid Panel, Iron Panel, Hepatitis BE Antibody
+	For "Test Name"
+		Is the standard name used by the medical industry for a unique test
+		Can have the same name as the "Test Group Name" or a different name
+		It is listed after the "Test Group Name" in the PDF
+		Some examples are (not exclusive list) = Analyte, CMP, CBC, Iron Panel, Lipid Panel
+	For "Units of Measure"
+		Is the standard name for units of measure for the value of the test
+		Extract when present
+		If units are missing but obvious from context fill them in, otherwise leave the cell blank
+		Some examples are (not exclusive list) = g/dL, %, ng/mL
+	For "Reference Range"
+		Is the text that describes the range of values that is considered normal
+		In the PDF file, it will often have the text "Reference Range" before it or as a column heading
+		Some examples are (not exclusive list) = 45-160 mcg/dL, <200 mg/dL, OR = 50 mg/dL
+	For the data columns
+		Is the resulting value of the test
+		Can be a numeric value
+		Can be a text value such as such as "E3/E3", "Reactive", "Not Detected", "Negative" or "Trace"
+		Can be a comparative text value such as ">50"
+		Can be a ratio text value such as "1:2301"
+		If a value is missing, leave the cell blank
+		
+	Normalize "Test Group Name" and "Test Name" names so they match across all PDFs
+		Some example are (not exclusive list):
+			“F GLUCOSE”, “A GLUCOSE”, “GLUCOSE (FASTING)” → “Glucose”
+			“F HDL CHOLESTEROL”, “HDL CHOL”, “A HDL” → “HDL”
+			“F VITAMIN D,25-OH,TOTAL,IA” → “Vitamin D 25-OH”
+			“F HEMOGLOBIN A1c” → “Hemoglobin A1c”
+		Use the best long name
+
+
+	Parse the entire file and include all "Test Group Name", "Test Name" and it's associated data
+
+4) Anomalies File
+	Create a separate text file called "Anomolies", which is a list of any items that are in error or ambiguous
+	Format each anomaly as: [filename]: [exact text]
+	Each anomaly  is a separate line
+
+
+Ensure that all "Test Group Name" and "Test Name" are included in RawData
+If there are 50 PDF files then there should be 50 data columns
+
+If necessary create a report that can then be exported into Excel
+
+===========================================================
+                END OF PARSING RULES
+===========================================================
+
+Now parse the uploaded PDFs using these rules
+
+		

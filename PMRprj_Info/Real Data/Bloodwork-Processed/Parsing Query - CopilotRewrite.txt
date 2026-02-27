@@ -1,0 +1,59 @@
+TASK: Parse all uploaded bloodwork PDF files and generate two outputs: RawData.csv and Anomalies.txt.
+
+DESCRIPTION:
+Each PDF contains blood test results. Extract all test groups, test names, units, reference ranges, and values. Normalize names across PDFs. Each PDF becomes one column in RawData.
+
+INSTRUCTIONS:
+
+1. Extract File Date
+   - Each PDF filename begins with YYYY_MMDD.
+   - Convert this to MM/DD/YYYY.
+   - Use this date as the column header for that PDF in RawData.
+
+2. Build RawData (comma‑delimited)
+   - First four columns:
+       1. Test Group Name
+       2. Test Name
+       3. Units of Measure
+       4. Reference Range
+   - Columns 5+ are the dates extracted from each PDF.
+   - Sort the date columns from newest → oldest.
+   - Each row represents one unique test (e.g., Glucose, HDL Cholesterol).
+
+3. Parsing Rules
+   - Test Group Name:
+       • Appears as a standalone line in the PDF.
+       • If unclear, leave blank.
+   - Test Name:
+       • Standard medical test name.
+       • Appears after the group name.
+   - Units of Measure:
+       • Extract when present.
+       • If missing but obvious, fill in; otherwise leave blank.
+   - Reference Range:
+       • Extract the normal range text.
+   - Test Value:
+       • Can be numeric or text (e.g., “Reactive”, “>50”, “1:2301”).
+       • Leave blank if missing.
+
+4. Normalize Names
+   - Normalize Test Group and Test Name so they match across PDFs.
+   - Examples:
+       • “F GLUCOSE”, “A GLUCOSE”, “GLUCOSE (FASTING)” → “Glucose”
+       • “F HDL CHOLESTEROL”, “HDL CHOL”, “A HDL” → “HDL”
+       • “F VITAMIN D,25-OH,TOTAL,IA” → “Vitamin D 25-OH”
+       • “F HEMOGLOBIN A1c” → “Hemoglobin A1c”
+   - Use the clearest long‑form name.
+
+5. Anomalies File
+   - Create a text file named “Anomalies”.
+   - Each line: [filename]: [exact text]
+   - Include any ambiguous, malformed, or unparseable items.
+
+6. Output Requirements
+   - RawData must include every test from every PDF.
+   - If there are 25 PDFs, RawData must have 25 data columns.
+   - Ensure the output can be imported into Excel.
+
+FINAL COMMAND:
+Parse all uploaded PDFs now using these instructions and generate RawData and Anomalies.

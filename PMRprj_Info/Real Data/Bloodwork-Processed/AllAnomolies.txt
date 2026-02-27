@@ -1,0 +1,119 @@
+2022_0601 - Bloodwork.pdf: BUN/CREATININE RATIO NOT APPLICABLE
+2022_0601 - Bloodwork.pdf: See Note 1
+2023_1107 - Bloodwork.pdf: BUN/CREATININE RATIO SEE NOTE
+2024_0613b - Bloodwork.pdf: INTERPRETATION SEE NOTE
+2024_0613b - Bloodwork.pdf: MITOCHONDRIAL AB TITER Test Not Performed
+2024_1204 - Bloodwork.pdf: BUN/CREATININE RATIO SEE NOTE
+2024_1204 - Bloodwork.pdf: %SRGAUAMSG
+2025_0613 - Bloodwork.pdf: BUN/CREATININE RATIO SEE NOTE
+2025_0922 - Bloodwork.pdf: BUN/CREATININE RATIO SEE NOTE
+2025_1111 - Bloodwork.pdf: BUN/CREATININE RATIO SEE NOTE
+2021_1222 - Bloodwork2.pdf: N/A
+
+
+
+2021_1116 - Hepatitis B Bloodwork B.pdf: 0; 0; 0
+2021_1222 - Bloodwork2.pdf: The "N/A" and ">=60 max estimate" for GFR where specific numerical values are missing.
+2024_0613b - Bloodwork.pdf: 0; 0; 0; 0; 0; 0; 0; 0
+2024_0613b - Bloodwork.pdf: MITOCHONDRIAL AB TITER Test Not Performed
+2024_1204 - Bloodwork.pdf: %SRGAUAMSG
+2024_1204 - Bloodwork.pdf: BUN/CREATININE RATIO SEE NOTE: Not Reported
+2025_0922 - Bloodwork.pdf: BUN/CREATININE RATIO SEE NOTE: Not Reported
+2025_1111 - Bloodwork.pdf: BUN/CREATININE RATIO SEE NOTE: Not Reported
+
+
+
+
+
+[2015_0530 - BloodWork.pdf]: Creatinine and ALT values noted as "Unable to flag appropriately due to gender not provided." eGFR calculation was also skipped for this reason [1, 2].
+[2017_0723 - BloodWork.pdf]: Urinalysis resulted in "TNP" (Test Not Performed) due to "Improper specimen submitted" [3].
+[2017_0724 - BloodWork.pdf]: Urinalysis also resulted in "TNP" for the same accession HL153423A [4].
+[2018_0220 - BloodWork.pdf]: Out-of-range results specifically highlighted: Total T3 (Low), Ferritin (High), Vitamin D (Low), A1c (High), and Amber/Turbid urine with 2+ Blood [5].
+[2018_0612 - Bloodwork Celiac Disease.pdf]: Interpretation Note: "No serological evidence of celiac disease. Total serum IgA is elevated. Consider mucosal inflammatory conditions or underlying gammopathy" [6].
+[2018_1206 - BloodWork.pdf]: Microalbumin/Creatinine Ratio marked as "NA" because "Microalbumin result is below analytical range" [7].
+[2019_0604 - BloodWork.pdf]: Urinalysis Occult Blood flagged as "TRACE A Alpha abnormal" and Crystals "PRESENT A Alpha abnormal" [8, 9].
+[2019_1205 - BloodWork and UrineAnalysis.pdf]: High BUN/Creatinine Ratio (32) and High Sodium (145) flagged [10].
+[2020_0612 (Labcorp) - BloodWork and UrineAnalysis.pdf]: Urinalysis reflexed to culture; identified 25,000-50,000 CFU/mL of "Enterococcus faecalis" [11].
+[2020_1210 - Bloodwork.pdf]: Urinalysis "Mixed urogenital flora" 10,000-25,000 CFU/mL reported [12].
+
+ [2021_0614 - BloodWork and UrineAnalysis.pdf]: Microscopic Examination: "Microscopic was indicated and was performed." No discrete value provided.
+• [2021_0614 - BloodWork and UrineAnalysis.pdf]: Urine Culture Result 1: "Mixed urogenital flora 25,000-50,000 colony forming units per mL."
+• [2021_1116 - Hepatitis B Bloodwork B.pdf]: Specific string found in report header: 0; 0; 0.
+• [2023_0324 - Hepatitis B Blooodwork.pdf]: Specific string found in report header: 0; 0; 0; 0; 0; 0; 0 ; FASTING:YES.
+• [2023_0324 - Bloodwork.pdf]: BUN/CREATININE RATIO: "NOT APPLICABLE" (Reference Range: 6-22).
+• [2024_0201 - Bloodwork.pdf]: BUN/CREATININE RATIO: "SEE NOTE: Not Reported: BUN and Creatinine are within reference range."
+• [2024_0613b - Bloodwork.pdf]: MITOCHONDRIAL AB TITER: "Test Not Performed. Screening test Negative or Not Detected."
+• [2024_0613b - Bloodwork.pdf]: CELIAC DISEASE COMPREHENSIVE PANEL: "No serological evidence of celiac disease. Total serum IgA is elevated. Consider mucosal inflammatory conditions or underlying gammopathy."
+• [2024_0613b - Bloodwork.pdf]: Specific string found in report header: 0; 0; 0; 0; 0; 0; 0; 0.
+• [2024_1204 - Bloodwork.pdf]: System flag string: %SRGAUAMSG.
+• [2024_1204 - Bloodwork.pdf]: ALBUMIN, URINE: Reference Range "Not established".
+• Multiple Sources: Duplicate collection date 03/24/2023 appears across two separate Quest Diagnostics reports; one provides a Metabolic/Vitamin panel, while the other provides Hepatitis-specific data.
+• Multiple Sources: Collection date 12/04/2024 appears across two Quest reports (2024_1204 and 2024_1205) with different panel content (CBC/Metabolic vs. Hepatitis).
+• 12/10/2020 Data: Extracted from "Previous Result" columns in the 2021_0614 report; no primary lab source for this date was provided in the context.
+3. Source Traceability Matrix
+Extracted Date
+Source Filename
+11/11/2025
+2025_1111 - Bloodwork.pdf
+09/22/2025
+2025_0922 - Bloodwork.pdf
+12/04/2024
+2024_1204 - Bloodwork.pdf / 2024_1205 - Hepatits B Bloodwork (comparison).pdf
+06/13/2024
+2024_0613b - Bloodwork.pdf
+02/20/2024
+2024_0220 - Blood Work.pdf
+02/01/2024
+2024_0201 - Bloodwork.pdf
+11/07/2023
+2023_1107 - Hepatits B Bloodwork.pdf
+03/24/2023
+2023_0324 - Bloodwork.pdf / 2023_0324 - Hepatitis B Blooodwork.pdf
+12/21/2021
+2021_1222 - Bloodwork2.pdf
+11/16/2021
+2021_1116 - Hepatitis B Bloodwork B.pdf
+08/26/2021
+2021_0826 - Bloodwork.pdf
+06/14/2021
+2021_0614 - BloodWork and UrineAnalysis.pdf
+12/10/2020
+2021_0614 - BloodWork and UrineAnalysis.pdf (Historical Data)
+
+
+
+
+
+============================
+from full run
+==========================
+
+2. Anomalies and Extraction Log
+
+* 2015_0115 - BloodWork.pdf: BUN/CREATININE RATIO NOT APPLICABLE -- Calculation not performed.
+* 2015_0115 - BloodWork.pdf: Health ID: 8573002356852745 -- Primary longitudinal ID established; inconsistent with later specific lab provider identifiers (Labcorp 254166188, Quest 85233759).
+* 2015_0616 - BloodWork.pdf: BUN/CREATININE RATIO NOT APPLICABLE -- Calculation not performed.
+* 2016_0127 - BloodWork.pdf: FASTING: NO -- Explicit record of non-fasting status for metabolic panel assessment.
+* 2016_0323 - BloodWork.pdf: Specimen: DL542853N, DL542392N, DL542483N -- Multiple specimen IDs generated for a single date of service across different ordering clinics (Lakewood Family Phys vs Rheumatology Clinic).
+* 2016_0323 - BloodWork.pdf: BUN/CREATININE RATIO NOT APPLICABLE -- Calculation not performed.
+* 2020_0612 (Labcorp) - BloodWork and UrineAnalysis.pdf: Appearance CLEAR -- Urinalysis baseline for comparative synthesis.
+* 2021_0614 (Labcorp) - BloodWork and UrineAnalysis.pdf: Result 1 Mixed urogenital flora -- Culture reflex result note.
+* 2021_1222 - Bloodwork.pdf: Specimen collected 12/21/2021 2:41 PM -- CSV column header corrected to specimen date (12/21/2021) from filename date (12/22/2021).
+* 2021_1222 - Bloodwork.pdf: Gender [Not Specified] -- Gender identifier missing from HCA Houston report header.
+* 2023_0324 - Bloodwork.pdf: Patient ID: 19288 -- Discrepancy noted compared to prior and subsequent Quest identifiers.
+* 2023_0324 - Bloodwork.pdf: BUN/CREATININE RATIO NOT APPLICABLE -- Calculation not performed.
+* 2023_1107 - Hepatits B Bloodwork.pdf: Patient ID: 84550 -- Internal inconsistency within Quest Diagnostics patient ID mapping.
+* 2023_1107 - Hepatits B Bloodwork.pdf: HEPATIC FUNCTION PANEL -- Group mapped to CMP for longitudinal tracking.
+* 2024_0201 - Bloodwork.pdf: BUN/CREATININE RATIO SEE NOTE: -- Not Reported: BUN and Creatinine are within reference range.
+* 2024_0201 - Bloodwork.pdf: VITAMIN D,25-OH,TOTAL,IA -- Source specifies using IA method; interpretive note suggests QuestAssureD LC/MS/MS for specific supplementation monitoring.
+* 2024_0613a - Bloodwork.pdf: Patient ID: 11342 -- Discrepancy noted compared to other 2024 Quest reports.
+* 2024_0613a - Bloodwork.pdf: BUN/CREATININE RATIO SEE NOTE: -- Not Reported: BUN and Creatinine are within reference range.
+* 2024_1204 - Bloodwork.pdf: BUN/CREATININE RATIO SEE NOTE: -- Not Reported: BUN and Creatinine are within reference range.
+* 2024_1204 - Bloodwork.pdf: MCHC 31.7 L -- Interpretive Note: For adults, a slight decrease in the range of 30 to 32 g/dL is most likely not clinically significant.
+* 2024_1204 - Bloodwork.pdf: Appearance CLOUDY -- Urinalysis anomaly note for clear baseline.
+* 2025_0613 - Bloodwork.pdf: BUN/CREATININE RATIO SEE NOTE: -- Not Reported: BUN and Creatinine are within reference range.
+* 2025_0922 - Bloodwork.pdf: BUN/CREATININE RATIO SEE NOTE: -- Not Reported: BUN and Creatinine are within reference range.
+* 2025_0922 - Bloodwork.pdf: ANA PATTERN NUCLEAR, DENSE FINE SPECKLED -- Interpretive Note: Pattern seen in normal individuals and rarely associated with SLE, Sjogren's, and systemic sclerosis.
+* 2025_1111 - Bloodwork.pdf: BUN/CREATININE RATIO SEE NOTE: -- Not Reported: BUN and Creatinine are within reference range.
+* 2025_1111 - Bloodwork.pdf: MCHC 31.1 L -- Interpretive Note: Slight decrease (range 30-32) is most likely not clinically significant.
+* 2025_1111 - Bloodwork.pdf: QUEST AD DETECT® APOE ISOFORM, PLASMA E3/E3 -- Genotype associated with average risk for Alzheimer's disease.
